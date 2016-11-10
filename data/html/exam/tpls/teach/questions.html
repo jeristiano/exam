@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="无纸化模拟考试系统">
+<meta name="description" content="无纸化模拟考试系统">
+<meta name="keywords" content="无纸化模拟考试系统">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>PHPEMS无纸化模拟考试系统</title>
+<!–[if lt IE9]>
+<script src="app/core/styles/js/html5.js"></script>
+<![endif]–>
+<!-- Le styles -->
+<link href="app/core/styles/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="app/core/styles/css/layoutit.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<link href="app/core/styles/css/datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="app/core/styles/js/jquery.min.js"></script>
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="app/core/styles/js/html5shiv.js"></script>
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+</head><body>
+<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">PHPEMS教师管理平台<span class="label">Version:3.1</span></a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav pull-right">					<li>						<a href="index.php">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">教师<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?user-app-logout" class="ajax">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span2">
+			<div class="accordion" id="accordion-13465">	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-707348">考试设计 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-707348">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-basic">考场列表</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-2120761">课程成绩 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-2120761">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-users">成绩管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212076">试题管理 </a>		</div>		<div class="accordion-body in collapse" id="accordion-element-212076">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-questions">普通试题管理</a></li>					<li><a href="index.php?exam-teach-rowsquestions">题帽题管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212096">试卷管理 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212096">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-exams">试卷列表</a></li>					<li><a href="index.php?exam-teach-exams-autopage">随机组卷</a></li>					<li><a href="index.php?exam-teach-exams-selfpage">手工组卷</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212090">回收站 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212090">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-recyle">普通试题</a></li>					<li><a href="index.php?exam-teach-recyle-rows">题帽题</a></li>				</ul>			</div>		</div>	</div></div>		</div>
+		<div class="span10" id="datacontent">
+			<ul class="breadcrumb">
+				<li><a href="index.php?exam-teach">考试模块</a> <span class="divider">/</span></li>
+				<li><a href="index.php?exam-teach-questions">试题管理</a> <span class="divider">/</span></li>
+				<li class="active">普通试题管理</li>
+			</ul>
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="#">普通试题管理</a>
+				</li>
+				<li class="dropdown pull-right">
+					<a data-toggle="dropdown" class="dropdown-toggle" href="#">添加试题<strong class="caret"></strong></a>
+					<ul class="dropdown-menu">
+						<li><a href="index.php?exam-teach-questions-addquestion&page=">单题添加</a></li>
+						<li><a href="index.php?exam-teach-questions-bataddquestion&page=">批量添加</a></li>
+					</ul>
+				</li>
+			</ul>
+			<form action="index.php?exam-teach-questions" method="post">
+				<table class="table">
+					<thead>
+		                <tr>
+					        <th colspan="2">搜索</th>
+					        <th></th>
+					        <th></th>
+					        <th></th>
+					        <th></th>
+		                </tr>
+		            </thead>
+					<tr>
+						<td>
+							试题ID：
+						</td>
+						<td>
+							<input name="search[questionid]" class="input-small" size="25" type="text" class="number" value=""/>
+						</td>
+						<td>
+							录入时间：
+						</td>
+						<td>
+							<input class="input-small datetimepicker" data-date="2016-11-10" data-date-format="yyyy-mm-dd" type="text" name="search[stime]" size="10" id="stime" value=""/> - <input class="input-small datetimepicker" data-date="2016-11-10" data-date-format="yyyy-mm-dd" size="10" type="text" name="search[etime]" id="etime" value=""/>
+						</td>
+						<td>
+							关键字：
+						</td>
+						<td>
+							<input class="input-small" name="search[keyword]" size="25" type="text" value=""/>
+						</td>
+					</tr>
+			        <tr>
+						<td>
+							科目：
+						</td>
+						<td>
+			        		<select name="search[questionsubjectid]" class="combox input-medium" target="sectionselect" refUrl="?exam-teach-questions-ajax-getsectionsbysubjectid&subjectid={value}">
+				        		<option value="0">选择科目</option>
+						  								  		<option value="1">请修改科目名称</option>
+						  							  		</select>
+			        	</td>
+			        	<td>
+							章节：
+						</td>
+						<td>
+					  		<select name="search[questionsectionid]" class="combox input-medium" id="sectionselect" target="knowsselect" refUrl="?exam-teach-questions-ajax-getknowsbysectionid&sectionid={value}">
+					  		<option value="0">选择章节</option>
+					  							  		</select>
+			        	</td>
+			        	<td>
+							知识点：
+						</td>
+						<td>
+					  		<select name="search[questionknowsid]" id="knowsselect" class="input-medium">
+						  		<option value="">选择知识点</option>
+						  							  		</select>
+			        	</td>
+					</tr>
+					<tr>
+						<td>
+							录入人：
+						</td>
+			        	<td>
+			        		<input class="input-small" name="search[username]" size="25" type="text" value=""/>
+			        	</td>
+			        	<td>
+							试题类型：
+						</td>
+						<td>
+							<select name="search[questiontype]" class="input-medium">
+						  		<option value="0">类型不限</option>
+						  								  		<option value="1">单选题</option>
+						  								  		<option value="2">多选题</option>
+						  								  		<option value="3">判断题</option>
+						  								  		<option value="4">问答题</option>
+						  								  		<option value="5">填空题</option>
+						  								  		<option value="6">故障题</option>
+						  							  		</select>
+						</td>
+						<td>
+							难度：
+						</td>
+						<td>
+							<select name="search[questionlevel]" class="input-medium">
+						  		<option value="0">难度不限</option>
+								<option value="1">易</option>
+								<option value="2">中</option>
+								<option value="3">难</option>
+					  		</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button class="btn btn-primary" type="submit">搜索</button>
+							<input type="hidden" value="1" name="search[argsmodel]" />
+						</td>
+						<td colspan="4"></td>
+					</tr>
+				</table>
+			</form>
+	        <table class="table table-hover">
+	            <thead>
+	                <tr>
+	                    <!--
+	                    <th><input type="checkbox" class="checkall"/></th>
+	                    -->
+	                    <th>ID</th>
+				        <th>试题类型</th>
+				        <th>试题内容</th>
+				        <th>录入人</th>
+				        <th>录入时间</th>
+				        <th>难度</th>
+				        <th>操作</th>
+	                </tr>
+	            </thead>
+	            <tbody>
+                    			        <tr>
+						<!--
+						<td>
+							<input type="checkbox" />
+						</td>
+						-->
+						<td>
+							8457						</td>
+						<td>
+							填空题						</td>
+						<td>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=8457" data-target="#modal">asdsadsadsadasd</a>
+						</td>
+						<td>
+							peadmin						</td>
+						<td>
+							2015-10-17						</td>
+						<td>
+							易						</td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=8457" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=8457" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+			        </tr>
+			        			        <tr>
+						<!--
+						<td>
+							<input type="checkbox" />
+						</td>
+						-->
+						<td>
+							8456						</td>
+						<td>
+							单选题						</td>
+						<td>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=8456" data-target="#modal">啊啊啊啊啊</a>
+						</td>
+						<td>
+													</td>
+						<td>
+							2015-10-12						</td>
+						<td>
+							中						</td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=8456" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=8456" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+			        </tr>
+			        			        <tr>
+						<!--
+						<td>
+							<input type="checkbox" />
+						</td>
+						-->
+						<td>
+							8455						</td>
+						<td>
+							单选题						</td>
+						<td>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=8455" data-target="#modal">问题测试</a>
+						</td>
+						<td>
+							peadmin						</td>
+						<td>
+							2015-10-02						</td>
+						<td>
+							难						</td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=8455" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=8455" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+			        </tr>
+			        			        <tr>
+						<!--
+						<td>
+							<input type="checkbox" />
+						</td>
+						-->
+						<td>
+							8450						</td>
+						<td>
+							填空题						</td>
+						<td>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=8450" data-target="#modal">测试填空</a>
+						</td>
+						<td>
+							peadmin						</td>
+						<td>
+							2015-08-26						</td>
+						<td>
+							难						</td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=8450" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=8450" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+			        </tr>
+			        			        <tr>
+						<!--
+						<td>
+							<input type="checkbox" />
+						</td>
+						-->
+						<td>
+							773						</td>
+						<td>
+							问答题						</td>
+						<td>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=773" data-target="#modal">描述抗战史著名战役和时间</a>
+						</td>
+						<td>
+							peadmin						</td>
+						<td>
+							2013-08-20						</td>
+						<td>
+							难						</td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=773" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=773" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+			        </tr>
+			        			        <tr>
+						<!--
+						<td>
+							<input type="checkbox" />
+						</td>
+						-->
+						<td>
+							770						</td>
+						<td>
+							判断题						</td>
+						<td>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=770" data-target="#modal">健全全民医保体系，建立重特大疾病保障和救助机制，全面开展儿童白血病等30种重大疾病保障试点工...</a>
+						</td>
+						<td>
+													</td>
+						<td>
+							2013-06-26						</td>
+						<td>
+							易						</td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=770" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=770" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+			        </tr>
+			        			        <tr>
+						<!--
+						<td>
+							<input type="checkbox" />
+						</td>
+						-->
+						<td>
+							769						</td>
+						<td>
+							判断题						</td>
+						<td>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=769" data-target="#modal">收入分配制度是经济社会发展中一项根本性、基础性的制度，是社会主义市场经济体制的重要基石。</a>
+						</td>
+						<td>
+													</td>
+						<td>
+							2013-06-26						</td>
+						<td>
+							易						</td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=769" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=769" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+			        </tr>
+			        			        <tr>
+						<!--
+						<td>
+							<input type="checkbox" />
+						</td>
+						-->
+						<td>
+							766						</td>
+						<td>
+							判断题						</td>
+						<td>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=766" data-target="#modal">推动诚信体系建设，以社会诚信带动商务诚信和政务诚信，形成良好的社会风尚。</a>
+						</td>
+						<td>
+													</td>
+						<td>
+							2013-06-26						</td>
+						<td>
+							易						</td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=766" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=766" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+			        </tr>
+			        			        <tr>
+						<!--
+						<td>
+							<input type="checkbox" />
+						</td>
+						-->
+						<td>
+							764						</td>
+						<td>
+							判断题						</td>
+						<td>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=764" data-target="#modal">目前我国年度财政性教育经费支出总额已经超过3万亿元。</a>
+						</td>
+						<td>
+													</td>
+						<td>
+							2013-06-26						</td>
+						<td>
+							易						</td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=764" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=764" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+			        </tr>
+			        			        <tr>
+						<!--
+						<td>
+							<input type="checkbox" />
+						</td>
+						-->
+						<td>
+							712						</td>
+						<td>
+							判断题						</td>
+						<td>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=712" data-target="#modal">党员领导干部不准借用公款、公物或者将公款、公物借给他人。</a>
+						</td>
+						<td>
+													</td>
+						<td>
+							2013-06-26						</td>
+						<td>
+							易						</td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=712" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=712" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+			        </tr>
+			        	        	</tbody>
+	        </table>
+	        <!--
+            <div class="control-group">
+	            <div class="controls">
+		            		            <button class="btn btn-primary" type="submit">删除</button>
+		        </div>
+	        </div>
+	        -->
+	        <div class="pagination pagination-right">
+	            <ul><li><a target="" href="index.php?exam-teach-questions&page=1">|&lsaquo;</a></li><li><a href="#" class="current">1</a></li><li><a target="" href="index.php?exam-teach-questions&page=2">2</a></li><li><a target="" href="index.php?exam-teach-questions&page=3">3</a></li><li><a target="" href="index.php?exam-teach-questions&page=4">4</a></li><li><a target="" href="index.php?exam-teach-questions&page=5">5</a></li><li><a target="" href="index.php?exam-teach-questions&page=6">6</a></li><li><a target="" href="index.php?exam-teach-questions&page=7">7</a></li><li><a target="" href="index.php?exam-teach-questions&page=8">8</a></li><li><a target="" href="index.php?exam-teach-questions&page=9">9</a></li><li><a target="" href="index.php?exam-teach-questions&page=10">10</a></li><li><a target="" href="index.php?exam-teach-questions&page=11"> >> </a></li><li><a target="" href="index.php?exam-teach-questions&page=64">&rsaquo;|</a></li><li><a>共635条数据</a></li></ul>
+	        </div>
+	        <div aria-hidden="true" id="modal" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-header">
+					<button aria-hidden="true" class="close" type="button" data-dismiss="modal">×</button>
+					<h3 id="myModalLabel">
+						试题详情
+					</h3>
+				</div>
+				<div class="modal-body"></div>
+				<div class="modal-footer">
+					 <button aria-hidden="true" class="btn" data-dismiss="modal">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
