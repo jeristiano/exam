@@ -31,7 +31,7 @@
 <script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
 <script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
 </head><body>
-<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">PHPEMS教师管理平台<span class="label">Version:3.1</span></a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav pull-right">					<li>						<a href="index.php">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">教师<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?user-app-logout" class="ajax">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
+<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">PHPEMS教师管理平台<span class="label">Version:3.1</span></a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav pull-right">					<li>						<a href="index.php">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">陈晨<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?user-app-logout" class="ajax">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
 	<div class="row-fluid">
 		<div class="span2">
 			<div class="accordion" id="accordion-13465">	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-707348">考试设计 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-707348">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-basic">考场列表</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-2120761">课程成绩 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-2120761">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-users">成绩管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212076">试题管理 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212076">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-questions">普通试题管理</a></li>					<li><a href="index.php?exam-teach-rowsquestions">题帽题管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212096">试卷管理 </a>		</div>		<div class="accordion-body in collapse" id="accordion-element-212096">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-exams">试卷列表</a></li>					<li><a href="index.php?exam-teach-exams-autopage">随机组卷</a></li>					<li><a href="index.php?exam-teach-exams-selfpage">手工组卷</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212090">回收站 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212090">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-recyle">普通试题</a></li>					<li><a href="index.php?exam-teach-recyle-rows">题帽题</a></li>				</ul>			</div>		</div>	</div></div>		</div>
@@ -73,7 +73,7 @@
 				  	<div class="controls">
 					  	<select class="combox" autocomplete="off" id="selectedsubjectid" msg="请选择科目" needle="needle" min="1" name="args[examsubject]" onchange="javascript:loadsubjectsetting(this);">
 						  	<option value="">请选择科目</option>
-						  							  	<option value="1">请修改科目名称</option>
+						  							  	<option value="1">php</option>
 						  						  	</select>
 					</div>
 				</div>
@@ -108,9 +108,6 @@
 														<a class="btn questpanel panel_1">单选题<input type="hidden" name="args[examsetting][questypelite][1]" value="1" class="questypepanelinput" id="panel_1"/></a>
 														<a class="btn questpanel panel_2">多选题<input type="hidden" name="args[examsetting][questypelite][2]" value="1" class="questypepanelinput" id="panel_2"/></a>
 														<a class="btn questpanel panel_3">判断题<input type="hidden" name="args[examsetting][questypelite][3]" value="1" class="questypepanelinput" id="panel_3"/></a>
-														<a class="btn questpanel panel_4">问答题<input type="hidden" name="args[examsetting][questypelite][4]" value="1" class="questypepanelinput" id="panel_4"/></a>
-														<a class="btn questpanel panel_5">填空题<input type="hidden" name="args[examsetting][questypelite][5]" value="1" class="questypepanelinput" id="panel_5"/></a>
-														<a class="btn questpanel panel_6">故障题<input type="hidden" name="args[examsetting][questypelite][6]" value="1" class="questypepanelinput" id="panel_6"/></a>
 													</div>
 					</div>
 					<div class="controls">拖拽进行题型排序</div>
@@ -155,48 +152,6 @@
 						<span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selectquestions&search[questionsubjectid]={selectedsubjectid}&search[questiontype]=3&questionids={iselectquestions_3}&rowsquestionids={iselectrowsquestions_3}&useframe=1" valuefrom="iselectquestions_3|iselectrowsquestions_3|selectedsubjectid">选题</a></span>
 	  					<input type="hidden" value="" id="iselectquestions_3" name="args[examquestions][3][questions]" />
 	  					<input type="hidden" value="" id="iselectrowsquestions_3" name="args[examquestions][3][rowsquestions]" />
-					</div>
-				</div>
-								<div class="control-group questpanel panel_4">
-					<label class="control-label">问答题：</label>
-					<div class="controls">
-						<span class="info">共&nbsp;</span>
-						<input id="iselectallnumber_4" type="text" class="input-mini" needle="needle" name="args[examsetting][questype][4][number]" value="0" size="2" msg="您必须填写总题数"/>
-						<span class="info">&nbsp;题，每题&nbsp;</span><input class="input-mini" needle="needle" type="text" name="args[examsetting][questype][4][score]" value="0" size="2" msg="您必须填写每题的分值"/>
-						<span class="info">&nbsp;分，描述&nbsp;</span><input class="input-mini" type="text" name="args[examsetting][questype][4][describe]" value="" size="12"/>
-						<span class="info">&nbsp;已选题数：<a id="ialreadyselectnumber_4">0</a>&nbsp;&nbsp;题</span>
-						<span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selected&questionids={iselectquestions_4}&rowsquestionids={iselectrowsquestions_4}" valuefrom="iselectquestions_4|iselectrowsquestions_4">看题</a></span>
-						<span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selectquestions&search[questionsubjectid]={selectedsubjectid}&search[questiontype]=4&questionids={iselectquestions_4}&rowsquestionids={iselectrowsquestions_4}&useframe=1" valuefrom="iselectquestions_4|iselectrowsquestions_4|selectedsubjectid">选题</a></span>
-	  					<input type="hidden" value="" id="iselectquestions_4" name="args[examquestions][4][questions]" />
-	  					<input type="hidden" value="" id="iselectrowsquestions_4" name="args[examquestions][4][rowsquestions]" />
-					</div>
-				</div>
-								<div class="control-group questpanel panel_5">
-					<label class="control-label">填空题：</label>
-					<div class="controls">
-						<span class="info">共&nbsp;</span>
-						<input id="iselectallnumber_5" type="text" class="input-mini" needle="needle" name="args[examsetting][questype][5][number]" value="0" size="2" msg="您必须填写总题数"/>
-						<span class="info">&nbsp;题，每题&nbsp;</span><input class="input-mini" needle="needle" type="text" name="args[examsetting][questype][5][score]" value="0" size="2" msg="您必须填写每题的分值"/>
-						<span class="info">&nbsp;分，描述&nbsp;</span><input class="input-mini" type="text" name="args[examsetting][questype][5][describe]" value="" size="12"/>
-						<span class="info">&nbsp;已选题数：<a id="ialreadyselectnumber_5">0</a>&nbsp;&nbsp;题</span>
-						<span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selected&questionids={iselectquestions_5}&rowsquestionids={iselectrowsquestions_5}" valuefrom="iselectquestions_5|iselectrowsquestions_5">看题</a></span>
-						<span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selectquestions&search[questionsubjectid]={selectedsubjectid}&search[questiontype]=5&questionids={iselectquestions_5}&rowsquestionids={iselectrowsquestions_5}&useframe=1" valuefrom="iselectquestions_5|iselectrowsquestions_5|selectedsubjectid">选题</a></span>
-	  					<input type="hidden" value="" id="iselectquestions_5" name="args[examquestions][5][questions]" />
-	  					<input type="hidden" value="" id="iselectrowsquestions_5" name="args[examquestions][5][rowsquestions]" />
-					</div>
-				</div>
-								<div class="control-group questpanel panel_6">
-					<label class="control-label">故障题：</label>
-					<div class="controls">
-						<span class="info">共&nbsp;</span>
-						<input id="iselectallnumber_6" type="text" class="input-mini" needle="needle" name="args[examsetting][questype][6][number]" value="0" size="2" msg="您必须填写总题数"/>
-						<span class="info">&nbsp;题，每题&nbsp;</span><input class="input-mini" needle="needle" type="text" name="args[examsetting][questype][6][score]" value="0" size="2" msg="您必须填写每题的分值"/>
-						<span class="info">&nbsp;分，描述&nbsp;</span><input class="input-mini" type="text" name="args[examsetting][questype][6][describe]" value="" size="12"/>
-						<span class="info">&nbsp;已选题数：<a id="ialreadyselectnumber_6">0</a>&nbsp;&nbsp;题</span>
-						<span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selected&questionids={iselectquestions_6}&rowsquestionids={iselectrowsquestions_6}" valuefrom="iselectquestions_6|iselectrowsquestions_6">看题</a></span>
-						<span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selectquestions&search[questionsubjectid]={selectedsubjectid}&search[questiontype]=6&questionids={iselectquestions_6}&rowsquestionids={iselectrowsquestions_6}&useframe=1" valuefrom="iselectquestions_6|iselectrowsquestions_6|selectedsubjectid">选题</a></span>
-	  					<input type="hidden" value="" id="iselectquestions_6" name="args[examquestions][6][questions]" />
-	  					<input type="hidden" value="" id="iselectrowsquestions_6" name="args[examquestions][6][rowsquestions]" />
 					</div>
 				</div>
 								<div class="control-group">

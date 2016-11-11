@@ -320,7 +320,7 @@ class files
     }
 
     //创建随即验证码图片
-    public function createRandImage($randCode = NULL,$width = 60, $height = 24,$mix = 50)
+    public function createRandImage($randCode = NULL,$width = 70, $height = 36,$mix = 50)
     {
     	$par = intval($width/4);
     	$randCode = strval($randCode);
@@ -330,9 +330,9 @@ class files
     	for($i = 0;$i<4;$i++)
     	{
 	    	$text_color = imagecolorallocate($image, rand(128,255), rand(128,255), rand(128,255));
-			imagettftext($image,14,intval(rand(0,60)),10+$i*$par,23+rand(3,8), $text_color,'files/public/font/Symbola.ttf',$randCode[$i]);
+			imagettftext($image,20,intval(rand(0,10)),10+$i*$par,23+rand(3,8), $text_color,'files/public/font/Symbola.ttf',$randCode[$i]);
     	}
-    	for($i=0;$i<250;$i++)
+    	for($i=0;$i<30;$i++)
 		{
 			$randcolor = ImageColorallocate($image,rand(0,255),rand(0,255),rand(0,255));
 			imagesetpixel($image, rand(1,$width) , rand(1,$height) , $randcolor);

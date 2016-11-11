@@ -11,13 +11,13 @@
 						<div class="control-group">
 							<label class="control-label" for="inputEmail">用户名：</label>
 							<div class="controls">
-								<input class="input-xlarge" type="text" name="args[username]" datatype="userName" needle="needle" msg="请你输入用户名" value="guest"/><span>请输入您的用户名</span>
+								<input class="input-xlarge" type="text" name="args[username]" datatype="userName" needle="needle" msg="请你输入用户名" /><span>请输入您的用户名</span>
 							</div>
 						</div>
 						<div class="control-group">
 							<label class="control-label" for="inputPassword">密码：</label>
 							<div class="controls">
-								<input class="input-xlarge" type="password" name="args[userpassword]" datatype="password" needle="needle" msg="请你输入密码" value="123456"/><span>密码长度6位以上，数字、字母或其他字符</span>
+								<input class="input-xlarge" type="password" name="args[userpassword]" datatype="password" needle="needle" msg="请你输入密码" /><span>密码长度6位以上，数字、字母或其他字符</span>
 							</div>
 						</div>
 						<div class="control-group">

@@ -59,6 +59,7 @@ class app
 	//设置基础信息，包括题型、地区、科目及关联关系
 	public function basic()
 	{
+		
 		$subaction = $this->ev->url(3);
 		$search = $this->ev->get('search');
 		$u = '';
@@ -192,6 +193,7 @@ class app
 				{
 					$tpls['pp'][] = substr(basename($p),0,-4);
 				}
+
 				$this->tpl->assign('tpls',$tpls);
 				$this->tpl->assign('basic',$basic);
 				$this->tpl->assign('areas',$areas);
@@ -203,6 +205,7 @@ class app
 			break;
 
 			case 'add':
+			
 			if($this->ev->get('insertbasic'))
 			{
 				$args = $this->ev->get('args');
@@ -218,11 +221,14 @@ class app
 			}
 			else
 			{
+				
 				$subjects = $this->basic->getSubjectList(array(array("AND","find_in_set(subjectid,:subjectid)",'subjectid',$this->teachsubjects)));
 				$areas = $this->area->getAreaList();
 				$this->tpl->assign('areas',$areas);
 				$this->tpl->assign('subjects',$subjects);
 				$this->tpl->display('basic_add');
+
+				print_r($subjects);
 			}
 			break;
 
