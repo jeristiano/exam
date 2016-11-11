@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="无纸化模拟考试系统">
+<meta name="description" content="无纸化模拟考试系统">
+<meta name="keywords" content="无纸化模拟考试系统">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>无纸化模拟考试系统</title>
+<!–[if lt IE9]>
+<script src="app/core/styles/js/html5.js"></script>
+<![endif]–>
+<!-- Le styles -->
+<link href="app/core/styles/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="app/core/styles/css/layoutit.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<link href="app/core/styles/css/datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="app/core/styles/js/jquery.min.js"></script>
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="app/core/styles/js/html5shiv.js"></script>
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+</head><body>
+<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">PHPEMS系统管理平台<span class="label">Version:3.1</span></a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav">					<li>						<a href="index.php?core-master">全局</a>					</li>															<li>						<a href="index.php?user-master">用户模块</a>					</li>																				<li>						<a href="index.php?exam-master">考试模块</a>					</li>																																								<li class="active">						<a href="index.php?content-master">内容模块</a>					</li>																								</ul>				<ul class="nav pull-right">					<li>						<a href="index.php">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">peadmin<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?core-master-logout">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span2">
+			<ul class="nav nav-tabs nav-stacked">	<li>		<a href="index.php?content-master">首页</a>	</li>	<li class="active">		<a href="index.php?content-master-category">分类管理</a>	</li>	<li>		<a href="index.php?content-master-contents">内容管理</a>	</li>	<li>		<a href="index.php?content-master-module">模型管理</a>	</li>	<li>		<a href="index.php?content-master-blocks">标签管理</a>	</li></ul>		</div>
+		<div class="span10" id="datacontent">
+			<ul class="breadcrumb">
+				<li><a href="index.php?content-master">内容模块</a> <span class="divider">/</span></li>
+				<li><a href="index.php?content-master-category">分类管理</a> <span class="divider">/</span></li>
+				<li class="active">添加分类</li>
+			</ul>
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="#">添加分类</a>
+				</li>
+				<li class="pull-right">
+					<a href="index.php?content-master-category&parent=2">分类列表</a>
+				</li>
+			</ul>
+			<form action="index.php?content-master-category-add" method="post" class="form-horizontal">
+				<fieldset>
+					<div class="control-group">
+					</div>
+					<div class="control-group">
+						<label for="modulename" class="control-label">分类名称</label>
+						<div class="controls">
+							<input type="text" id="input1" name="args[catname]" value="" datatype="userName" needle="needle" msg="您必须输入中英文字符的分类名称">
+							<span class="help-block">请输入分类名称</span>
+						</div>
+					</div>
+										<div class="control-group">
+						<label for="modulename" class="control-label">在首页展示内容</label>
+						<div class="controls">
+							<input type="text" name="args[catindex]" value="0" datatype="number" needle="needle" msg="您必须填写展示内容条数"> 条
+							<span class="help-block">填写展示内容条数，如果不需要在首页展示，请填写0。</span>
+						</div>
+					</div>
+					<div class="control-group">
+						<label for="modulecode" class="control-label">分类排序</label>
+						<div class="controls">
+							<input type="text" id="input2" name="args[catlite]" value="" datatype="number" msg="排序为整数">
+						</div>
+					</div>
+					<div class="control-group">
+						<label for="moduledescribe" class="control-label">外链地址</label>
+						<div class="controls">
+							<input type="text" name="args[caturl]" value="">
+						</div>
+					</div>
+					<div class="control-group">
+						<label for="moduledescribe" class="control-label">使用外链地址</label>
+						<div class="controls">
+							<label class="radio inline">
+								<input type="radio"  name="args[catuseurl]" value="1">使用
+							</label>
+			            	<label class="radio inline">
+			            		<input type="radio"  name="args[catuseurl]" value="0" checked>不使用
+			            	</label>
+							<span class="help-block">填写外链地址后，该分类会直接转到外链地址</span>
+						</div>
+					</div>
+					<div class="control-group">
+						<label for="moduledescribe" class="control-label">发布用户</label>
+						<div class="controls">
+							<input type="text" name="args[catmanager][pubusers]" value="">
+							<span class="help-block">填写允许发布内容的用户ID，用英文逗号隔开</span>
+						</div>
+					</div>
+					<div class="control-group">
+						<label for="moduledescribe" class="control-label">发布角色</label>
+						<div class="controls">
+							<input type="text" name="args[catmanager][pubgroups]" value="">
+							<span class="help-block">填写允许发布内容的角色（用户组）ID，用英文逗号隔开</span>
+						</div>
+					</div>
+					<div class="control-group">
+						<label for="modulecode" class="control-label">分类模板</label>
+						<div class="controls">
+							<select name="args[cattpl]" needle="needle" msg="您必须为这个分类选择一个模板">
+				            					            	<option value="category_default">category_default</option>
+				            					            </select>
+						</div>
+					</div>
+					<div class="control-group">
+						<label for="moduledescribe" class="control-label">分类图片</label>
+						<div class="controls">
+							<div class="thumbuper pull-left">
+								<div class="thumbnail">
+									<a href="javascript:;" class="second label""><em class="uploadbutton" id="catimg" exectype="thumb"></em></a>
+									<div class="first" id="catimg_percent"></div>
+									<div class="boot"><img src="app/core/styles/images/noimage.gif" id="catimg_view"/><input type="hidden" name="args[catimg]" value="" id="catimg_value"/></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="control-group">
+						<label for="catdes" class="control-label">分类简介</label>
+						<div class="controls">
+							<textarea class="input-xxlarge ckeditor" rows="7" id="catdes" name="args[catdes]"></textarea>
+							<span class="help-block">对这个模型进行描述</span>
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<button class="btn btn-primary" type="submit">提交</button>
+				            <input type="hidden" name="page" value="">
+				            <input type="hidden" name="addcategory" value="1">
+				            <input type="hidden" name="args[catparent]" value="2">
+													</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

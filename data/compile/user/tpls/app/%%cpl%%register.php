@@ -11,7 +11,26 @@
 						<div class="control-group">
 							<label class="control-label" for="inputEmail">用户名：</label>
 							<div class="controls">
-								<input class="input-xlarge" type="text" type="text" name="args[username]" datatype="userName" needle="needle" msg="请你输入用户名"/><span>请输入可用的用户名</span>
+								<input class="input-xlarge" type="text" type="text" name="args[username]" datatype="userName" needle="needle" msg="请输入用户名"/><span>请输入可用的用户名</span>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="inputEmail">真实姓名：</label>
+							<div class="controls">
+								<input class="input-xlarge" type="text" type="text" name="args[usertruename]" datatype="userName" needle="needle" msg="请输入真实姓名"/><span>请输入真实姓名</span>
+							</div>
+						</div>
+						<div class="control-group">
+							<label for="basicareaid" class="control-label">所在班级</label>
+							<div class="controls">
+								<select id="basicareaid" name="args[areaid]" needle="needle" msg="您必须选择班级">
+								<option value="">选择班级</option>
+								<?php $aid = 0;
+ foreach($this->tpl_var['areas'] as $key => $area){ 
+ $aid++; ?>
+								<option value="<?php echo $area['areaid']; ?>"><?php echo $area['area']; ?></option>
+								<?php } ?>
+								</select>
 							</div>
 						</div>
 						<div class="control-group">

@@ -189,6 +189,19 @@ class app
 			break;
 
 			case 'detail':
+			//此处判断学生的班级id
+				$bid = $this->ev->get('basicid');
+				$bic = $this->basic->getBasicById($bid);	
+				$uid = $this->_user['sessionuserid'];
+				$res = $this->exam->getUserInfoById($uid);
+				if($res['areaid']!=$bic['basicareaid']){
+					$message = array(
+						'statusCode' => 300,
+						"message" => "您不在此班级,考试!"
+					);
+					$this->G->R($message);
+					
+				}
 			$this->basic->delOpenPassBasic($this->_user['sessionuserid']);
 			$this->area = $this->G->make('area','exam');
 			$basicid = $this->ev->get('basicid');
@@ -412,7 +425,9 @@ class app
 	//首页
 	public function index()
 	{
+		//?exam/index
 		$action = $this->ev->url(3);
+		
 		switch($action)
 		{
 			case 'setCurrentBasic':
@@ -429,6 +444,19 @@ class app
 			}
 			else
 			{
+				//此处判断学生的班级id
+				$bid = $this->ev->get('basicid');
+				$bic = $this->basic->getBasicById($bid);	
+				$uid = $this->_user['sessionuserid'];
+				$res = $this->exam->getUserInfoById($uid);
+				if($res['areaid']!=$bic['basicareaid']){
+					$message = array(
+						'statusCode' => 300,
+						"message" => "您不在此班级!"
+					);
+					$this->G->R($message);
+					
+				}
 				$message = array(
 					'statusCode' => 200,
 					"message" => "您尚未开通本考场，系统将引导您开通",
@@ -506,7 +534,13 @@ class app
 			break;
 
 			default:
+
+			
+			$uid = $this->_user['sessionuserid'];
+			$res = $this->exam->getUserInfoById($uid);
+			$this->data['openbasics']['areaid']=$res['areaid'];
 			$this->tpl->assign('basics',$this->data['openbasics']);
+			//echo '<pre>';print_r($this->data['openbasics']);
 			$this->tpl->display('index');
 			break;
 		}

@@ -26,9 +26,7 @@
 								<h3><?php echo $this->tpl_var['_user']['username']; ?></h3>
 								<p>注册日期：<?php echo date('Y-m-d',$this->tpl_var['_user']['userregtime']); ?></p>
 								<p>注册IP：<?php echo $this->tpl_var['_user']['userregip']; ?></p>
-								<p>您现有积分：<?php echo $this->tpl_var['_user']['usercoin']; ?></p>
-								<p>&nbsp;</p>
-								<p><a class="btn" href="index.php?user-center-payfor">充值</a></p>
+								
 							</div>
 							<div>&nbsp;</div>
 						</div>

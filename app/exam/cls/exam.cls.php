@@ -169,6 +169,13 @@ class exam_exam
 		return $this->db->fetch($sql,array('examsetting','examquestions'));
 	}
 
+	public function getUserInfoById($id)
+	{
+		$data = array(false,'user',array(array("AND","userid = :userid",'userid',$id)));
+		$sql = $this->pdosql->makeSelect($data);
+		return $this->db->fetch($sql);
+	}
+
 	//获取已设置考题的数量
 	public function getExamQuestionNumber($number = false)
 	{

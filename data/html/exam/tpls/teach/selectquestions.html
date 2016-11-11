@@ -1,0 +1,153 @@
+		    	<script type="text/javascript">
+		    	function selectall(obj,a,b){
+		    		$(".sbox").prop('checked', $(obj).is(':checked'));
+		    		$(".sbox").each(function(){
+		    			selectquestions(this,a,b);
+		    		});
+		    	}
+		    	</script>
+		    	<form action="index.php?exam-teach-exams-selectquestions" method="post" direct="modal-body">
+					<table class="table">
+						<tr>
+							<td class="form-inline">
+								录入时间：
+								<input type="text" name="search[stime]" size="9" class="input-small datetimepicker" data-date="2016-11-11" data-date-format="yyyy-mm-dd" id="stime" value=""/> - <input class="input-small datetimepicker" data-date="2016-11-11" data-date-format="yyyy-mm-dd" size="9" type="text" name="search[etime]" id="etime" value=""/>
+								关键字：
+								<input name="search[keyword]" class="input-small" size="8" type="text" value=""/>
+							</td>
+						</tr>
+						<tr>
+							<td class="form-inline">
+								<select name="search[questionisrows]" class="input-medium">
+						  		<option value="0">普通试题</option>
+								<option value="1">题帽题</option>
+						  		</select>
+								<input type="hidden" name="search[questiontype]" value="1">
+								<input type="hidden" name="search[questionsubjectid]" value="1">
+				        		录入人：<input name="search[username]" class="input-mini" size="5" type="text" value=""/>
+								<select name="search[questionlevel]" class="combox input-medium">
+							  		<option value="0">难度不限</option>
+									<option value="1">易</option>
+									<option value="2">中</option>
+									<option value="3">难</option>
+						  		</select>
+							</td>
+				        </tr>
+				        <tr>
+							<td class="form-inline">
+						  		<select name="search[questionsectionid]" class="combox input-medium" id="sectionselect" target="knowsselect" refUrl="?exam-master-questions-ajax-getknowsbysectionid&sectionid={value}">
+							  		<option value="">选择章节</option>
+							  									  									  		<option value="1">第一章</option>
+							  									  		<option value="2">第二章</option>
+							  									  		<option value="3">第一章</option>
+							  									  								  		</select>
+						  		<select name="search[questionknowsid]" id="knowsselect" class="input-medium">
+							  		<option value="">选择知识点</option>
+							  								  		</select>
+								<button class="btn btn-primary" type="submit">检索</button>
+							</td>
+						</tr>
+					</table>
+				</form>
+				<div class="input"></div>
+								<table class="table table-hover">
+					<thead>
+						<tr>
+					        <th width="50"><input type="checkbox" onclick="javascript:selectall(this,'iselectquestions_1','ialreadyselectnumber_1');"/></th>
+					        <th width="100">试题类型</th>
+					        <th>试题内容</th>
+					        <th width="50">难度</th>
+						</tr>
+					</thead>
+					<tbody>
+										        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="8456" onclick="javascript:selectquestions(this,'iselectquestions_1','ialreadyselectnumber_1')"/></td>
+				          <td>单选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="啊啊啊啊啊">啊啊啊啊啊</a>
+						  </td>
+						  <td>中</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="8455" onclick="javascript:selectquestions(this,'iselectquestions_1','ialreadyselectnumber_1')"/></td>
+				          <td>单选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="问题测试">问题测试</a>
+						  </td>
+						  <td>难</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="8454" onclick="javascript:selectquestions(this,'iselectquestions_1','ialreadyselectnumber_1')"/></td>
+				          <td>单选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="这些自行车自行车相撞">这些自行车自行车相撞</a>
+						  </td>
+						  <td>难</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="229" onclick="javascript:selectquestions(this,'iselectquestions_1','ialreadyselectnumber_1')"/></td>
+				          <td>单选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="各级纪律检查委员会要经常对党员进行（）的教育。">各级纪律检查委员会要经常对党员进行（）的教育。</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="228" onclick="javascript:selectquestions(this,'iselectquestions_1','ialreadyselectnumber_1')"/></td>
+				          <td>单选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="党的全国代表大会每（）举行一次，由中央委员会召集。">党的全国代表大会每（）举行一次，由中央委员会召集。</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="227" onclick="javascript:selectquestions(this,'iselectquestions_1','ialreadyselectnumber_1')"/></td>
+				          <td>单选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="党组织讨论决定问题，必须执行（）的原则。（B）">党组织讨论决定问题，必须执行（）的原则。（B）</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="226" onclick="javascript:selectquestions(this,'iselectquestions_1','ialreadyselectnumber_1')"/></td>
+				          <td>单选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="在选举党的各级代表大会的代表和委员会委员时，应当采用（）的方式进行选举。">在选举党的各级代表大会的代表和委员会委员时，应当采用（）的方...</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="225" onclick="javascript:selectquestions(this,'iselectquestions_1','ialreadyselectnumber_1')"/></td>
+				          <td>单选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="在选举产生党的各级代表大会的代表和委员会委员时，下列表述中，正确的是（）。">在选举产生党的各级代表大会的代表和委员会委员时，下列表述中，...</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="224" onclick="javascript:selectquestions(this,'iselectquestions_1','ialreadyselectnumber_1')"/></td>
+				          <td>单选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="党的上下级组织之间要（）、互相支持和互相监督。">党的上下级组织之间要（）、互相支持和互相监督。</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="223" onclick="javascript:selectquestions(this,'iselectquestions_1','ialreadyselectnumber_1')"/></td>
+				          <td>单选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="党的总支部委员会和支部委员会设（）。">党的总支部委员会和支部委员会设（）。</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        					</tbody>
+				</table>
+				<div class="pagination pagination-right">
+	            	<ul><li><a target="modal-body" class="ajax" href="index.php?exam-teach-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=,8456,8455,8454,229,228,227,226,225,224,223,&rowsquestionids=,1,2,&0.4050550118663312&page=1">|&lsaquo;</a></li><li><a href="#" class="current">1</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-teach-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=,8456,8455,8454,229,228,227,226,225,224,223,&rowsquestionids=,1,2,&0.4050550118663312&page=2">2</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-teach-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=,8456,8455,8454,229,228,227,226,225,224,223,&rowsquestionids=,1,2,&0.4050550118663312&page=3">3</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-teach-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=,8456,8455,8454,229,228,227,226,225,224,223,&rowsquestionids=,1,2,&0.4050550118663312&page=4">4</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-teach-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=,8456,8455,8454,229,228,227,226,225,224,223,&rowsquestionids=,1,2,&0.4050550118663312&page=5">5</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-teach-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=,8456,8455,8454,229,228,227,226,225,224,223,&rowsquestionids=,1,2,&0.4050550118663312&page=6">6</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-teach-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=,8456,8455,8454,229,228,227,226,225,224,223,&rowsquestionids=,1,2,&0.4050550118663312&page=7">7</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-teach-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=,8456,8455,8454,229,228,227,226,225,224,223,&rowsquestionids=,1,2,&0.4050550118663312&page=8">8</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-teach-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=,8456,8455,8454,229,228,227,226,225,224,223,&rowsquestionids=,1,2,&0.4050550118663312&page=9">9</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-teach-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=,8456,8455,8454,229,228,227,226,225,224,223,&rowsquestionids=,1,2,&0.4050550118663312&page=10">10</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-teach-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=,8456,8455,8454,229,228,227,226,225,224,223,&rowsquestionids=,1,2,&0.4050550118663312&page=11"> >> </a></li><li><a target="modal-body" class="ajax" href="index.php?exam-teach-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=,8456,8455,8454,229,228,227,226,225,224,223,&rowsquestionids=,1,2,&0.4050550118663312&page=24">&rsaquo;|</a></li><li><a>共231条数据</a></li></ul>
+		        </div>
+		    	<script type="text/javascript">
+		    		jQuery(function($) {
+						markSelectedQuestions('ids[]','iselectquestions_1');
+		    		});
+		    	</script>
+				

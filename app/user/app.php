@@ -103,6 +103,7 @@ class app
 	{
 		if($this->ev->get('userregister'))
 		{
+			//print_r($_POST);die;
 			$fob = array('admin','管理员','站长');
 			$args = $this->ev->get('args');
 			$defaultgroup = $this->user->getDefaultGroup();
@@ -115,6 +116,8 @@ class app
 				exit(json_encode($message));
 			}
 			$username = $args['username'];
+			$usertruename = $args['usertruename'];
+			$areaid = $args['areaid'];
 			foreach($fob as $f)
 			{
 				if(strpos($username,$f) !== false)
@@ -148,7 +151,8 @@ class app
 				);
 				exit(json_encode($message));
 			}
-			$id = $this->user->insertUser(array('username' => $username,'usergroupid' => $defaultgroup['groupid'],'userpassword' => md5($args['userpassword']),'useremail' => $email));
+			$id = $this->user->insertUser(array('username' => $username,'usergroupid' => $defaultgroup['groupid'],'userpassword' => md5($args['userpassword']),'useremail' => $email,
+				'usertruename'=>$usertruename,'areaid'=>$areaid));
 			$this->session->setSessionUser(array('sessionuserid'=>$id,'sessionpassword'=>md5($args['userpassword']),'sessionip'=>$this->ev->getClientIp(),'sessiongroupid'=>$defaultgroup['groupid'],'sessionlogintime'=>TIME,'sessionusername'=>$username));
 			$message = array(
 				'statusCode' => 200,
@@ -161,7 +165,12 @@ class app
 			exit(json_encode($message));
 		}
 		else
-		{
+		{	
+
+			//地区分配过来
+			$this->area = $this->G->make('area','exam');
+			$areas = $this->area->getAreaList();
+			$this->tpl->assign('areas',$areas);
 			$this->tpl->display('register');
 		}
 	}

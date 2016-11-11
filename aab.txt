@@ -1,1004 +1,84 @@
 Array
 (
-    [ehtype] => 2
-    [ehtimelist] => a:31:{i:221;s:10:"1478770676";i:222;s:10:"1478770682";i:223;s:10:"1478770685";i:224;s:10:"1478770688";i:225;s:10:"1478770690";i:226;s:10:"1478770692";i:227;s:10:"1478770694";i:228;s:10:"1478770695";i:229;s:10:"1478770697";i:396;s:10:"1478770701";i:397;s:10:"1478770703";i:398;s:10:"1478770704";i:399;s:10:"1478770706";i:400;s:10:"1478770708";i:401;s:10:"1478770710";i:402;s:10:"1478770712";i:403;s:10:"1478770713";i:404;s:10:"1478770715";i:405;s:10:"1478770717";i:8450;s:10:"1478770724";i:773;s:10:"1478770726";i:706;s:10:"1478770728";i:707;s:10:"1478770731";i:708;s:10:"1478770733";i:709;s:10:"1478770735";i:710;s:10:"1478770737";i:711;s:10:"1478770739";i:712;s:10:"1478770742";i:766;s:10:"1478770744";i:769;s:10:"1478770746";i:770;s:10:"1478770748";}
-    [ehexam] => 测试手工组卷
-    [ehexamid] => 1
-    [ehbasicid] => 1
+    [ehtype] => 1
+    [ehtimelist] => 
+    [ehexam] => 大学英语试题
+    [ehexamid] => 10
+    [ehbasicid] => 4
     [ehquestion] => Array
         (
-            [questions] => Array
+            [questionids] => Array
                 (
-                    [1] => Array
+                    [question] => 
+                    [questionrow] => 
+                    [setting] => Array
                         (
-                            [221] => Array
+                            [examid] => 10
+                            [examsubject] => 4
+                            [exam] => 大学英语试题
+                            [examsetting] => Array
                                 (
-                                    [questionid] => 221
-                                    [questiontype] => 1
-                                    [question] => &lt;p&gt;党的各级委员会实行（）的制度。&lt;/p&gt;
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;table align=&quot;center&quot; border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;width: 500px;&quot;&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td&gt;&lt;img alt=&quot;&quot; src=&quot;http://127.0.0.1/3.0//files/attach/files/content/20150611/14339865451588.jpg&quot; style=&quot;width: 258px; height: 258px;&quot; /&gt;&lt;/td&gt;
-			&lt;td&gt;&lt;img alt=&quot;&quot; src=&quot;http://127.0.0.1/3.0//files/attach/files/content/20150611/14339865451588.jpg&quot; style=&quot;height: 258px; opacity: 0.9; line-height: 20.7999992370605px; width: 258px;&quot; /&gt;&lt;/td&gt;
-			&lt;td&gt;&lt;img alt=&quot;&quot; src=&quot;http://127.0.0.1/3.0//files/attach/files/content/20150611/14339865451588.jpg&quot; style=&quot;height: 258px; opacity: 0.9; line-height: 20.7999992370605px; width: 258px;&quot; /&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;&lt;img alt=&quot;&quot; src=&quot;http://127.0.0.1/3.0//files/attach/files/content/20150611/14339865451588.jpg&quot; style=&quot;height: 258px; opacity: 0.9; line-height: 20.7999992370605px; width: 258px;&quot; /&gt;&lt;/td&gt;
-			&lt;td&gt;&lt;img alt=&quot;&quot; src=&quot;http://127.0.0.1/3.0//files/attach/files/content/20150611/14339865451588.jpg&quot; style=&quot;height: 258px; opacity: 0.9; line-height: 20.7999992370605px; width: 258px;&quot; /&gt;&lt;/td&gt;
-			&lt;td&gt;&lt;img alt=&quot;&quot; src=&quot;http://127.0.0.1/3.0//files/attach/files/content/20150611/14339865451588.jpg&quot; style=&quot;height: 258px; opacity: 0.9; line-height: 20.7999992370605px; width: 258px;&quot; /&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;&lt;img alt=&quot;&quot; src=&quot;http://127.0.0.1/3.0//files/attach/files/content/20150611/14339865451588.jpg&quot; style=&quot;height: 258px; opacity: 0.9; line-height: 20.7999992370605px; width: 258px;&quot; /&gt;&lt;/td&gt;
-			&lt;td&gt;&lt;img alt=&quot;&quot; src=&quot;http://127.0.0.1/3.0//files/attach/files/content/20150611/14339865451588.jpg&quot; style=&quot;height: 258px; opacity: 0.9; line-height: 20.7999992370605px; width: 258px;&quot; /&gt;&lt;/td&gt;
-			&lt;td&gt;&lt;img alt=&quot;&quot; src=&quot;http://127.0.0.1/3.0//files/attach/files/content/20150611/14339865451588.jpg&quot; style=&quot;height: 258px; opacity: 0.9; line-height: 20.7999992370605px; width: 258px;&quot; /&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-                                    [questionselectnumber] => 6
-                                    [questionanswer] => E
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
+                                    [examtime] => 120
+                                    [comfrom] => 
+                                    [score] => 100
+                                    [passscore] => 60
+                                    [questypelite] => Array
                                         (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 2
-                                                    [knows] => 请修改知识点2
-                                                )
-
+                                            [1] => 1
+                                            [2] => 1
+                                            [3] => 1
                                         )
 
-                                    [questioncreatetime] => 1372247397
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [222] => Array
-                                (
-                                    [questionid] => 222
-                                    [questiontype] => 1
-                                    [question] => 党的各级委员会向（）负责并报告工作。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、同级党委书记办公会&lt;/p&gt;&lt;p&gt;B、同级党的代表大会&lt;/p&gt;&lt;p&gt;C、同级党委常委&lt;/p&gt;&lt;p&gt;D、党的地方领导机关&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => B
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
+                                    [scalemodel] => 1
+                                    [questype] => Array
                                         (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 2
-                                                    [knows] => 党章
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247397
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [223] => Array
-                                (
-                                    [questionid] => 223
-                                    [questiontype] => 1
-                                    [question] => 党的总支部委员会和支部委员会设（）。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、纪律检查组组长&lt;/p&gt;&lt;p&gt;B、纪律检查员&lt;/p&gt;&lt;p&gt;C、纪律检查委员会&lt;/p&gt;&lt;p&gt;D、纪律检查委员&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => D
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 2
-                                                    [knows] => 党章
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247397
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [224] => Array
-                                (
-                                    [questionid] => 224
-                                    [questiontype] => 1
-                                    [question] => 党的上下级组织之间要（）、互相支持和互相监督。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、互通有无&lt;/p&gt;&lt;p&gt;B、互相经验&lt;/p&gt;&lt;p&gt;C、互通情报&lt;/p&gt;&lt;p&gt;D、精诚合作&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => C
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 2
-                                                    [knows] => 党章
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247397
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [225] => Array
-                                (
-                                    [questionid] => 225
-                                    [questiontype] => 1
-                                    [question] => 在选举产生党的各级代表大会的代表和委员会委员时，下列表述中，正确的是（）。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、只能采取差额选举的办法&lt;/p&gt;&lt;p&gt;B、必须先采取差额选举办法进行预选，产生候选人名单，然后进行正式选举&lt;/p&gt;&lt;p&gt;C、党组织可以不经过选举人酝酿讨论而确定候选人名单&lt;/p&gt;&lt;p&gt;D、可以直接采用候选人数多于应选人数的差额选举办法进行正式选举；也可以先采用差额选举办法进行预选，产生候选人名单，然后进行正式选举&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => D
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 2
-                                                    [knows] => 党章
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247397
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [226] => Array
-                                (
-                                    [questionid] => 226
-                                    [questiontype] => 1
-                                    [question] => 在选举党的各级代表大会的代表和委员会委员时，应当采用（）的方式进行选举。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、举手表决&lt;/p&gt;&lt;p&gt;B、口头表决&lt;/p&gt;&lt;p&gt;C、记名投票&lt;/p&gt;&lt;p&gt;D、无记名投票&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => D
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 2
-                                                    [knows] => 党章
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247397
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [227] => Array
-                                (
-                                    [questionid] => 227
-                                    [questiontype] => 1
-                                    [question] => 党组织讨论决定问题，必须执行（）的原则。（B）
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、个人服从组织&lt;/p&gt;&lt;p&gt;B、少数服从多数&lt;/p&gt;&lt;p&gt;C、下级服从上级&lt;/p&gt;&lt;p&gt;D、党员服从党组织&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => B
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 2
-                                                    [knows] => 党章
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247397
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [228] => Array
-                                (
-                                    [questionid] => 228
-                                    [questiontype] => 1
-                                    [question] => 党的全国代表大会每（）举行一次，由中央委员会召集。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、1年&lt;/p&gt;&lt;p&gt;B、2年&lt;/p&gt;&lt;p&gt;C、4年&lt;/p&gt;&lt;p&gt;D、5年&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => D
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 2
-                                                    [knows] => 党章
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247397
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [229] => Array
-                                (
-                                    [questionid] => 229
-                                    [questiontype] => 1
-                                    [question] => 各级纪律检查委员会要经常对党员进行（）的教育。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、爱国主义&lt;/p&gt;&lt;p&gt;B、遵守纪律&lt;/p&gt;&lt;p&gt;C、道德品质&lt;/p&gt;&lt;p&gt;D、思想政治&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => B
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 2
-                                                    [knows] => 党章
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247397
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                        )
-
-                    [2] => Array
-                        (
-                            [396] => Array
-                                (
-                                    [questionid] => 396
-                                    [questiontype] => 2
-                                    [question] => 禁止党员领导干部脱离实际，弄虚作假，损害群众利益和党群干群关系，不准有以下哪些行为：（）。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、搞劳民伤财的“形象工程”和沽名钓誉的“政绩工程”；&lt;/p&gt;&lt;p&gt;B、虚报工作业绩；&lt;/p&gt;&lt;p&gt;C、在社会保障、政策扶持、救灾救济款物分配等事项中优亲厚友、显失公平；&lt;/p&gt;&lt;p&gt;D、获取荣誉、职称、学历学位等利益。&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => ABC
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247435
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [397] => Array
-                                (
-                                    [questionid] => 397
-                                    [questiontype] => 2
-                                    [question] => 《廉政准则》总则中强调了（）。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、党风廉政建设的重要性和规范党员领导干部廉洁从政行为的重大意义；&lt;/p&gt;&lt;p&gt;B、对党员领导干部廉洁从政的基本要求；&lt;/p&gt;&lt;p&gt;C、促进党员领导干部廉洁从政的基本举措；&lt;/p&gt;&lt;p&gt;D、廉洁自律的极端重要性。&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => BC
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247435
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [398] => Array
-                                (
-                                    [questionid] => 398
-                                    [questiontype] => 2
-                                    [question] => 《廉政准则》第二章强调了贯彻实施的（）。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、组织领导；&lt;/p&gt;&lt;p&gt;B、基本途径；&lt;/p&gt;&lt;p&gt;C、考核办法；&lt;/p&gt;&lt;p&gt;D、对违反本准则的处置以及对实施本准则的监督。&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => ABCD
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247435
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [399] => Array
-                                (
-                                    [questionid] => 399
-                                    [questiontype] => 2
-                                    [question] => 《廉政准则》规定，党员领导干部不准在（）中搞拉票等非组织活动。（）
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、民主推荐&lt;/p&gt;&lt;p&gt;B、民主测评&lt;/p&gt;&lt;p&gt;C、组织考察&lt;/p&gt;&lt;p&gt;D、选举&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => ABCD
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247435
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [400] => Array
-                                (
-                                    [questionid] => 400
-                                    [questiontype] => 2
-                                    [question] => 特定关系人是指国家工作人员的（）。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、近亲属&lt;/p&gt;&lt;p&gt;B、情妇（夫）&lt;/p&gt;&lt;p&gt;C、其他有共同利益关系的人&lt;/p&gt;&lt;p&gt;D、下属人员&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => ABCD
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247435
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [401] => Array
-                                (
-                                    [questionid] => 401
-                                    [questiontype] => 2
-                                    [question] => 反腐倡廉建设必须坚持（）的方针。（）
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、标本兼治&lt;/p&gt;&lt;p&gt;B、综合治理&lt;/p&gt;&lt;p&gt;C、惩防并举&lt;/p&gt;&lt;p&gt;D、注重预防&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => ABCD
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247435
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [402] => Array
-                                (
-                                    [questionid] => 402
-                                    [questiontype] => 2
-                                    [question] => 《廉政准则》规定，党员领导干部不准违反规定（）小汽车。（）
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、配备、购买&lt;/p&gt;&lt;p&gt;B、更换&lt;/p&gt;&lt;p&gt;C、装饰&lt;/p&gt;&lt;p&gt;D、使用&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => ABCD
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247435
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [403] => Array
-                                (
-                                    [questionid] => 403
-                                    [questiontype] => 2
-                                    [question] => &lt;p&gt;《廉政准则》规定，党员领导干部不准干预和插手农村集体资金、资产和资源的（）等事项。（） -----&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、使用&lt;/p&gt;
-
-&lt;p&gt;B、分配&lt;/p&gt;
-
-&lt;p&gt;C、承包&lt;/p&gt;
-
-&lt;p&gt;D、租赁&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => ABCD
-                                    [questiondescribe] => &lt;p&gt;3&lt;/p&gt;
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 1
-                                                    [knows] => 党史
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247435
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [404] => Array
-                                (
-                                    [questionid] => 404
-                                    [questiontype] => 2
-                                    [question] => 《廉政准则》适用于（）。（）
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、党的机关、人大机关、行政机关、政协机关、审判机关、检察机关中县(处)级以上党员领导干部；&lt;/p&gt;&lt;p&gt;B、人民团体、事业单位中相当于县(处)级以上党员领导干部；&lt;/p&gt;&lt;p&gt;C、国有和国有控股企业(含国有和国有控股金融企业)及其分支机构领导人员中的党员参照执行；&lt;/p&gt;&lt;p&gt;D、县(市、区、旗)直属机关、审判机关、检察机关的科级党员负责人，乡镇(街道)党员负责人，基层站所的党员负责人参照执行。&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => ABCD
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247435
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [405] => Array
-                                (
-                                    [questionid] => 405
-                                    [questiontype] => 2
-                                    [question] => 下列那种行为一定违反了《廉政准则》中关于禁止违反规定选拔任用干部的规定？（）
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、向当事人通告民主测评的情况及结果；&lt;/p&gt;&lt;p&gt;B、在工作调动时突击提拔干部；&lt;/p&gt;&lt;p&gt;C、给原任职地区干部选拔工作提出自己的建议和意见；&lt;/p&gt;&lt;p&gt;D、在干部选拔任用工作中封官许愿。&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => BD
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247435
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                        )
-
-                    [3] => Array
-                        (
-                            [706] => Array
-                                (
-                                    [questionid] => 706
-                                    [questiontype] => 3
-                                    [question] => 禁止党员领导干部个人经商、办企业，但对党员领导干部借他人名义经商、办企业则未作严格要求。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、对B、错&lt;/p&gt;
-                                    [questionselectnumber] => 2
-                                    [questionanswer] => B
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247469
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [707] => Array
-                                (
-                                    [questionid] => 707
-                                    [questiontype] => 3
-                                    [question] => 禁止党员领导干部在经济实体、社会团体等单位中兼职或者兼职取酬，以及从事中介活动。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、对B、错&lt;/p&gt;
-                                    [questionselectnumber] => 2
-                                    [questionanswer] => B
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247469
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [708] => Array
-                                (
-                                    [questionid] => 708
-                                    [questiontype] => 3
-                                    [question] => 禁止党员领导干部利用职务便利私自干预下级或者原任职地区、单位干部选拔任用工作。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、对B、错&lt;/p&gt;
-                                    [questionselectnumber] => 2
-                                    [questionanswer] => A
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247469
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [709] => Array
-                                (
-                                    [questionid] => 709
-                                    [questiontype] => 3
-                                    [question] => 禁止党员领导干部为配偶、子女及其配偶以及其他亲属经商、办企业提供便利条件，而对党员领导干部之间利用职权相互为对方配偶、子女及其配偶以及其他亲属经商、办企业提供便利条件则并无明文限制。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、对B、错&lt;/p&gt;
-                                    [questionselectnumber] => 2
-                                    [questionanswer] => B
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247469
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [710] => Array
-                                (
-                                    [questionid] => 710
-                                    [questiontype] => 3
-                                    [question] => 禁止党员领导干部在公务活动中提供或者接受超过规定标准的接待，或者超过规定标准报销招待费、差旅费等相关费用。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、对B、错&lt;/p&gt;
-                                    [questionselectnumber] => 2
-                                    [questionanswer] => A
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247469
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [711] => Array
-                                (
-                                    [questionid] => 711
-                                    [questiontype] => 3
-                                    [question] => 禁止党员领导干部大办婚丧喜庆事宜，造成不良影响，或者借机敛财。其中，用私款操办的不受禁止。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、对B、错&lt;/p&gt;
-                                    [questionselectnumber] => 2
-                                    [questionanswer] => B
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247469
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [712] => Array
-                                (
-                                    [questionid] => 712
-                                    [questiontype] => 3
-                                    [question] => 党员领导干部不准借用公款、公物或者将公款、公物借给他人。
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、对B、错&lt;/p&gt;
-                                    [questionselectnumber] => 2
-                                    [questionanswer] => B
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 时政
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247469
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [766] => Array
-                                (
-                                    [questionid] => 766
-                                    [questiontype] => 3
-                                    [question] => &lt;p&gt;推动诚信体系建设，以社会诚信带动商务诚信和政务诚信，形成良好的社会风尚。&lt;/p&gt;
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、对B、错&lt;/p&gt;
-                                    [questionselectnumber] => 2
-                                    [questionanswer] => B
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 1
-                                                    [knows] => 请修改知识点1
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247469
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [769] => Array
-                                (
-                                    [questionid] => 769
-                                    [questiontype] => 3
-                                    [question] => &lt;p&gt;收入分配制度是经济社会发展中一项根本性、基础性的制度，是社会主义市场经济体制的重要基石。&lt;/p&gt;
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、对B、错&lt;/p&gt;
-                                    [questionselectnumber] => 2
-                                    [questionanswer] => A
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 3
-                                                    [knows] => 请修改知识点3
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247469
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                            [770] => Array
-                                (
-                                    [questionid] => 770
-                                    [questiontype] => 3
-                                    [question] => &lt;p&gt;健全全民医保体系，建立重特大疾病保障和救助机制，全面开展儿童白血病等30种重大疾病保障试点工作。&lt;/p&gt;
-                                    [questionuserid] => 0
-                                    [questionusername] => 
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;A、对B、错&lt;/p&gt;
-                                    [questionselectnumber] => 2
-                                    [questionanswer] => B
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 4
-                                                    [knows] => 请修改知识点4
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1372247469
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 1
-                                )
-
-                        )
-
-                    [4] => Array
-                        (
-                            [773] => Array
-                                (
-                                    [questionid] => 773
-                                    [questiontype] => 4
-                                    [question] => &lt;p&gt;描述抗战史著名战役和时间&lt;/p&gt;
-                                    [questionuserid] => 54
-                                    [questionusername] => peadmin
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => 
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => &lt;p&gt;描述抗战史著名战役和时间&lt;/p&gt;
-                                    [questiondescribe] => 
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 1
-                                                    [knows] => 抗战史
-                                                )
-
-                                        )
-
-                                    [questioncreatetime] => 1376928488
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 3
-                                )
-
-                        )
-
-                    [5] => Array
-                        (
-                            [8450] => Array
-                                (
-                                    [questionid] => 8450
-                                    [questiontype] => 5
-                                    [question] => &lt;p&gt;测试填空&lt;/p&gt;
-                                    [questionuserid] => 1
-                                    [questionusername] => peadmin
-                                    [questionlastmodifyuser] => 
-                                    [questionselect] => &lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-                                    [questionselectnumber] => 4
-                                    [questionanswer] => 借,应付票据,500;贷,制造费用,500
-                                    [questiondescribe] => &lt;p&gt;测试填空&lt;/p&gt;
-                                    [questionknowsid] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [knowsid] => 2
-                                                    [knows] => 请修改知识点2
-                                                )
-
                                             [1] => Array
                                                 (
-                                                    [knowsid] => 1
-                                                    [knows] => 请修改知识点1
+                                                    [number] => 40
+                                                    [score] => 2
+                                                    [describe] => 
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [number] => 0
+                                                    [score] => 0
+                                                    [describe] => 
+                                                )
+
+                                            [3] => Array
+                                                (
+                                                    [number] => 20
+                                                    [score] => 1
+                                                    [describe] => 
                                                 )
 
                                         )
 
-                                    [questioncreatetime] => 1440560687
-                                    [questionstatus] => 1
-                                    [questionhtml] => 
-                                    [questionparent] => 0
-                                    [questionsequence] => 0
-                                    [questionlevel] => 3
+                                    [examscale] => Array
+                                        (
+                                            [1] => 
+                                            [2] => 
+                                            [3] => 
+                                        )
+
                                 )
 
+                            [examquestions] => 
+                            [examscore] => 
+                            [examstatus] => 0
+                            [examtype] => 1
+                            [examauthorid] => 10
+                            [examauthor] => 陈晨
+                            [examtime] => 1478831316
+                            [examkeyword] => 
+                            [examdecide] => 0
                         )
 
+                )
+
+            [questions] => Array
+                (
                 )
 
             [questionrows] => Array
@@ -1009,317 +89,75 @@ Array
 
     [ehsetting] => Array
         (
-            [examid] => 1
-            [examsubject] => 1
-            [exam] => 测试手工组卷
+            [examid] => 10
+            [examsubject] => 4
+            [exam] => 大学英语试题
             [examsetting] => Array
                 (
-                    [examtime] => 60
-                    [comfrom] => 测试手工组卷
+                    [examtime] => 120
+                    [comfrom] => 
                     [score] => 100
                     [passscore] => 60
                     [questypelite] => Array
                         (
                             [1] => 1
                             [2] => 1
-                            [5] => 1
-                            [4] => 1
-                            [6] => 1
                             [3] => 1
                         )
 
+                    [scalemodel] => 1
                     [questype] => Array
                         (
                             [1] => Array
                                 (
-                                    [number] => 10
-                                    [score] => 3
-                                    [describe] => 
-                                )
-
-                            [2] => Array
-                                (
-                                    [number] => 10
-                                    [score] => 3
-                                    [describe] => 
-                                )
-
-                            [3] => Array
-                                (
-                                    [number] => 10
+                                    [number] => 40
                                     [score] => 2
                                     [describe] => 
                                 )
 
-                            [4] => Array
-                                (
-                                    [number] => 1
-                                    [score] => 10
-                                    [describe] => 
-                                )
-
-                            [5] => Array
-                                (
-                                    [number] => 1
-                                    [score] => 10
-                                    [describe] => 
-                                )
-
-                            [6] => Array
+                            [2] => Array
                                 (
                                     [number] => 0
                                     [score] => 0
                                     [describe] => 
                                 )
 
+                            [3] => Array
+                                (
+                                    [number] => 20
+                                    [score] => 1
+                                    [describe] => 
+                                )
+
+                        )
+
+                    [examscale] => Array
+                        (
+                            [1] => 
+                            [2] => 
+                            [3] => 
                         )
 
                 )
 
-            [examquestions] => Array
-                (
-                    [1] => Array
-                        (
-                            [questions] => ,8446,229,228,227,226,225,224,223,222,221,
-                            [rowsquestions] => 
-                        )
-
-                    [2] => Array
-                        (
-                            [questions] => ,405,404,403,402,401,400,399,398,397,396,
-                            [rowsquestions] => 
-                        )
-
-                    [3] => Array
-                        (
-                            [questions] => ,770,769,766,712,711,710,709,708,707,706,
-                            [rowsquestions] => 
-                        )
-
-                    [4] => Array
-                        (
-                            [questions] => ,773,
-                            [rowsquestions] => 
-                        )
-
-                    [5] => Array
-                        (
-                            [questions] => ,8450,
-                            [rowsquestions] => 
-                        )
-
-                    [6] => Array
-                        (
-                            [questions] => 
-                            [rowsquestions] => 
-                        )
-
-                )
-
+            [examquestions] => 
             [examscore] => 
             [examstatus] => 0
-            [examtype] => 2
-            [examauthorid] => 1
-            [examauthor] => peadmin
-            [examtime] => 1432569421
+            [examtype] => 1
+            [examauthorid] => 10
+            [examauthor] => 陈晨
+            [examtime] => 1478831316
             [examkeyword] => 
-            [examdecide] => 1
+            [examdecide] => 0
         )
 
-    [ehuseranswer] => Array
-        (
-            [221] => Array
-                (
-                    [0] => A
-                )
-
-            [222] => Array
-                (
-                    [0] => A
-                )
-
-            [223] => Array
-                (
-                    [0] => A
-                )
-
-            [224] => Array
-                (
-                    [1] => B
-                )
-
-            [225] => Array
-                (
-                    [1] => B
-                )
-
-            [226] => Array
-                (
-                    [1] => B
-                )
-
-            [227] => Array
-                (
-                    [0] => A
-                )
-
-            [228] => Array
-                (
-                    [1] => B
-                )
-
-            [229] => Array
-                (
-                    [2] => C
-                )
-
-            [396] => Array
-                (
-                    [2] => C
-                )
-
-            [397] => Array
-                (
-                    [1] => B
-                )
-
-            [398] => Array
-                (
-                    [1] => B
-                )
-
-            [399] => Array
-                (
-                    [1] => B
-                )
-
-            [400] => Array
-                (
-                    [1] => B
-                )
-
-            [401] => Array
-                (
-                    [1] => B
-                )
-
-            [402] => Array
-                (
-                    [3] => D
-                )
-
-            [403] => Array
-                (
-                    [3] => D
-                )
-
-            [404] => Array
-                (
-                    [3] => D
-                )
-
-            [405] => Array
-                (
-                    [3] => D
-                )
-
-            [8450] => ddd
-            [773] => Array
-                (
-                    [1] => B
-                )
-
-            [706] => Array
-                (
-                    [0] => A
-                )
-
-            [707] => Array
-                (
-                    [0] => A
-                )
-
-            [708] => Array
-                (
-                    [0] => A
-                )
-
-            [709] => Array
-                (
-                    [0] => A
-                )
-
-            [710] => Array
-                (
-                    [0] => A
-                )
-
-            [711] => Array
-                (
-                    [0] => A
-                )
-
-            [712] => Array
-                (
-                    [0] => A
-                )
-
-            [766] => Array
-                (
-                    [0] => A
-                )
-
-            [769] => Array
-                (
-                    [0] => A
-                )
-
-            [770] => Array
-                (
-                    [0] => A
-                )
-
-        )
-
-    [ehstarttime] => 1478770668
-    [ehtime] => 86
+    [ehuseranswer] => 
+    [ehstarttime] => 1478849683
+    [ehtime] => 16
     [ehscore] => 0.0
-    [ehscorelist] => Array
-        (
-            [221] => 0
-            [222] => 0
-            [223] => 0
-            [224] => 0
-            [225] => 0
-            [226] => 0
-            [227] => 0
-            [228] => 0
-            [229] => 0
-            [396] => 0
-            [397] => 0
-            [398] => 0
-            [399] => 0
-            [400] => 0
-            [401] => 0
-            [402] => 0
-            [403] => 0
-            [404] => 0
-            [405] => 0
-            [706] => 0
-            [707] => 0
-            [708] => 2
-            [709] => 0
-            [710] => 2
-            [711] => 0
-            [712] => 0
-            [766] => 0
-            [769] => 2
-            [770] => 0
-            [8450] => 0
-        )
-
-    [ehuserid] => 1
-    [ehusername] => peadmin
-    [ehdecide] => 1
-    [ehstatus] => 0
+    [ehscorelist] => 
+    [ehuserid] => 14
+    [ehusername] => tim
+    [ehdecide] => 0
+    [ehstatus] => 1
 )
