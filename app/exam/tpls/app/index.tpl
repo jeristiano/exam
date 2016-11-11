@@ -22,26 +22,20 @@
 					</div>
 				</li>
 				</ul>	
-
-
-
-
-
 				<ul class="thumbnails">
-					
 					{x2;tree:$basics,basic,bid}
-						{x2;if:$basics['areaid']==v:basic['basicareaid']}
-					<li class="span2">
-						<div class="thumbnail">
+					{x2;if:$areaid==v:basic['basicareaid']}
+						<li class="span2">
+							<div class="thumbnail">
 							<img alt="300x200" src="{x2;if:v:basic['basicthumb']}{x2;v:basic['basicthumb']}{x2;else}app/exam/styles/image/paper.png{x2;endif}"/>
 							<div class="caption">
-								<p class="text-center">
-									<a class="ajax btn btn-primary" href="index.php?{x2;$_app}-app-index-setCurrentBasic&basicid={x2;v:basic['basicid']}" title="{x2;v:basic['basic']}">{x2;substring:v:basic['basic'],15}</a>
-								</p>
+							<p class="text-center">
+							<a class="ajax btn btn-primary" href="index.php?{x2;$_app}-app-index-setCurrentBasic&basicid={x2;v:basic['basicid']}" title="{x2;v:basic['basic']}">{x2;substring:v:basic['basic'],15}</a>
+							</p>
 							</div>
-						</div>
-					</li>
-					{x2;if:v:bid % 6 == 0}
+							</div>
+						</li>
+						{x2;if:v:bid % 6 == 0}
 					</ul>
 					<ul class="thumbnails">
 					{x2;endif}

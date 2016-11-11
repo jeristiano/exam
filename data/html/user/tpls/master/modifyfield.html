@@ -49,23 +49,23 @@
 					<div id="panel-344373" class="tab-pane active">
 						<form action="index.php?user-master-module-modifyfield" method="post" class="form-horizontal">
 							<fieldset>
-								<legend>usertruename</legend>
+								<legend>areaid</legend>
 								<div class="control-group">
 									<label class="control-label">字段别名：</label>
 									<div class="controls">
-										<input type="text" size="40" name="args[fieldtitle]" needle="needle" datatype="userName" id="fieldtitle" msg="您必须填写字段别名，字段别名必须为中英文字符或数字" value="真实姓名"/>
+										<input type="text" size="40" name="args[fieldtitle]" needle="needle" datatype="userName" id="fieldtitle" msg="您必须填写字段别名，字段别名必须为中英文字符或数字" value="班级"/>
 									</div>
 								</div>
 								<div class="control-group">
 									<label for="fieldhtmltype" class="control-label">HTML类型：</label>
 									<div class="controls">
 										<select class="fselect" name="args[fieldhtmltype]" id="fieldhtmltype">
-									  		<option value="text" selected>文本域(text)</option>
+									  		<option value="text">文本域(text)</option>
 									  		<option value="htmltime">时间文本域(htmltime)</option>
 									  		<option value="password">密码域(password)</option>
 									  		<option value="hidden">隐藏域(hidden)</option>
 									  		<option value="select">下拉菜单/选择框(select)</option>
-									  		<option value="radio">单选框(radio)</option>
+									  		<option value="radio" selected>单选框(radio)</option>
 									  		<option value="checkbox">复选框(checkbox)</option>
 									  		<option value="checkboxarray">复选框组(checkboxarray)</option>
 									  		<option value="textarea">文本区域(textarea)</option>
@@ -87,7 +87,10 @@
 						        <div class="control-group">
 							        <label class="control-label">可选值列表：</label>
 							        <div class="controls">
-								        <textarea class="input-xxlarge" rows="7" cols="4" name="args[fieldvalues]" id="fieldvalues"></textarea>
+								        <textarea class="input-xxlarge" rows="7" cols="4" name="args[fieldvalues]" id="fieldvalues">天津=1
+北京=2
+上海=3
+深圳=4</textarea>
 								        <span class="help-block">每行一个，等号隔开，如：属性=值;</span>
 							        </div>
 						        </div>
@@ -101,7 +104,7 @@
 							        <label class="control-label">禁止修改：</label>
 						          	<div class="controls">
 							          	<label class="checkbox inline">
-							          		<input type="checkbox" name="args[fieldforbidactors][]" value="-1" /> 本用户
+							          		<input type="checkbox" name="args[fieldforbidactors][]" value="-1" checked="true"/> 本用户
 							          	</label>
 							          								          								          								          								          								          								          	<label class="checkbox inline">
 							          		<input type="checkbox" name="args[fieldforbidactors][]" value="1" /> 管理员							          	</label>
@@ -128,8 +131,8 @@
 						        <div class="control-group">
 						            <div class="controls">
 							            <button class="btn btn-primary" type="submit">提交</button>
-							            <input type="hidden" name="moduleid" value="1"/>
-							            <input type="hidden" name="fieldid" value="3"/>
+							            <input type="hidden" name="moduleid" value="9"/>
+							            <input type="hidden" name="fieldid" value="9"/>
 							            <input type="hidden" name="modifyfieldhtml" value="1"/>
 						            </div>
 						        </div>
@@ -139,13 +142,13 @@
 					<div id="panel-788842" class="tab-pane">
 						<form action="index.php?user-master-module-modifyfield" method="post" class="form-horizontal">
 							<fieldset>
-								<legend>usertruename</legend>
+								<legend>areaid</legend>
 								<div class="control-group">
 							        <label class="control-label">字段类型：</label>
 									<div class="controls">
 										<select id="fieldtype" name="args[fieldtype]">
-											<option value="int">整型(int/time)</option>
-											<option value="varchar" selected>0~255字符串型(varchar)</option>
+											<option value="int" selected>整型(int/time)</option>
+											<option value="varchar">0~255字符串型(varchar)</option>
 											<option value="decimal">浮点型(decimal)</option>
 											<option value="text">长文字型(text)</option>
 										</select>
@@ -154,7 +157,7 @@
 								<div class="control-group">
 							        <label class="control-label">字段长度：</label>
 									<div class="controls">
-										<input type="text" size="16" name="args[fieldlength]" class="input-text" id="fieldlength" value="24"/>
+										<input type="text" size="16" name="args[fieldlength]" class="input-text" id="fieldlength" value="2"/>
 									</div>
 								</div>
 								<div class="control-group">
@@ -171,8 +174,8 @@
 								<div class="control-group">
 									<div class="controls">
 										<button class="btn btn-primary" type="submit">提交</button>
-							            <input type="hidden" name="moduleid" value="1"/>
-							            <input type="hidden" name="fieldid" value="3"/>
+							            <input type="hidden" name="moduleid" value="9"/>
+							            <input type="hidden" name="fieldid" value="9"/>
 							            <input type="hidden" name="modifyfielddata" value="1"/>
 						            </div>
 						        </div>

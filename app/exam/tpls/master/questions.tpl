@@ -144,7 +144,7 @@
 			                    <th><input type="checkbox" class="checkall" target="delids"/></th>
 			                    <th>ID</th>
 						        <th>试题类型</th>
-						        <th>试题内容</th>
+						        <th style='width:250px;'>试题内容</th>
 						        <th>录入人</th>
 						        <th>录入时间</th>
 						        <th>难度</th>
@@ -161,7 +161,7 @@
 								<td>
 									{x2;$questypes[v:question['questiontype']]['questype']}
 								</td>
-								<td>
+								<td style='width:250px; height:25px; overflow:hidden'>
 									<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-master-questions-detail&questionid={x2;v:question['questionid']}" data-target="#modal">{x2;substring:strip_tags(html_entity_decode(v:question['question'])),135}</a>
 								</td>
 								<td>

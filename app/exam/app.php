@@ -538,9 +538,10 @@ class app
 			
 			$uid = $this->_user['sessionuserid'];
 			$res = $this->exam->getUserInfoById($uid);
-			$this->data['openbasics']['areaid']=$res['areaid'];
+			$this->data['areaid']=$res['areaid'];
+			$this->tpl->assign('areaid',$this->data['areaid']);
 			$this->tpl->assign('basics',$this->data['openbasics']);
-			//echo '<pre>';print_r($this->data['openbasics']);
+			//echo '<pre>';print_r($this->data['areaid']);
 			$this->tpl->display('index');
 			break;
 		}

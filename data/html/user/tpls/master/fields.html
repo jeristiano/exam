@@ -38,16 +38,16 @@
 				</li>
 				<li class="dropdown pull-right"> <a class="dropdown-toggle" href="#" data-toggle="dropdown">添加字段<strong class="caret"></strong></a>
                     <ul class="dropdown-menu">
-						<li><a href="index.php?user-master-module-preview&moduleid=1">模型预览</a></li>
+						<li><a href="index.php?user-master-module-preview&moduleid=9">模型预览</a></li>
 						<li class="divider"></li>
-						<li><a href="index.php?user-master-module-addfield&moduleid=1">添加模型字段</a></li>
-						<li><a href="index.php?user-master-module-addfield&moduleid=1&fieldpublic=1">添加公共字段</a></li>
+						<li><a href="index.php?user-master-module-addfield&moduleid=9">添加模型字段</a></li>
+						<li><a href="index.php?user-master-module-addfield&moduleid=9&fieldpublic=1">添加公共字段</a></li>
                     </ul>
 				</li>
 			</ul>
 		    <form action="?user-master-module-fields" method="post">
 			    <fieldset>
-					<legend>管理员模型</legend>
+					<legend>学生用户</legend>
 				    <table class="table table-hover">
 						<thead>
 							<tr>
@@ -66,25 +66,6 @@
 						</thead>
 						<tbody>
 														<tr>
-								<td>1</td>
-								<td><input type="text" name="ids[1]" value="2" class="liter"/></td>
-								<td>manager_apps</td>
-								<td>模型字段</td>
-								<td>可管理模块</td>
-								<td>120</td>
-								<td>varchar</td>
-								<td>select</td>
-								<td>NULL</td>
-								<td></td>
-								<td>
-									<div class="btn-group">
-																				<a class="btn ajax" href="index.php?user-master-module-forbiddenfield&fieldid=1&moduleid=1&page=" title="禁用"><em class="icon-ok-circle"></em></a>
-																				<a class="btn" href="index.php?user-master-module-modifyfield&fieldid=1&page=" title="修改字段"><em class="icon-edit"></em></a>
-																				<a class="btn ajax" href="index.php?user-master-module-delfield&fieldid=1&moduleid=1&page=" title="删除字段"><em class="icon-remove"></em></a>
-																			</div>
-								</td>
-							</tr>
-														<tr>
 								<td>3</td>
 								<td><input type="text" name="ids[3]" value="1" class="liter"/></td>
 								<td>usertruename</td>
@@ -97,28 +78,28 @@
 								<td></td>
 								<td>
 									<div class="btn-group">
-																				<a class="btn ajax" href="index.php?user-master-module-forbiddenfield&fieldid=3&moduleid=1&page=" title="禁用"><em class="icon-ok-circle"></em></a>
+																				<a class="btn ajax" href="index.php?user-master-module-forbiddenfield&fieldid=3&moduleid=9&page=" title="禁用"><em class="icon-ok-circle"></em></a>
 																				<a class="btn" href="index.php?user-master-module-modifyfield&fieldid=3&page=" title="修改字段"><em class="icon-edit"></em></a>
-																				<a class="btn ajax" href="index.php?user-master-module-delfield&fieldid=3&moduleid=1&page=" title="删除字段"><em class="icon-remove"></em></a>
+																				<a class="btn ajax" href="index.php?user-master-module-delfield&fieldid=3&moduleid=9&page=" title="删除字段"><em class="icon-remove"></em></a>
 																			</div>
 								</td>
 							</tr>
 														<tr>
-								<td>2</td>
-								<td><input type="text" name="ids[2]" value="1" class="liter"/></td>
-								<td>photo</td>
+								<td>9</td>
+								<td><input type="text" name="ids[9]" value="0" class="liter"/></td>
+								<td>areaid</td>
 								<td>公共字段</td>
-								<td>用户肖像</td>
-								<td>120</td>
-								<td>varchar</td>
-								<td>thumb</td>
+								<td>班级</td>
+								<td>2</td>
+								<td>int</td>
+								<td>radio</td>
 								<td>NULL</td>
 								<td></td>
 								<td>
 									<div class="btn-group">
-																				<a class="btn ajax" href="index.php?user-master-module-forbiddenfield&fieldid=2&moduleid=1&page=" title="禁用"><em class="icon-ok-circle"></em></a>
-																				<a class="btn" href="index.php?user-master-module-modifyfield&fieldid=2&page=" title="修改字段"><em class="icon-edit"></em></a>
-																				<a class="btn ajax" href="index.php?user-master-module-delfield&fieldid=2&moduleid=1&page=" title="删除字段"><em class="icon-remove"></em></a>
+																				<a class="btn ajax" href="index.php?user-master-module-forbiddenfield&fieldid=9&moduleid=9&page=" title="禁用"><em class="icon-ok-circle"></em></a>
+																				<a class="btn" href="index.php?user-master-module-modifyfield&fieldid=9&page=" title="修改字段"><em class="icon-edit"></em></a>
+																				<a class="btn ajax" href="index.php?user-master-module-delfield&fieldid=9&moduleid=9&page=" title="删除字段"><em class="icon-remove"></em></a>
 																			</div>
 								</td>
 							</tr>
@@ -129,7 +110,7 @@
 							<button class="btn btn-primary" type="submit">更改排序</button>
 				            <input type="hidden" name="page" value="">
 				            <input type="hidden" name="modifyfieldsequence" value="1"/>
-	          				<input type="hidden" name="moduleid" value="1"/>
+	          				<input type="hidden" name="moduleid" value="9"/>
 													</div>
 					</div>
 				</fieldset>
