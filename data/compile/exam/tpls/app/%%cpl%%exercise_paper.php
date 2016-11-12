@@ -19,7 +19,7 @@
 						<?php echo $this->tpl_var['sessionvars']['examsession']; ?>
 					</li>
 				</ul>
-				<h3 class="text-center"><?php echo $this->tpl_var['sessionvars']['examsession']; ?></h3>
+				<h3 class="text-center text-success"><?php echo $this->tpl_var['sessionvars']['examsession']; ?></h3>
 				<?php $oid = 0; ?>
 				<?php $qid = 0;
  foreach($this->tpl_var['questype'] as $key => $quest){ 
@@ -29,7 +29,7 @@
 				<div id="panel-type<?php echo $quest['questid']; ?>" class="tab-pane<?php if((!$this->tpl_var['ctype'] && $qid == 1) || ($this->tpl_var['ctype'] == $quest['questid'])){ ?> active<?php } ?>">
 					<ul class="breadcrumb">
 						<li>
-							<h5><?php echo $oid; ?>、<?php echo $quest['questype']; ?></h5>
+							<h4 class='text-success'><?php echo $oid; ?>、<?php echo $quest['questype']; ?></h4>
 						</li>
 					</ul>
 					<?php $tid = 0; ?>
@@ -41,7 +41,7 @@
 						<div class="media well">
 							<ul class="nav nav-tabs">
 								<li class="active">
-									<span class="badge badge-info questionindex"><?php echo $tid; ?></span></a>
+									<span class="badge badge-success questionindex"><?php echo $tid; ?></span></a>
 								</li>
 								<li class="btn-group pull-right">
 									<button class="btn" type="button" onclick="javascript:signQuestion('<?php echo $question['questionid']; ?>',this);"><em class="<?php if($this->tpl_var['sessionvars']['examsessionsign'][$question['questionid']]){ ?>icon-star<?php } else { ?>icon-star-empty<?php } ?>" title="标注"></em></button>
@@ -97,7 +97,7 @@
 						<div class="media well">
 							<ul class="nav nav-tabs">
 								<li class="active">
-									<span class="badge badge-info questionindex"><?php echo $tid; ?></span>
+									<span class="badge badge-success questionindex"><?php echo $tid; ?></span>
 								</li>
 							</ul>
 							<div class="media-body well">
@@ -109,7 +109,7 @@
 							<div class="paperexamcontent">
 								<ul class="nav nav-tabs">
 									<li class="active">
-										<span class="badge questionindex"><?php echo $did; ?></span></a>
+										<span class="badge badge-info questionindex"><?php echo $did; ?></span></a>
 									</li>
 									<li class="btn-group pull-right">
 										<button class="btn" type="button" onclick="javascript:signQuestion('<?php echo $data['questionid']; ?>',this);"><em class="<?php if($this->tpl_var['sessionvars']['examsessionsign'][$data['questionid']]){ ?>icon-star<?php } else { ?>icon-star-empty<?php } ?>" title="标注"></em></button>
@@ -173,7 +173,7 @@
 						<p>共有试题 <span class="allquestionnumber">50</span> 题，已做 <span class="yesdonumber">0</span> 题。您确认要交卷吗？</p>
 					</div>
 					<div class="modal-footer">
-						 <button type="button" onclick="javascript:submitPaper();" class="btn btn-primary">确定交卷</button>
+						 <button type="button" onclick="javascript:submitPaper();" class="btn  btn-success">确定交卷</button>
 						 <input type="hidden" name="insertscore" value="1"/>
 						 <button aria-hidden="true" class="btn" type="button" data-dismiss="modal">再检查一下</button>
 					</div>
@@ -245,7 +245,7 @@
 			</div>
 			<div class="span2">
 				<ul class="unstyled">
-					<li class="text-right"><a href="#submodal" role="button" class="btn btn-primary" data-toggle="modal"> 交 卷 </a></li>
+					<li class="text-right"><a href="#submodal" role="button" class="btn  btn-success" data-toggle="modal"> 交 卷 </a></li>
 				</ul>
 			</div>
 		</div>
@@ -268,7 +268,7 @@ $(document).ready(function(){
 	setInterval(saveanswer,300000);
 
 	$('.allquestionnumber').html($('.paperexamcontent').length);
-	$('.yesdonumber').html($('#modal-body .badge-info').length);
+	$('.yesdonumber').html($('#modal-body .badge-success').length);
 
 	initData = $.parseJSON(storage.getItem('questions'));
 	if(initData){

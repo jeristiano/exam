@@ -23,7 +23,7 @@
 				</ul>
 				<p>您的最高分：<span class="text-warning"><?php echo $this->tpl_var['s']['score']; ?></span> 您的最好名次：<span class="text-warning"><?php echo $this->tpl_var['s']['index']; ?></span></p>
 				<table class="table table-bordered table-hover">
-					<tr class="info">
+					<tr class="success">
 						<td>名次</td>
 						<td>用户名</td>
                         <td>得分</td>

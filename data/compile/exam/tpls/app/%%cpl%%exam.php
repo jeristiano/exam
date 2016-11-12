@@ -21,15 +21,15 @@
 						<a href="#" data-toggle="tab">正式考试</a>
 					</li>
 				</ul>
-				<div class="alert alert-info">
+				<div class="alert alert-success">
 					<strong>提示：</strong>
 					<p>本考场开启时间 <?php if($this->tpl_var['data']['currentbasic']['basicexam']['opentime']['start'] && $this->tpl_var['data']['currentbasic']['basicexam']['opentime']['end']){ ?><?php echo date('Y-m-d H:i:s',$this->tpl_var['data']['currentbasic']['basicexam']['opentime']['start']); ?> - <?php echo date('Y-m-d H:i:s',$this->tpl_var['data']['currentbasic']['basicexam']['opentime']['end']); ?><?php } else { ?>不限<?php } ?> ； 考试次数 <?php if($this->tpl_var['data']['currentbasic']['basicexam']['examnumber']){ ?><?php echo $this->tpl_var['data']['currentbasic']['basicexam']['examnumber']; ?><?php } else { ?>不限<?php } ?> ； 抽卷规则 <?php if($this->tpl_var['data']['currentbasic']['basicexam']['selectrule']){ ?>系统随机抽卷<?php } else { ?>用户手选试卷<?php } ?>。</p>
 				</div>
             	<ul class="unstyled">
-                	<li><b>1、</b>点击考试名称按钮进入答题界面，考试开始计时。</li>
-                	<li><b>2、</b>在随机考试过程中，您可以通过顶部的考试时间来掌握自己的做题时间。</li>
-                	<li><b>3、</b>提交试卷后，可以通过“查看答案和解析”功能进行总结学习。</li>
-                	<li><b>4、</b>系统自动记录模拟考试的考试记录，学员考试结束后可以进入“答题记录”功能进行查看。</li>
+                	<li class='text-success'><b>1、</b>点击考试名称按钮进入答题界面，考试开始计时。</li>
+                	<li class='text-success'><b>2、</b>在随机考试过程中，您可以通过顶部的考试时间来掌握自己的做题时间。</li>
+                	<li class='text-success'><b>3、</b>提交试卷后，可以通过“查看答案和解析”功能进行总结学习。</li>
+                	<li class='text-success'><b>4、</b>系统自动记录模拟考试的考试记录，学员考试结束后可以进入“答题记录”功能进行查看。</li>
                 	<li>&nbsp;</li>
                 </ul>
 				<?php if($this->tpl_var['data']['currentbasic']['basicexam']['opentime']['start'] && $this->tpl_var['data']['currentbasic']['basicexam']['opentime']['end']){ ?>

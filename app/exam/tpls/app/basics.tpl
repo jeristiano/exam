@@ -7,7 +7,7 @@
 			<div class="examform">
 				<ul class="breadcrumb">
 					<li>
-						<span class="icon-home"></span> <a href="index.php?exam">考场选择</a> <span class="divider">/</span>
+						<span class="icon-home"></span> <a href="index.php?exam">考试选择</a> <span class="divider">/</span>
 					</li>
 					<li class="active">
 						{x2;$data['currentbasic']['basic']}
@@ -25,7 +25,7 @@
 							<img src="app/core/styles/images/icons/colors.png"/>
 							<div class="caption">
 								<p class="text-center">
-									<a class="btn btn-primary" href="index.php?exam-app-lesson">课后练习</a>
+									<a class="btn btn-success" href="index.php?exam-app-lesson">课后练习</a>
 								</p>
 							</div>
 						</div>
@@ -35,7 +35,7 @@
 							<img src="app/core/styles/images/icons/Pensils.png"/>
 							<div class="caption">
 								<p class="text-center">
-									<a class="btn btn-primary" href="index.php?exam-app-exercise">强化训练</a>
+									<a class="btn btn-success" href="index.php?exam-app-exercise">强化训练</a>
 								</p>
 							</div>
 						</div>
@@ -45,7 +45,7 @@
 							<img src="app/core/styles/images/icons/Clipboard.png"/>
 							<div class="caption">
 								<p class="text-center">
-									<a class="btn btn-primary" href="index.php?exam-app-exampaper">模拟考试</a>
+									<a class="btn btn-success" href="index.php?exam-app-exampaper">模拟考试</a>
 								</p>
 							</div>
 						</div>
@@ -57,7 +57,7 @@
 							<img src="app/core/styles/images/icons/Watches.png"/>
 							<div class="caption">
 								<p class="text-center">
-									<a class="btn btn-primary" href="index.php?exam-app-exam">正式考试</a>
+									<a class="btn btn-success" href="index.php?exam-app-exam">正式考试</a>
 								</p>
 							</div>
 						</div>
@@ -70,7 +70,7 @@
 								<img src="app/core/styles/images/icons/Compas.png"/>
 								<div class="caption">
 									<p class="text-center">
-										<a class="ajax btn btn-primary" href="index.php?exam-app-recover">意外续考</a>
+										<a class="ajax btn btn-success" href="index.php?exam-app-recover">意外续考</a>
 									</p>
 								</div>
 							</div>
@@ -82,7 +82,7 @@
 							<img src="app/core/styles/images/icons/Compas.png"/>
 							<div class="caption">
 								<p class="text-center">
-									<a class="ajax btn btn-primary" href="index.php?exam-app-recover">意外续考</a>
+									<a class="ajax btn btn-success" href="index.php?exam-app-recover">意外续考</a>
 								</p>
 							</div>
 						</div>
@@ -103,7 +103,7 @@
 							<img src="app/core/styles/images/icons/Map.png"/>
 							<div class="caption">
 								<p class="text-center">
-									<a class="btn btn-primary" href="index.php?exam-app-history">考试记录</a>
+									<a class="btn btn-success" href="index.php?exam-app-history">考试记录</a>
 								</p>
 							</div>
 						</div>
@@ -113,7 +113,7 @@
 							<img src="app/core/styles/images/icons/Pocket.png"/>
 							<div class="caption">
 								<p class="text-center">
-									<a class="btn btn-primary" href="index.php?exam-app-favor">习题收藏</a>
+									<a class="btn btn-success" href="index.php?exam-app-favor">习题收藏</a>
 								</p>
 							</div>
 						</div>
@@ -123,7 +123,7 @@
 							<img src="app/core/styles/images/icons/Retina-Ready.png"/>
 							<div class="caption">
 								<p class="text-center">
-									<a class="btn btn-primary" href="index.php?exam-app-score">成绩单</a>
+									<a class="btn btn-success" href="index.php?exam-app-score">成绩单</a>
 								</p>
 							</div>
 						</div>

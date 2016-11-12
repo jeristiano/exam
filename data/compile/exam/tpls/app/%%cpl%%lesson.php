@@ -22,7 +22,7 @@
 					</li>
 				</ul>
 				<?php if($this->tpl_var['record']){ ?>
-				<div class="alert alert-info">
+				<div class="alert alert-success">
 					<strong>提示：</strong>
 					<p>系统检测到您上次做到《<?php echo $this->tpl_var['knows'][$this->tpl_var['record']['exerknowsid']]['knows']; ?>》的<?php echo $this->tpl_var['questype'][$this->tpl_var['record']['exerqutype']]['questype']; ?>第<?php echo $this->tpl_var['record']['exernumber']; ?>题，点此<a class="ajax" href="index.php?exam-app-lesson-ajax-setlesson&questype=<?php echo $this->tpl_var['record']['exerqutype']; ?>&knowsid=<?php echo $this->tpl_var['record']['exerknowsid']; ?>&number=<?php echo $this->tpl_var['record']['exernumber']; ?>">继续练习</a></p>
 				</div>
@@ -31,7 +31,7 @@
  foreach($this->tpl_var['sections'] as $key => $section){ 
  $sid++; ?>
 				<table class="table table-hover table-bordered">
-					<tr class="info"><td colspan="6"><?php echo $section['section']; ?></td></tr>
+					<tr class="success"><td colspan="6"><?php echo $section['section']; ?></td></tr>
 					<tr>
 						<?php $kid = 0;
  foreach($this->tpl_var['basic']['basicknows'][$section['sectionid']] as $key => $know){ 

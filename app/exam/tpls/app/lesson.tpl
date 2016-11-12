@@ -22,14 +22,14 @@
 					</li>
 				</ul>
 				{x2;if:$record}
-				<div class="alert alert-info">
+				<div class="alert alert-success">
 					<strong>提示：</strong>
 					<p>系统检测到您上次做到《{x2;$knows[$record['exerknowsid']]['knows']}》的{x2;$questype[$record['exerqutype']]['questype']}第{x2;$record['exernumber']}题，点此<a class="ajax" href="index.php?exam-app-lesson-ajax-setlesson&questype={x2;$record['exerqutype']}&knowsid={x2;$record['exerknowsid']}&number={x2;$record['exernumber']}">继续练习</a></p>
 				</div>
 				{x2;endif}
 				{x2;tree:$sections,section,sid}
 				<table class="table table-hover table-bordered">
-					<tr class="info"><td colspan="6">{x2;v:section['section']}</td></tr>
+					<tr class="success"><td colspan="6">{x2;v:section['section']}</td></tr>
 					<tr>
 						{x2;tree:$basic['basicknows'][v:section['sectionid']],know,kid}
 				    	<td><a href="index.php?route=exam-app-lesson-lessonnumber&knowsid={x2;v:know}" target="lessonknows" class="ajax" onclick="javascript:$('#submodal').modal('show');">{x2;$knows[v:know]['knows']}</a></td>

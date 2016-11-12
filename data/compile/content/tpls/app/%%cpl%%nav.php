@@ -13,9 +13,9 @@
 		</div>
 	</div>
 </div>
-<div class="row-fluid top">
-	<div class="container-fluid">
-		<div class="span4"><a name="top"></a><h2><img src="app/user/styles/img/theme/logo.png" /></h2></div>
+<div class="row-fluid top " style='height:70px;'>
+	<div class="container-fluid" >
+		<div class="span4"><a name="top"></a><h2><img  src="app/user/styles/img/theme/logo.png" /></h2></div>
 		<div class="span8">
 			<div class="navbar" id="menuNav">
 				<div class="">

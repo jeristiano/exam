@@ -12,14 +12,14 @@
 		</div>
 		<div class="span10 exambox" id="datacontent">
 			<div class="examform">
-				<div>
-					<ul class="breadcrumb">
-						<li><a href="index.php?{x2;$_app}-app">用户中心</a> <span class="divider">/</span></li>
+				<div >
+					<ul class="breadcrumb"  >
+						<li ><a href="index.php?user-center">用户中心</a> <span class="divider">/</span></li>
 						<li class="active">隐私设置</li>
 					</ul>
 					<div>
 						<div class="span3">
-							<div class="thumbnail"><img alt="300x200" src="{x2;if:$_user['photo']}{x2;$_user['photo']}{x2;else}app/exam/styles/image/paper.png{x2;endif}" /></div>
+							<div class="thumbnail"><img alt="200x200" src="{x2;if:$_user['photo']}{x2;$_user['photo']}{x2;else}app/user/styles/img/theme/stu.png{x2;endif}" /></div>
 						</div>
 						<div class="span3">
 							<div class="caption">

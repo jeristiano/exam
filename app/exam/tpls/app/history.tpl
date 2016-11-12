@@ -36,7 +36,7 @@
 				<p><b class="text-warning">注意：</b>正式考试的重做试卷将作为模拟考试记录！</p>
 				{x2;endif}
 				<table class="table table-bordered table-hover">
-					<tr class="info">
+					<tr class="success">
 						<td>答题记录</td>
 						<td>答题时间</td>
 						<td>用时</td>

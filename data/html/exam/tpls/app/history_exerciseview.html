@@ -1,0 +1,1064 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="无纸化模拟考试系统">
+<meta name="description" content="无纸化模拟考试系统">
+<meta name="keywords" content="无纸化模拟考试系统">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>PHPEMS无纸化模拟考试系统</title>
+<link href="app/core/styles/css/bootstrap.css" rel="stylesheet">
+<link href="app/core/styles/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<link href="app/user/styles/css/theme.css" rel="stylesheet" type="text/css" />
+<link href="app/core/styles/css/datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" href="app/exam/styles/css/mathquill.css" type="text/css">
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/jquery.json.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<!--
+<script type="text/javascript" src="app/core/styles/js/fingerprint/fingerprint.js"></script>
+<script type="text/javascript" src="app/core/styles/js/fingerprint/plugin.js"></script>
+-->
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+<script src="app/exam/styles/js/plugin.js"></script>
+</head><body>
+<div class="row-fluid topLine">
+	<div class="container-fluid">
+		<div class="span4"></div>
+		<div class="span8">
+			<span class="pull-right">
+						您好（kris）&nbsp;&nbsp;<a href="index.php?user-center"><em class="icon-user"></em> 用户中心</a>&nbsp;&nbsp;<a class="ajax" href="index.php?user-app-logout"><em class="icon-lock"></em> 退出</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+			</span>
+		</div>
+	</div>
+</div>
+<div class="row-fluid top">
+	<div class="container-fluid">
+		<div class="span4"><a name="top"></a><h2><img src="app/user/styles/img/theme/logo.png" /></h2></div>
+		<div class="span8">
+			<div class="navbar" id="menuNav">
+				<div class="">
+					<div class="nav-collapse">
+						<ul class="nav pull-right">
+							<li class="mainmenu">
+								<a href="index.php">主页</a>
+							</li>
+							<li class="active mainmenu">
+								<a href="index.php?exam">在线考试</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><div class="row-fluid">
+	<div class="container-fluid examcontent">
+		<div class="exambox" id="datacontent">
+			<div class="examform" style="position:relative;">
+				<div class="scoreArea">0.00</div>
+				<ul class="breadcrumb">
+					<li>
+						<span class="icon-home"></span> <a href="index.php?exam">考场选择</a> <span class="divider">/</span>
+					</li>
+					<li>
+						<a href="index.php?exam-app-basics">检测0801大学英语考场</a> <span class="divider">/</span>
+					</li>
+					<li>
+						<a href="index.php?exam-app-history&ehtype=0">考试记录</a> <span class="divider">/</span>
+					</li>
+					<li class="active">
+						查看解析
+					</li>
+				</ul>
+				<h3 class="text-center">33</h3>
+																				<div id="panel-type1" class="tab-pane active">
+					<ul class="breadcrumb">
+						<li>
+							<h4 class='text-success'>1、单选题</h4>
+						</li>
+					</ul>
+						                	                	                <div id="question_9" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">1</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('9');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_9"></a>上海“孤岛”时期是指从（）年11月中国军队撤离上海到1941年12月珍珠港事变日军侵入上海租界为止。							</div>
+														<div class="media-body well">
+		                    	<p>A、1935</p><p>B、1936</p><p>C、1937</p><p>D、1938</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">C</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_12" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">2</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('12');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_12"></a>1941年5月19日，毛泽东在延安部会上作（）的报告，第一次明确提出了“实事求是”的思想。							</div>
+														<div class="media-body well">
+		                    	<p>A、《改造我们的学习》</p><p>B、《论联合政府》</p><p>C、《论持久战》</p><p>D、《新民主主义论》</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">A</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_23" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">3</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('23');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_23"></a>党的十一届三中全会把全党的工作重点转移到（）上来，提出了( )的重要思想。							</div>
+														<div class="media-body well">
+		                    	<p>A、社会主义现代化建设改革开放</p><p>B、社会主义现代化建设实事求是</p><p>C、改革开放实事求是</p><p>D、经济建设改革开放</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">A</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_50" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">4</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('50');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_50"></a>“和平统一、一国两制”的前提是（）。							</div>
+														<div class="media-body well">
+		                    	<p>A、一个中国</p><p>B、港澳台高度自治</p><p>C、国家主体部分实行社会主义制度</p><p>D、港澳台的资本主义制度不变</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">A</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_71" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">5</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('71');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_71"></a>党的十七大《报告》指出，（）是发展中国特色社会主义的基本要求。							</div>
+														<div class="media-body well">
+		                    	<p>A、科学发展、社会和谐</p><p>B、解放思想、实事求是</p><p>C、改革开放、自力更生</p><p>D、与时俱进、统筹兼顾</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">A</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_102" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">6</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('102');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_102"></a>中国共产党第十七届五中全会，于２０１０年１０月１５日至１８日在北京举行。全会审议通过了《中共中央关于制定国民经济和社会发展第（）五年规划的建议》。							</div>
+														<div class="media-body well">
+		                    	<p>A、十个</p><p>B、十一个</p><p>C、十二个</p><p>D、十三个</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">C</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_106" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">7</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('106');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_106"></a>人民英雄纪念碑的碑文是由( )起草( )题写的。							</div>
+														<div class="media-body well">
+		                    	<p>A、毛泽东周恩来</p><p>B、周恩来毛泽东</p><p>C、毛泽东朱德</p><p>D、朱德周恩来</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">A</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_134" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">8</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('134');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_134"></a>2001年11月10日，在（）举行的世界贸易组织第四届部长级会议通过中国加入世界贸易组织的决定。12月11日，中国正式成为世贸组织成员国，标志着中国对外开放进入新的阶段。							</div>
+														<div class="media-body well">
+		                    	<p>A、巴黎</p><p>B、巴黎</p><p>C、多哈</p><p>D、纽约</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">C</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+											                	                <div id="questionrow_1">
+						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">9</span>
+								</li>
+							</ul>
+							<div class="media-body well">
+								<p>测试题冒题</p>							</div>
+														<div class="paperexamcontent decidediv">
+								<div class="wrong"></div>								<ul class="nav nav-tabs">
+									<li class="active">
+										<span class="badge  badge-info questionindex">1</span></a>
+									</li>
+									<li class="btn-group pull-right">
+										<button class="btn" type="button" onclick="javascript:favorquestion('8445');"><em class="icon-heart" title="收藏"></em></button>
+									</li>
+								</ul>
+								<div class="media-body well text-warning">
+									<a name="question_8445"></a><p>asdsadsadasd</p>								</div>
+																<div class="media-body well">
+			                    	<p>sadasd</p>			                    </div>
+			                    								<div class="media-body well">
+			                  		<p class="text-error">本题得分：0分</p>
+			                  	</div>
+								<div class="media-body well">
+									<ul class="unstyled">
+			                        	<li class="text-error">正确答案：</li>
+			                            <li class="text-success">A</li>
+			                        	<li class="text-success">您的答案：</li>
+			                            <li class="text-success"></li>
+			                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+			                        	<li><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+			                        	<li class="text-success">答案解析：</li>
+		                        		<li class="text-success"><p>sadasdasdasd</p></li>
+			                        </ul>
+								</div>
+							</div>
+														<div class="paperexamcontent decidediv">
+								<div class="wrong"></div>								<ul class="nav nav-tabs">
+									<li class="active">
+										<span class="badge  badge-info questionindex">2</span></a>
+									</li>
+									<li class="btn-group pull-right">
+										<button class="btn" type="button" onclick="javascript:favorquestion('772');"><em class="icon-heart" title="收藏"></em></button>
+									</li>
+								</ul>
+								<div class="media-body well text-warning">
+									<a name="question_772"></a><p>测试子试题</p>								</div>
+																<div class="media-body well">
+			                    				                    </div>
+			                    								<div class="media-body well">
+			                  		<p class="text-error">本题得分：0分</p>
+			                  	</div>
+								<div class="media-body well">
+									<ul class="unstyled">
+			                        	<li class="text-error">正确答案：</li>
+			                            <li class="text-success">A</li>
+			                        	<li class="text-success">您的答案：</li>
+			                            <li class="text-success"></li>
+			                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+			                        	<li><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+			                        	<li class="text-success">答案解析：</li>
+		                        		<li class="text-success"></li>
+			                        </ul>
+								</div>
+							</div>
+													</div>
+					</div>
+									</div>
+																				<div id="panel-type2" class="tab-pane">
+					<ul class="breadcrumb">
+						<li>
+							<h4 class='text-success'>2、多选题</h4>
+						</li>
+					</ul>
+						                	                	                <div id="question_231" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">1</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('231');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_231"></a>1922年7月，党的二大在上海召开，第一次提出明确的反帝反封建的民主革命纲领。其内容是（）。							</div>
+														<div class="media-body well">
+		                    	<p>A、打倒军阀</p><p>B、推翻国际帝国主义的压迫</p><p>C、统一中国为真正的民主共和国</p><p>D、实现共产主义</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">ABC</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_238" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">2</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('238');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_238"></a>1949年３月，在党的七届二中全会上，毛泽东告诫全党，必须警惕资产阶级“糖衣炮弹”的攻击；务必继续地保持（）的作风，务必继续地保持艰苦奋斗的作风。							</div>
+														<div class="media-body well">
+		                    	<p>A、谦虚</p><p>B、谨慎</p><p>C、不骄</p><p>D、不躁</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">ABCD</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_243" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">3</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('243');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_243"></a>和平共处五项原则指互相尊重主权和领土完整（）。							</div>
+														<div class="media-body well">
+		                    	<p>A、互不侵犯</p><p>B、互不干涉内政</p><p>C、平等互利</p><p>D、和平共处</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">ABCD</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_245" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">4</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('245');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_245"></a>1957年4月,中共中央发出指示,决定在全党进行一次以正确处理人民内部矛盾为主题,以反对（）为内容的整风运动。							</div>
+														<div class="media-body well">
+		                    	<p>A、官僚主义</p><p>B、党八股</p><p>C、宗派主义</p><p>D、主观主义</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">ACD</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_264" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">5</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('264');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_264"></a>党在长期斗争中形成的三大优良作风（）							</div>
+														<div class="media-body well">
+		                    	<p>A、理论联系实际</p><p>B、密切联系群众</p><p>C、为人民服务</p><p>D、批评与自我批评</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">ABD</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_270" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">6</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('270');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_270"></a>1980年8月26日，五届全国人大常委会第十五次会议通过决议，批准国务院提出的《广东省经济特区条例》和《福建省厦门经济特区条例》，决定在广东( )和福建厦门设置经济特区（）							</div>
+														<div class="media-body well">
+		                    	<p>A、深圳</p><p>B、珠海</p><p>C、汕头</p><p>D、广州</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">ABC</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_273" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">7</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('273');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_273"></a>1989年12月,中共中央发出《关于坚持和完善中国共产党领导的多党合作和政治协商制度的意见，指出：中国共产党同各民主党派合作的基本方针是（）							</div>
+														<div class="media-body well">
+		                    	<p>A、长期共存</p><p>B、互相监督</p><p>C、肝胆相照</p><p>D、荣辱与共</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">ABCD</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_284" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">8</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('284');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_284"></a>从1978年到2009年，我国国内生产总值由3645亿元增长到33、35万亿元，年均实际增长9、7％，是同期世界经济年均增长率的３倍多，2010年我国经济总量上升为世界第二。30多年的实践证明改革开放是（）							</div>
+														<div class="media-body well">
+		                    	<p>A、决定当代中国命运的关键抉择</p><p>B、党执政兴国的第一要务</p><p>C、发展中国特色社会主义的必由之路</p><p>D、解决当代中国发展问题的权宜之计</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">AC</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_299" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">9</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('299');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_299"></a>党要代表先进文化前进方向就是党的全部理论和实践必须努力（）							</div>
+														<div class="media-body well">
+		                    	<p>A、体现发展面向现代化、面向世界、面向未来的社会主义文化的要求</p><p>B、体现发展民族的科学的大众的社会主义文化的要求</p><p>C、促进全民族思想道德素质和科学文化素质的不断提高</p><p>D、为我国经济发展和社会进步提供精神动力和智力支持</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">ABCD</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_301" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">10</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('301');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_301"></a>深入贯彻落实科学发展观对加强党的执政能力建设提出了新要求，要求我们在运用科学发展观指导经济社会发展的实践中，不断提高（）							</div>
+														<div class="media-body well">
+		                    	<p>A、驾驭社会主义市场经济的能力</p><p>B、发展社会主义民主政治的能力</p><p>C、建设社会主义先进文化的能力</p><p>D、构建社会主义和谐社会的能力</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">ABCD</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+														</div>
+																				<div id="panel-type3" class="tab-pane">
+					<ul class="breadcrumb">
+						<li>
+							<h4 class='text-success'>3、判断题</h4>
+						</li>
+					</ul>
+						                	                	                <div id="question_497" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">1</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('497');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_497"></a>1923年6月15日，中国共产党理论刊物《新青年》在广州创刊，由瞿秋白翻译的《国际歌》的中文歌词首次在这个刊物上发表。							</div>
+														<div class="media-body well">
+		                    	<p>A、对B、错</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">A</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_500" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">2</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('500');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_500"></a>1931年11月7日，中华工农兵苏维埃第一次全国代表大会在江西瑞金召开，会议宣布成立中华苏维埃共和国临时中央政府，选举毛泽东为主席。							</div>
+														<div class="media-body well">
+		                    	<p>A、对B、错</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">A</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_511" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">3</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('511');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_511"></a>1947年9月制定的《中国土地法大纲》，这是中国共产党历史上比较完备的一部土地革命纲领。							</div>
+														<div class="media-body well">
+		                    	<p>A、对B、错</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">A</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_527" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">4</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('527');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_527"></a>中国人数最多、最基本的依靠力量是农民阶级。							</div>
+														<div class="media-body well">
+		                    	<p>A、对B、错</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">A</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_545" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">5</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('545');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_545"></a>“三个代表”与马列主义、毛泽东思想、邓小平理论在基本立场、基本观点和基本方法上是一致的。							</div>
+														<div class="media-body well">
+		                    	<p>A、对B、错</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">A</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_551" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">6</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('551');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_551"></a>深入贯彻落实科学发展观，基础在于用马克思主义中国化最新成果武装全体人民的头脑。							</div>
+														<div class="media-body well">
+		                    	<p>A、对B、错</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">B</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_561" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">7</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('561');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_561"></a>1983年邓小平提出，教育要面向现代化，面向世界，面向未来。							</div>
+														<div class="media-body well">
+		                    	<p>A、对B、错</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">A</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_563" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">8</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('563');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_563"></a>在世纪之交，我们党带领人民顺利实现了现代化建设的前两步战略目标，人民生活总体上实现了全面小康的历史性跨越。							</div>
+														<div class="media-body well">
+		                    	<p>A、对B、错</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">B</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_580" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">9</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('580');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_580"></a>社会和谐是中国特色社会主义的本质属性，是国家富强、民族振兴、人民幸福的重要保证。							</div>
+														<div class="media-body well">
+		                    	<p>A、对B、错</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">A</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+						                	                <div id="question_581" class="paperexamcontent decidediv">
+						<div class="wrong"></div>						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-success questionindex">10</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:favorquestion('581');"><em class="icon-heart" title="收藏"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_581"></a>当代中国最基本的国情是我国正处于并将长期处于社会主义初级阶段。							</div>
+														<div class="media-body well">
+		                    	<p>A、对B、错</p>		                    </div>
+		                    							<div class="media-body well">
+		                  		<p class="text-error">本题得分：0分</p>
+		                  	</div>
+							<div class="media-body well">
+		                    	<ul class="unstyled">
+		                        	<li class="text-error">正确答案：</li>
+		                            <li class="text-success">A</li>
+		                        	<li class="text-success">您的答案：</li>
+		                            <li class="text-success"></li>
+		                        	<li><span class="text-success">所在章：</span>&nbsp;&nbsp;第一章&nbsp;</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>&nbsp;&nbsp;请修改知识点1&nbsp;</li>
+		                        	<li class="text-success">答案解析：</li>
+		                        	<li class="text-success"></li>
+		                        </ul>
+		                    </div>
+						</div>
+					</div>
+														</div>
+											</div>
+		</div>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="container-fluid logfooter">
+		<ul class="inline unstyled">
+			
+			<li><a href=" ">湖畔大学附中网站</a></li>
+			<li>|</li>
+			<li><a href=" ">隐私政策</a></li>
+			<li>|</li>
+			<li><a href=" "></a>关于我们</li>
+			<li></li>
+			
+			
+			
+		
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+$(".thumbnails img").bind("error",function(){$(this).attr("src","app/core/styles/images/icons/Book.png?"+Math.random());});
+</script></body>
+</html>

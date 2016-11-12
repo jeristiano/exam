@@ -32,7 +32,7 @@
                 		</div>
                 	</div>
                 	<div class="span8">
-                		<div><b class="text-info">考试详情：</b></div>
+                		<div><b class="text-success">考试详情：</b></div>
               			<p>总分：<b class="text-warning">{x2;$sessionvars['examsessionsetting']['examsetting']['score']}</b>分 合格分数线：<b class="text-warning">{x2;$sessionvars['examsessionsetting']['examsetting']['passscore']}</b>分 答卷耗时：<b class="text-warning">{x2;if:$sessionvars['examsessiontime'] >= 60}{x2;if:$sessionvars['examsessiontime']%60}{x2;eval: echo intval($sessionvars['examsessiontime']/60)+1}{x2;else}{x2;eval: echo intval($sessionvars['examsessiontime']/60)}{x2;endif}分钟{x2;else}{x2;$sessionvars['examsessiontime']}秒{x2;endif}</b></p>
                   		<table class="table table-hover table-bordered">
                           <tr class="success">

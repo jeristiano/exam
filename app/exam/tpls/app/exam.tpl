@@ -21,15 +21,15 @@
 						<a href="#" data-toggle="tab">正式考试</a>
 					</li>
 				</ul>
-				<div class="alert alert-info">
+				<div class="alert alert-success">
 					<strong>提示：</strong>
 					<p>本考场开启时间 {x2;if:$data['currentbasic']['basicexam']['opentime']['start'] && $data['currentbasic']['basicexam']['opentime']['end']}{x2;date:$data['currentbasic']['basicexam']['opentime']['start'],'Y-m-d H:i:s'} - {x2;date:$data['currentbasic']['basicexam']['opentime']['end'],'Y-m-d H:i:s'}{x2;else}不限{x2;endif} ； 考试次数 {x2;if:$data['currentbasic']['basicexam']['examnumber']}{x2;$data['currentbasic']['basicexam']['examnumber']}{x2;else}不限{x2;endif} ； 抽卷规则 {x2;if:$data['currentbasic']['basicexam']['selectrule']}系统随机抽卷{x2;else}用户手选试卷{x2;endif}。</p>
 				</div>
             	<ul class="unstyled">
-                	<li><b>1、</b>点击考试名称按钮进入答题界面，考试开始计时。</li>
-                	<li><b>2、</b>在随机考试过程中，您可以通过顶部的考试时间来掌握自己的做题时间。</li>
-                	<li><b>3、</b>提交试卷后，可以通过“查看答案和解析”功能进行总结学习。</li>
-                	<li><b>4、</b>系统自动记录模拟考试的考试记录，学员考试结束后可以进入“答题记录”功能进行查看。</li>
+                	<li class='text-success'><b>1、</b>点击考试名称按钮进入答题界面，考试开始计时。</li>
+                	<li class='text-success'><b>2、</b>在随机考试过程中，您可以通过顶部的考试时间来掌握自己的做题时间。</li>
+                	<li class='text-success'><b>3、</b>提交试卷后，可以通过“查看答案和解析”功能进行总结学习。</li>
+                	<li class='text-success'><b>4、</b>系统自动记录模拟考试的考试记录，学员考试结束后可以进入“答题记录”功能进行查看。</li>
                 	<li>&nbsp;</li>
                 </ul>
 				{x2;if:$data['currentbasic']['basicexam']['opentime']['start'] && $data['currentbasic']['basicexam']['opentime']['end']}

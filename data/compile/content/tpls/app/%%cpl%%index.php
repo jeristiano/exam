@@ -1,24 +1,24 @@
 <?php $this->_compileInclude('header'); ?>
 <body>
 <?php $this->_compileInclude('nav'); ?>
-<div class="row-fluid">
+ <div class="row-fluid">
 	<div class="container-fluid examcontent">
 		<div class="exambox" id="datacontent">
 			<div class="examform">
 				<div class="banner span12">
-					<ul class="unstyled">
-						<?php $cid = 0;
- foreach($this->tpl_var['contents'][2]['data'] as $key => $content){ 
- $cid++; ?>
-						<li><div class="inner"><a href="index.php?content-app-content&contentid=<?php echo $content['contentid']; ?>"><img src="<?php echo $content['contentthumb']; ?>" /></a></div></li>
-						<?php } ?>
+					<ul class="unstyled" >						
+					<li><div class="inner"  style='height:470px;'><img src="app/core/styles/carousel/pic3.jpg" /></div></li>						
+					<li><div class="inner"  style='height:470px;'><img src="app/core/styles/carousel/pic1.jpg" /></div></li>						
+					<li><div class="inner"  style='height:470px;'><img src="app/core/styles/carousel/pic2.jpg" /></div></li>						
+					<li><div class="inner"  style='height:470px;'><img src="app/core/styles/carousel/pic4.jpg" /></div></li>						
 					</ul>
+					
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div class="row-fluid">
+</div> 
+<!-- <div class="row-fluid">
 	<div class="container-fluid">
 		<div class="span6 examcontent">
 			<div class="exambox">
@@ -122,7 +122,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+ --></div>
 <?php $this->_compileInclude('foot'); ?>
 <script>
 $(function() {

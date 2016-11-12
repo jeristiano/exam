@@ -197,7 +197,7 @@ class app
 				if($res['areaid']!=$bic['basicareaid']){
 					$message = array(
 						'statusCode' => 300,
-						"message" => "您不在此班级,考试!"
+						"message" => "您不在此班级,不能考试!"
 					);
 					$this->G->R($message);
 					
@@ -704,12 +704,12 @@ class app
 					'examsessionbasic'=> $eh['ehbasicid'],
 					'examsessionquestion'=> $eh['ehquestion'],
 					'examsessionuseranswer'=>$eh['ehanswer'],
-					'examsessiontime'=> $eh['ehtime'],
+					'examsessiontime'=> intval($eh['ehtime']/60),
 					'examsessionscorelist'=> $eh['ehscorelist'],
 					'examsessionscore'=>$eh['ehscore'],
 					'examsessionstarttime'=>$eh['ehstarttime']
 				);
-
+				//print_r($sessionvars['examsessiontime']);
 				$questype = $this->basic->getQuestypeList();
 				$number = array();
 				$right = array();

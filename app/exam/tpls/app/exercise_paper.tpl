@@ -19,7 +19,7 @@
 						{x2;$sessionvars['examsession']}
 					</li>
 				</ul>
-				<h3 class="text-center">{x2;$sessionvars['examsession']}</h3>
+				<h3 class="text-center text-success">{x2;$sessionvars['examsession']}</h3>
 				{x2;eval: v:oid = 0}
 				{x2;tree:$questype,quest,qid}
 				{x2;if:$sessionvars['examsessionquestion']['questions'][v:quest['questid']] || $sessionvars['examsessionquestion']['questionrows'][v:quest['questid']]}
@@ -27,7 +27,7 @@
 				<div id="panel-type{x2;v:quest['questid']}" class="tab-pane{x2;if:(!$ctype && v:qid == 1) || ($ctype == v:quest['questid'])} active{x2;endif}">
 					<ul class="breadcrumb">
 						<li>
-							<h5>{x2;v:oid}、{x2;v:quest['questype']}</h5>
+							<h4 class='text-success'>{x2;v:oid}、{x2;v:quest['questype']}</h4>
 						</li>
 					</ul>
 					{x2;eval: v:tid = 0}
@@ -37,7 +37,7 @@
 						<div class="media well">
 							<ul class="nav nav-tabs">
 								<li class="active">
-									<span class="badge badge-info questionindex">{x2;v:tid}</span></a>
+									<span class="badge badge-success questionindex">{x2;v:tid}</span></a>
 								</li>
 								<li class="btn-group pull-right">
 									<button class="btn" type="button" onclick="javascript:signQuestion('{x2;v:question['questionid']}',this);"><em class="{x2;if:$sessionvars['examsessionsign'][v:question['questionid']]}icon-star{x2;else}icon-star-empty{x2;endif}" title="标注"></em></button>
@@ -87,7 +87,7 @@
 						<div class="media well">
 							<ul class="nav nav-tabs">
 								<li class="active">
-									<span class="badge badge-info questionindex">{x2;v:tid}</span>
+									<span class="badge badge-success questionindex">{x2;v:tid}</span>
 								</li>
 							</ul>
 							<div class="media-body well">
@@ -97,7 +97,7 @@
 							<div class="paperexamcontent">
 								<ul class="nav nav-tabs">
 									<li class="active">
-										<span class="badge questionindex">{x2;v:did}</span></a>
+										<span class="badge badge-info questionindex">{x2;v:did}</span></a>
 									</li>
 									<li class="btn-group pull-right">
 										<button class="btn" type="button" onclick="javascript:signQuestion('{x2;v:data['questionid']}',this);"><em class="{x2;if:$sessionvars['examsessionsign'][v:data['questionid']]}icon-star{x2;else}icon-star-empty{x2;endif}" title="标注"></em></button>
@@ -157,7 +157,7 @@
 						<p>共有试题 <span class="allquestionnumber">50</span> 题，已做 <span class="yesdonumber">0</span> 题。您确认要交卷吗？</p>
 					</div>
 					<div class="modal-footer">
-						 <button type="button" onclick="javascript:submitPaper();" class="btn btn-primary">确定交卷</button>
+						 <button type="button" onclick="javascript:submitPaper();" class="btn  btn-success">确定交卷</button>
 						 <input type="hidden" name="insertscore" value="1"/>
 						 <button aria-hidden="true" class="btn" type="button" data-dismiss="modal">再检查一下</button>
 					</div>
@@ -221,7 +221,7 @@
 			</div>
 			<div class="span2">
 				<ul class="unstyled">
-					<li class="text-right"><a href="#submodal" role="button" class="btn btn-primary" data-toggle="modal"> 交 卷 </a></li>
+					<li class="text-right"><a href="#submodal" role="button" class="btn  btn-success" data-toggle="modal"> 交 卷 </a></li>
 				</ul>
 			</div>
 		</div>
@@ -244,7 +244,7 @@ $(document).ready(function(){
 	setInterval(saveanswer,300000);
 
 	$('.allquestionnumber').html($('.paperexamcontent').length);
-	$('.yesdonumber').html($('#modal-body .badge-info').length);
+	$('.yesdonumber').html($('#modal-body .badge-success').length);
 
 	initData = $.parseJSON(storage.getItem('questions'));
 	if(initData){

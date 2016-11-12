@@ -14,7 +14,7 @@
 			<div class="examform">
 				<div>
 					<ul class="breadcrumb">
-						<li><a href="index.php?<?php echo $this->tpl_var['_app']; ?>-app">用户中心</a> <span class="divider">/</span></li>
+						<li><a href="index.php?<?php echo $this->tpl_var['_app']; ?>-center">用户中心</a> <span class="divider">/</span></li>
 						<li class="active">隐私设置</li>
 					</ul>
 					<div id="tabs-694325" class="tabbable">
@@ -43,7 +43,7 @@
 										<?php } ?>
 										<div class="control-group">
 											<div class="controls">
-												<button class="btn btn-primary" type="submit">提交</button>
+												<button class="btn btn-success" type="submit">提交</button>
 												<input type="hidden" name="modifyuserinfo" value="1"/>
 												<input type="hidden" name="page" value="<?php echo $this->tpl_var['page']; ?>"/>
 												<?php $aid = 0;
@@ -56,8 +56,8 @@
 									</fieldset>
 								</form>
 							</div>
-							<div id="panel-788885" class="tab-pane">
-								<form action="index.php?user-center-privatement" method="post" class="form-horizontal">
+							<div id="panel-788885" class="tab-pane" >
+								<form action="index.php?user-center-privatement" method="post" class="form-horizontal" style='height:270px'>
 									<fieldset>
 										<legend><?php echo $this->tpl_var['user']['username']; ?></legend>
 										<div class="control-group">
@@ -80,7 +80,7 @@
 										</div>
 										<div class="control-group">
 											<div class="controls">
-												<button class="btn btn-primary" type="submit">提交</button>
+												<button class="btn btn-success" type="submit">提交</button>
 												<input type="hidden" name="modifyuserpassword" value="1"/>
 												<input type="hidden" name="page" value="<?php echo $this->tpl_var['page']; ?>"/>
 												<?php $aid = 0;

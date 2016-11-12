@@ -1,22 +1,24 @@
 {x2;include:header}
 <body>
 {x2;include:nav}
-<div class="row-fluid">
+ <div class="row-fluid">
 	<div class="container-fluid examcontent">
 		<div class="exambox" id="datacontent">
 			<div class="examform">
 				<div class="banner span12">
-					<ul class="unstyled">
-						{x2;tree:$contents[2]['data'],content,cid}
-						<li><div class="inner"><a href="index.php?content-app-content&contentid={x2;v:content['contentid']}"><img src="{x2;v:content['contentthumb']}" /></a></div></li>
-						{x2;endtree}
+					<ul class="unstyled" >						
+					<li><div class="inner"  style='height:470px;'><img src="app/core/styles/carousel/pic3.jpg" /></div></li>						
+					<li><div class="inner"  style='height:470px;'><img src="app/core/styles/carousel/pic1.jpg" /></div></li>						
+					<li><div class="inner"  style='height:470px;'><img src="app/core/styles/carousel/pic2.jpg" /></div></li>						
+					<li><div class="inner"  style='height:470px;'><img src="app/core/styles/carousel/pic4.jpg" /></div></li>						
 					</ul>
+					
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div class="row-fluid">
+</div> 
+<!-- <div class="row-fluid">
 	<div class="container-fluid">
 		<div class="span6 examcontent">
 			<div class="exambox">
@@ -110,7 +112,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+ --></div>
 {x2;include:foot}
 <script>
 $(function() {

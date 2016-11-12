@@ -53,7 +53,7 @@
 		                        </select>
 							</td>
 							<td>
-								<button class="btn btn-primary" type="submit">提交</button>
+								<button class="btn btn-success" type="submit">提交</button>
 								<input type="hidden" value="<?php echo $this->tpl_var['type']; ?>" name="type" />
 							</td>
 						</tr>

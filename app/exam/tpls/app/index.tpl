@@ -7,20 +7,16 @@
 			<div class="examform">
 				<ul class="nav nav-tabs">
 					<li class="active">
-						<a href="#panel-461715" data-toggle="tab">我的考场</a>
+						<a href="#panel-461715" data-toggle="tab" >我的考试</a>
 					</li>
+					<div class="caption pull-right">
+					<p class="text-center">
+						<a class="btn btn-success " href="index.php?exam-app-basics-open" title="开通新考试">开通新考试</a>
+					</p>
+					</div>
 				</ul>
 				<ul class="thumbnails">
-				<li class="span2">
-					<div class="thumbnail">
-						<img alt="300x200" src="app/core/styles/images/icons/Book.png"/>
-						<div class="caption">
-							<p class="text-center">
-								<a class="btn btn-warning" href="index.php?exam-app-basics-open" title="开通新考场">开通新考场</a>
-							</p>
-						</div>
-					</div>
-				</li>
+				
 				</ul>	
 				<ul class="thumbnails">
 					{x2;tree:$basics,basic,bid}

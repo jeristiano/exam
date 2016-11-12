@@ -7,7 +7,7 @@
 			<form class="examform form-horizontal" id="form1" name="form1" action="index.php?exam-app-exampaper-makescore">
 				<ul class="breadcrumb">
 					<li>
-						<span class="icon-home"></span> <a href="index.php?exam">考场选择</a> <span class="divider">/</span>
+						<span class="icon-home"></span> <a href="index.php?exam">考试选择</a> <span class="divider">/</span>
 					</li>
 					<li>
 						<a href="index.php?exam-app-basics">{x2;$data['currentbasic']['basic']}</a> <span class="divider">/</span>
@@ -27,7 +27,7 @@
                 		</div>
                 	</div>
                 	<div class="span8">
-                		<div><b class="text-info">考试详情：</b></div>
+                		<div><b class="text-success">考试详情：</b></div>
               			<p>总分：<b class="text-warning">100</b>分 合格分数线：<b class="text-warning">60</b>分 答卷耗时：<b class="text-warning">{x2;$sessionvars['examsessiontime']}</b>分钟</p>
                   		<table class="table table-hover table-bordered">
                           <tr class="success">
@@ -52,7 +52,7 @@
                             <td colspan="5" align="left">本次考试共<b class="text-warning">{x2;$allnumber}</b>道题，总分<b class="text-warning">100</b>分，您做对<b class="text-warning">{x2;$allright}</b>道题，得到<b class="text-warning">{x2;$sessionvars['examsessionscore']}</b>分</td>
                           </tr>
                        </table>
-                       <div class="text-center"><a href="index.php?exam-app-history-view&ehid={x2;$ehid}" class="btn btn-info">查看答案和解析</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php?exam-app-history" class="btn btn-info">进入我的考试记录</a></div>
+                       <div class="text-center"><a href="index.php?exam-app-history-view&ehid={x2;$ehid}" class="btn btn-success">查看答案和解析</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php?exam-app-history" class="btn btn-success">进入我的考试记录</a></div>
                 	</div>
                 </div>
 			</div>

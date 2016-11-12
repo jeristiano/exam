@@ -22,11 +22,11 @@
 					</li>
 				</ul>
             	<ul class="unstyled">
-                	<li><b>1、</b>点击考试名称按钮进入答题界面，考试开始计时。</li>
-                	<li><b>2、</b>在随机考试过程中，您可以通过顶部的考试时间来掌握自己的做题时间。</li>
-                	<li><b>3、</b>提交试卷后，可以通过“查看答案和解析”功能进行总结学习。</li>
-                	<li><b>4、</b>系统自动记录模拟考试的考试记录，学员考试结束后可以进入“答题记录”功能进行查看。</li>
-                	<li>&nbsp;</li>
+                	<li class='text-success'><b>1、</b>点击考试名称按钮进入答题界面，考试开始计时。</li>
+                	<li class='text-success'><b>2、</b>在随机考试过程中，您可以通过顶部的考试时间来掌握自己的做题时间。</li>
+                	<li class='text-success'><b>3、</b>提交试卷后，可以通过“查看答案和解析”功能进行总结学习。</li>
+                	<li class='text-success'><b>4、</b>系统自动记录模拟考试的考试记录，学员考试结束后可以进入“答题记录”功能进行查看。</li>
+                	<li class='text-success'>&nbsp;</li>
                 </ul>
 				<ul class="thumbnails">
 					<?php $eid = 0;

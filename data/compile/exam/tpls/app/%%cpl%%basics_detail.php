@@ -12,7 +12,7 @@
 						<span class="icon-home"></span> <a href="index.php?exam">考场选择</a> <span class="divider">/</span>
 					</li>
 					<li>
-						<a href="index.php?exam-app-basics-open">开通考场</a> <span class="divider">/</span>
+						<a href="index.php?exam-app-basics-open">开通考试</a> <span class="divider">/</span>
 					</li>
 					<li class="active">
 						<?php echo $this->tpl_var['basic']['basic']; ?>
@@ -20,7 +20,7 @@
 				</ul>
 				<ul class="nav nav-tabs">
 					<li class="active">
-						<a href="#" data-toggle="tab">开通考场</a>
+						<a href="#" data-toggle="tab">开通考试</a>
 					</li>
 				</ul>
 				<div class="row-fluid">
@@ -34,9 +34,8 @@
 							<h3><?php echo $this->tpl_var['basic']['basic']; ?></h3>
 							<p>&nbsp;</p>
 							<p>科目：<?php echo $this->tpl_var['subjects'][$this->tpl_var['basic']['basicsubjectid']]['subject']; ?></p>
-							<p>地区：<?php echo $this->tpl_var['areas'][$this->tpl_var['basic']['basicareaid']]['area']; ?></p>
-							<p>您现有积分：<?php echo $this->tpl_var['_user']['usercoin']; ?> （<a href="index.php?user-center-payfor">支付宝充值</a> / <a href="#myModal" role="button" data-toggle="modal">代金券充值</a>）</p>
-							<?php if($this->tpl_var['isopen']){ ?><p>到期时间：<?php echo date('Y-m-d',$this->tpl_var['isopen']['obendtime']); ?></p><?php } ?>
+							<p>班级：<?php echo $this->tpl_var['areas'][$this->tpl_var['basic']['basicareaid']]['area']; ?></p>
+							
 						</div>
 						<div>&nbsp;</div>
 						<?php if(!$this->tpl_var['isopen']){ ?>
@@ -70,7 +69,7 @@
 						</form>
 						<?php } else { ?>
 						<p>
-							<a class="btn ajax" href="index.php?exam-app-index-setCurrentBasic&basicid=<?php echo $this->tpl_var['basic']['basicid']; ?>">进入考场</a>
+							<a class="btn btn-success ajax" href="index.php?exam-app-index-setCurrentBasic&basicid=<?php echo $this->tpl_var['basic']['basicid']; ?>">进入</a>
 						</p>
 						<?php } ?>
 					</div>

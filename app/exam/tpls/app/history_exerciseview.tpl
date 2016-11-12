@@ -28,7 +28,7 @@
 				<div id="panel-type{x2;v:quest['questid']}" class="tab-pane{x2;if:(!$ctype && v:qid == 1) || ($ctype == v:quest['questid'])} active{x2;endif}">
 					<ul class="breadcrumb">
 						<li>
-							<h5>{x2;v:oid}、{x2;v:quest['questype']}</h5>
+							<h4 class='text-success'>{x2;v:oid}、{x2;v:quest['questype']}</h4>
 						</li>
 					</ul>
 					{x2;eval: v:tid = 0}
@@ -39,7 +39,7 @@
 						<div class="media well">
 							<ul class="nav nav-tabs">
 								<li class="active">
-									<span class="badge badge-info questionindex">{x2;v:tid}</span></a>
+									<span class="badge badge-success questionindex">{x2;v:tid}</span></a>
 								</li>
 								<li class="btn-group pull-right">
 									<button class="btn" type="button" onclick="javascript:favorquestion('{x2;v:question['questionid']}');"><em class="icon-heart" title="收藏"></em></button>
@@ -60,11 +60,11 @@
 		                    	<ul class="unstyled">
 		                        	<li class="text-error">正确答案：</li>
 		                            <li class="text-success">{x2;realhtml:v:question['questionanswer']}</li>
-		                        	<li class="text-info">您的答案：</li>
+		                        	<li class="text-success">您的答案：</li>
 		                            <li class="text-success">{x2;if:is_array($sessionvars['examsessionuseranswer'][v:question['questionid']])}{x2;eval: echo implode('',$sessionvars['examsessionuseranswer'][v:question['questionid']])}{x2;else}{x2;realhtml:$sessionvars['examsessionuseranswer'][v:question['questionid']]}{x2;endif}</li>
-		                        	<li><span class="text-info">所在章：</span>{x2;tree:v:question['questionknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalsections[$globalknows[v:knowsid['knowsid']]['knowssectionid']]['section']}&nbsp;{x2;endtree}</li>
-		                        	<li class="text-success"><span class="text-info">知识点：</span>{x2;tree:v:question['questionknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalknows[v:knowsid['knowsid']]['knows']}&nbsp;{x2;endtree}</li>
-		                        	<li class="text-info">答案解析：</li>
+		                        	<li><span class="text-success">所在章：</span>{x2;tree:v:question['questionknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalsections[$globalknows[v:knowsid['knowsid']]['knowssectionid']]['section']}&nbsp;{x2;endtree}</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>{x2;tree:v:question['questionknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalknows[v:knowsid['knowsid']]['knows']}&nbsp;{x2;endtree}</li>
+		                        	<li class="text-success">答案解析：</li>
 		                        	<li class="text-success">{x2;realhtml:v:question['questiondescribe']}</li>
 		                        </ul>
 		                    </div>
@@ -77,7 +77,7 @@
 						<div class="media well">
 							<ul class="nav nav-tabs">
 								<li class="active">
-									<span class="badge badge-info questionindex">{x2;v:tid}</span>
+									<span class="badge badge-success questionindex">{x2;v:tid}</span>
 								</li>
 							</ul>
 							<div class="media-body well">
@@ -88,7 +88,7 @@
 								{x2;if:$sessionvars['examsessionscorelist'][v:data['questionid']] && $sessionvars['examsessionscorelist'][v:data['questionid']] == 1}<div class="right"></div>{x2;else}<div class="wrong"></div>{x2;endif}
 								<ul class="nav nav-tabs">
 									<li class="active">
-										<span class="badge questionindex">{x2;v:did}</span></a>
+										<span class="badge  badge-info questionindex">{x2;v:did}</span></a>
 									</li>
 									<li class="btn-group pull-right">
 										<button class="btn" type="button" onclick="javascript:favorquestion('{x2;v:data['questionid']}');"><em class="icon-heart" title="收藏"></em></button>
@@ -109,11 +109,11 @@
 									<ul class="unstyled">
 			                        	<li class="text-error">正确答案：</li>
 			                            <li class="text-success">{x2;realhtml:v:data['questionanswer']}</li>
-			                        	<li class="text-info">您的答案：</li>
+			                        	<li class="text-success">您的答案：</li>
 			                            <li class="text-success">{x2;if:is_array($sessionvars['examsessionuseranswer'][v:data['questionid']])}{x2;eval: echo implode('',$sessionvars['examsessionuseranswer'][v:data['questionid']])}{x2;else}{x2;realhtml:$sessionvars['examsessionuseranswer'][v:data['questionid']]}{x2;endif}</li>
-			                        	<li><span class="text-info">所在章：</span>{x2;tree:v:questionrow['qrknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalsections[$globalknows[v:knowsid['knowsid']]['knowssectionid']]['section']}&nbsp;{x2;endtree}</li>
-			                        	<li><span class="text-info">知识点：</span>{x2;tree:v:questionrow['qrknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalknows[v:knowsid['knowsid']]['knows']}&nbsp;{x2;endtree}</li>
-			                        	<li class="text-info">答案解析：</li>
+			                        	<li><span class="text-success">所在章：</span>{x2;tree:v:questionrow['qrknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalsections[$globalknows[v:knowsid['knowsid']]['knowssectionid']]['section']}&nbsp;{x2;endtree}</li>
+			                        	<li><span class="text-success">知识点：</span>{x2;tree:v:questionrow['qrknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalknows[v:knowsid['knowsid']]['knows']}&nbsp;{x2;endtree}</li>
+			                        	<li class="text-success">答案解析：</li>
 		                        		<li class="text-success">{x2;realhtml:v:data['questiondescribe']}</li>
 			                        </ul>
 								</div>

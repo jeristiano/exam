@@ -9,15 +9,15 @@
 			<div class="examform">
 				<ul class="breadcrumb">
 					<li>
-						<span class="icon-home"></span> <a href="index.php?exam">考场选择</a> <span class="divider">/</span>
+						<span class="icon-home"></span> <a href="index.php?exam">考试选择</a> <span class="divider">/</span>
 					</li>
 					<li class="active">
-						开通考场
+						开通考试
 					</li>
 				</ul>
 				<ul class="nav nav-tabs">
 					<li class="active">
-						<a href="#" data-toggle="tab">开通考场</a>
+						<a href="#" data-toggle="tab">开通考试</a>
 					</li>
 				</ul>
 				<form action="index.php?exam-app-basics-open" method="post">
@@ -47,11 +47,11 @@
 						</tr>
 				        <tr>
 							<td>
-								地区：
+								班级：
 							</td>
 				        	<td>
 				        		<select name="search[basicareaid]" class="input-medium">
-					        		<option value="0">选择地区</option>
+					        		<option value="0">选择班级</option>
 							  		{x2;tree:$areas,area,aid}
 							  		<option value="{x2;v:area['areaid']}"{x2;if:v:area['areaid'] == $search['basicareaid']} selected{x2;endif}>{x2;v:area['area']}</option>
 							  		{x2;endtree}
@@ -69,7 +69,7 @@
 						  		</select>
 				        	</td>
 							<td>
-								<button class="btn btn-primary" type="submit">提交</button>
+								<button class="btn btn-success" type="submit">提交</button>
 							</td>
 						</tr>
 					</table>

@@ -22,12 +22,12 @@
 				<h3 class="text-center">主观题评分（{x2;$sessionvars['examsession']}）</h3>
                 <div class="well">
                 	<ul class="unstyled">
-                    	<li><b>阅卷规则</b></li>
-                    	<li>1、客观题系统将自动核对学员答案。</li>
-                    	<li>2、主观题请参照系统给出的答案自行核对，并给出分数。</li>
-                    	<li>3、自行评分完毕后请单击“自行判卷无误，提交”按钮，将即刻为您生成本次测验的成绩单。</li>
+                    	<li class='success'><b>阅卷规则</b></li>
+                    	<li class='success'>1、客观题系统将自动核对学员答案。</li>
+                    	<li class='success'>2、主观题请参照系统给出的答案自行核对，并给出分数。</li>
+                    	<li class='success'>3、自行评分完毕后请单击“自行判卷无误，提交”按钮，将即刻为您生成本次测验的成绩单。</li>
                     </ul>
-                    <p>以下题为主观题请参照正确答案后自行给出分数</p>
+                    <p class='success'>以下题为主观题请参照正确答案后自行给出分数</p>
                 </div>
 				{x2;eval: v:oid = 0}
 				{x2;tree:$questype,quest,qid}
@@ -47,7 +47,7 @@
 						<div class="media well">
 							<ul class="nav nav-tabs">
 								<li class="active">
-									<span class="badge badge-info questionindex">{x2;v:tid}</span></a>
+									<span class="badge badge-success questionindex">{x2;v:tid}</span></a>
 								</li>
 								<li class="btn-group pull-right">
 									<button class="btn" type="button"><em class="icon-heart" title="收藏"></em></button>
@@ -60,11 +60,11 @@
 		                    	<ul class="unstyled">
 		                        	<li class="text-error">正确答案：</li>
 		                            <li class="text-success">{x2;realhtml:v:question['questionanswer']}</li>
-		                        	<li class="text-info">您的答案：</li>
+		                        	<li class="text-success">您的答案：</li>
 		                            <li class="text-success">{x2;realhtml:$sessionvars['examsessionuseranswer'][v:question['questionid']]}</li>
-		                        	<li><span class="text-info">所在章：</span>{x2;tree:v:question['questionknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalsections[$globalknows[v:knowsid['knowsid']]['knowssectionid']]['section']}&nbsp;{x2;endtree}</li>
-		                        	<li class="text-success"><span class="text-info">知识点：</span>{x2;tree:v:question['questionknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalknows[v:knowsid['knowsid']]['knows']}&nbsp;{x2;endtree}</li>
-		                        	<li class="text-info">答案解析：</li>
+		                        	<li><span class="text-success">所在章：</span>{x2;tree:v:question['questionknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalsections[$globalknows[v:knowsid['knowsid']]['knowssectionid']]['section']}&nbsp;{x2;endtree}</li>
+		                        	<li class="text-success"><span class="text-success">知识点：</span>{x2;tree:v:question['questionknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalknows[v:knowsid['knowsid']]['knows']}&nbsp;{x2;endtree}</li>
+		                        	<li class="text-success">答案解析：</li>
 		                        	<li class="text-success">{x2;realhtml:v:question['questiondescribe']}</li>
 		                        </ul>
 		                    </div>
@@ -82,7 +82,7 @@
 						<div class="media well">
 							<ul class="nav nav-tabs">
 								<li class="active">
-									<span class="badge badge-info questionindex">{x2;v:tid}</span>
+									<span class="badge badge-success questionindex">{x2;v:tid}</span>
 								</li>
 							</ul>
 							<div class="media-body well">
@@ -92,7 +92,7 @@
 							<div class="paperexamcontent">
 								<ul class="nav nav-tabs">
 									<li class="active">
-										<span class="badge questionindex">{x2;v:did}</span></a>
+										<span class="badge badge-info questionindex">{x2;v:did}</span></a>
 									</li>
 									<li class="btn-group pull-right">
 										<button class="btn" type="button"><em class="icon-heart" title="收藏"></em></button>
@@ -105,11 +105,11 @@
 									<ul class="unstyled">
 			                        	<li class="text-error">正确答案：</li>
 			                            <li class="text-success">{x2;realhtml:v:data['questionanswer']}</li>
-			                        	<li class="text-info">您的答案：</li>
+			                        	<li class="text-success">您的答案：</li>
 			                            <li class="text-success">{x2;realhtml:$sessionvars['examsessionuseranswer'][v:data['questionid']]}</li>
-			                        	<li><span class="text-info">所在章：</span>{x2;tree:v:questionrow['qrknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalsections[$globalknows[v:knowsid['knowsid']]['knowssectionid']]['section']}&nbsp;{x2;endtree}</li>
-			                        	<li><span class="text-info">知识点：</span>{x2;tree:v:questionrow['qrknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalknows[v:knowsid['knowsid']]['knows']}&nbsp;{x2;endtree}</li>
-			                        	<li class="text-info">答案解析：</li>
+			                        	<li><span class="text-success">所在章：</span>{x2;tree:v:questionrow['qrknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalsections[$globalknows[v:knowsid['knowsid']]['knowssectionid']]['section']}&nbsp;{x2;endtree}</li>
+			                        	<li><span class="text-success">知识点：</span>{x2;tree:v:questionrow['qrknowsid'],knowsid,kid}&nbsp;&nbsp;{x2;$globalknows[v:knowsid['knowsid']]['knows']}&nbsp;{x2;endtree}</li>
+			                        	<li class="text-success">答案解析：</li>
 		                        		<li class="text-success">{x2;realhtml:v:data['questiondescribe']}</li>
 			                        </ul>
 								</div>
