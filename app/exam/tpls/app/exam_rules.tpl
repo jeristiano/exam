@@ -4,7 +4,7 @@
 {x2;include:nav}
 <!--头部-->
 <div id="head">
-	<div id="banner"><img src="app/exam/styles/image/head_banner.jpg" border="0" usemap="#Map" longdesc="注册会计师机考模拟系统" />
+	<div id="banner"><img src="app/exam/styles/image/head_banner.jpg" border="0" usemap="#Map" longdesc="机考模拟系统" />
       <map name="Map" id="Map">
         <area shape="rect" coords="20,25,181,75" href="http://www.dongao.com/" title="东奥会计在线" />
       </map>
@@ -22,7 +22,7 @@
     	<div class="bor_mid">
     		<div id="hide_left"><a href="javascript:pr()"></a></div>
             <div id="notice">
-            	<h2 class="page_title"><img src="app/exam/styles/image/shouze_tit.jpg" alt="考场守则" class="mr_10" /></h2>
+            	<h2 class="page_title"><img src="app/exam/styles/image/shouze_tit.jpg" alt="考试守则" class="mr_10" /></h2>
                 <ul id="shouze">
                 	<li class="mb_10"><b>一、</b>应考人员应当遵守《注册会计师全国统一考试办法》、《注册会计师全国统一考试违规行为处理办法》和本守则的规定。</li>
                 	<li class="mb_10"><b>二、</b>每科开考前40分钟开始，应考人员可以凭准考证和有效的身份证件进入考场。在进入考场时，应考人员应当接受监考人员核对证件，在《注册会计师全国统一考试考场情况记录表》（以下简称《考场情况记录表》）中的“考生签字”栏内签名，拍照，对号入座。</li>

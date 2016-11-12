@@ -5,7 +5,7 @@
 	                            	<td>
 	                            	{x2;v:quest['questype']}（共{x2;$numbers[v:quest['questid']]}题）
 	                            	{x2;if:$numbers[v:quest['questid']]}
-	                            	<a href="index.php?exam-app-lesson-ajax-setlesson&questype={x2;v:quest['questid']}&knowsid={x2;$knows['knowsid']}" class="btn btn-primary ajax" action-before="clearStorage">练习</a>
+	                            	<a href="index.php?exam-app-lesson-ajax-setlesson&questype={x2;v:quest['questid']}&knowsid={x2;$knows['knowsid']}" class="btn btn-success ajax" action-before="clearStorage">练习</a>
 	                            	{x2;else}
 	                            	<a href="javascript:;" class="btn">练习</a>
 	                            	{x2;endif}

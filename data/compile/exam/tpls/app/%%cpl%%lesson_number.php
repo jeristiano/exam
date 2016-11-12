@@ -7,7 +7,7 @@
 	                            	<td>
 	                            	<?php echo $quest['questype']; ?>（共<?php echo $this->tpl_var['numbers'][$quest['questid']]; ?>题）
 	                            	<?php if($this->tpl_var['numbers'][$quest['questid']]){ ?>
-	                            	<a href="index.php?exam-app-lesson-ajax-setlesson&questype=<?php echo $quest['questid']; ?>&knowsid=<?php echo $this->tpl_var['knows']['knowsid']; ?>" class="btn btn-primary ajax" action-before="clearStorage">练习</a>
+	                            	<a href="index.php?exam-app-lesson-ajax-setlesson&questype=<?php echo $quest['questid']; ?>&knowsid=<?php echo $this->tpl_var['knows']['knowsid']; ?>" class="btn btn-success ajax" action-before="clearStorage">练习</a>
 	                            	<?php } else { ?>
 	                            	<a href="javascript:;" class="btn">练习</a>
 	                            	<?php } ?>

@@ -7,7 +7,9 @@
 			<form class="examform form-horizontal" id="form1" name="form1" action="index.php?exam-app-exampaper-makescore">
 				<ul class="breadcrumb">
 					<li>
-						<span class="icon-home"></span> <a href="index.php?exam">考场选择</a> <span class="divider">/</span>
+						<span class="icon-home"></span> <a href="index.php?exam">地区
+地区
+考试选择</a> <span class="divider">/</span>
 					</li>
 					<li>
 						<a href="index.php?exam-app-basics">{x2;$data['currentbasic']['basic']}</a> <span class="divider">/</span>

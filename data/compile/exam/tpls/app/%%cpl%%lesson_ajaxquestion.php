@@ -4,7 +4,7 @@
 					<div class="media well">
 						<ul class="nav nav-tabs">
 							<li class="active">
-								<span class="badge badge-info questionindex"><?php echo $this->tpl_var['number']; ?></span></a>
+								<span class="badge badge-success questionindex"><?php echo $this->tpl_var['number']; ?></span></a>
 							</li>
 							<li class="btn-group pull-right">
 								<button class="btn" type="button" onclick="javascript:favorquestion('<?php echo $this->tpl_var['question']['questionid']; ?>');"><em class="icon-heart" title="收藏"></em></button>
@@ -75,7 +75,7 @@
 					<div class="media well">
 						<ul class="nav nav-tabs">
 							<li class="active">
-								<span class="badge badge-info questionindex"><?php echo $this->tpl_var['number']; ?></span>
+								<span class="badge badge-success questionindex"><?php echo $this->tpl_var['number']; ?></span>
 							</li>
 						</ul>
 						<div class="media-body well">
@@ -93,7 +93,7 @@
 						<div class="paperexamcontent_<?php echo $data['questionid']; ?>">
 							<ul class="nav nav-tabs">
 								<li class="active">
-									<span class="badge questionindex"><?php echo $did; ?></span>
+									<span class="badge badge-info questionindex"><?php echo $did; ?></span>
 								</li>
 								<li class="btn-group pull-right">
 									<button class="btn" type="button" onclick="javascript:favorquestion('<?php echo $data['questionid']; ?>');"><em class="icon-heart" title="收藏"></em></button>

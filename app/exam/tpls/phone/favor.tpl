@@ -11,7 +11,9 @@
 				<div class="scoreArea">{x2;$sessionvars['examsessionscore']}</div>
 				<ul class="breadcrumb">
 					<li>
-						<span class="icon-home"></span> <a href="index.php?exam-phone">考场选择</a> <span class="divider">/</span>
+						<span class="icon-home"></span> <a href="index.php?exam-phone">地区
+地区
+考试选择</a> <span class="divider">/</span>
 					</li>
 					<li>
 						<a href="index.php?exam-phone-basics">{x2;$data['currentbasic']['basic']}</a> <span class="divider">/</span>
