@@ -4,9 +4,17 @@
 		<div class="span8">
 			<span class="pull-right">
 			{x2;if:$_user['userid']}
-			您好（{x2;$_user['username']}）&nbsp;&nbsp;<a href="index.php?user-center"><em class="icon-user"></em> 用户中心</a>{x2;if:$_user['teacher_subjects']}&nbsp;&nbsp;<em class="icon-edit"></em> <a href="index.php?exam-teach">教师管理</a>{x2;elseif:$_user['groupid'] == 1}&nbsp;&nbsp;<em class="icon-edit"></em> <a href="index.php?core-master">后台管理</a>{x2;endif}&nbsp;&nbsp;<a href="index.php?user-app-logout" class="ajax"><em class="icon-lock"></em> 退出</a>
+			您好（{x2;$_user['username']}）&nbsp;&nbsp;
+
+
+			{x2;if:$_user['groupid'] != 1}
+			<a href="index.php?user-center"><em class="icon-user"></em> 用户中心</a>
+			{x2;endif}
+
+
+			{x2;if:$_user['teacher_subjects']}&nbsp;&nbsp;<em class="icon-edit"></em> <a href="index.php?exam-teach">教师管理</a>{x2;elseif:$_user['groupid'] == 1}&nbsp;&nbsp;<em class="icon-edit"></em> <a href="index.php?core-master">后台管理</a>{x2;endif}&nbsp;&nbsp;<a href="index.php?user-app-logout" class="ajax"><em class="icon-lock"></em> 退出</a>
 			{x2;else}
-			<a href="javascript:;" onclick="javascript:$.loginbox.show();"><em class="icon-lock"></em> 登录</a>&nbsp;&nbsp;<a href="index.php?user-center"><em class="icon-user"></em> 注册</a>
+			<a href="javascript:;" onclick="javascript:$.loginbox.show();"><em class="icon-lock"></em> 登录</a>&nbsp;&nbsp;<a href="index.php?user-app-register"><em class="icon-user"></em> 注册</a>
 			{x2;endif}
 			&nbsp;&nbsp;&nbsp;&nbsp;
 			</span>
@@ -15,7 +23,7 @@
 </div>
 <div class="row-fluid top " style='height:70px;'>
 	<div class="container-fluid" >
-		<div class="span4"><a name="top"></a><h2><img  src="app/user/styles/img/theme/logo.png" /></h2></div>
+		<div class="span4"><a name="top"></a><h2><img  style='position:relative;top:-10px'  src="app/user/styles/img/theme/logo.png" /></h2></div>
 		<div class="span8">
 			<div class="navbar" id="menuNav">
 				<div class="">
@@ -23,10 +31,20 @@
 						<ul class="nav pull-right">
 							<li class="active mainmenu">
 								<a href="index.php">主页</a>
+								</li>
+							{x2;if:$_user['teacher_subjects']}
+							<li class=" mainmenu">
+								<a href="index.php?exam-teach">教师管理</a>
 							</li>
-							<li class="mainmenu">
+							{x2;elseif:$_user['groupid'] == 1}
+							<li class=" mainmenu">
+								<a href="index.php?core-master">后台管理</a>
+							</li>
+							{x2;else}
+							<li class=" mainmenu">
 								<a href="index.php?exam">在线考试</a>
 							</li>
+							{x2;endif}
 						</ul>
 					</div>
 				</div>

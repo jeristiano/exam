@@ -99,7 +99,7 @@
 											<?php if($basic['basicdemo']){ ?>
 											<a class="btn btn-success" href="index.php?exam-app-basics-detail&basicid=<?php echo $basic['basicid']; ?>" title="<?php echo $basic['basic']; ?>">免费开通</a>
 											<?php } else { ?>
-											<a class="btn btn-primary" href="index.php?exam-app-basics-detail&basicid=<?php echo $basic['basicid']; ?>" title="<?php echo $basic['basic']; ?>">去开通</a>
+											<a class="btn btn-success" href="index.php?exam-app-basics-detail&basicid=<?php echo $basic['basicid']; ?>" title="<?php echo $basic['basic']; ?>">去开通</a>
 											<?php } ?>
 										<?php } ?>
 										</p>

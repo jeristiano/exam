@@ -7,9 +7,7 @@
 			<div class="examform">
 				<ul class="breadcrumb">
 					<li>
-						<span class="icon-home"></span> <a href="index.php?exam">地区
-地区
-考试选择</a> <span class="divider">/</span>
+						<span class="icon-home"></span> <a href="index.php?exam">考试选择</a> <span class="divider">/</span>
 					</li>
 					<li>
 						<a href="index.php?exam-app-basics"><?php echo $this->tpl_var['data']['currentbasic']['basic']; ?></a> <span class="divider">/</span>
@@ -42,7 +40,7 @@
 							<?php if($this->tpl_var['data']['currentbasic']['basicexam']['examnumber'] > 0 && $this->tpl_var['number']['all'] >= $this->tpl_var['data']['currentbasic']['basicexam']['examnumber']){ ?>
 							<div class="span4 text-center"><a class="btn" href="javascript:;">您的考试次数已经用完</a></div>
 							<?php } else { ?>
-							<div class="span4 text-center"><a class="ajax btn btn-primary" href="index.php?exam-app-exam-selectquestions&examid=<?php echo $exam['examid']; ?>" action-before="clearStorage">开始考试</a></div>
+							<div class="span4 text-center"><a class="ajax btn btn-success" href="index.php?exam-app-exam-selectquestions&examid=<?php echo $exam['examid']; ?>" action-before="clearStorage">开始考试</a></div>
 							<?php } ?>
 							<div class="span4"></div>
 						</div>
@@ -59,7 +57,7 @@
 											<?php if($this->tpl_var['data']['currentbasic']['basicexam']['examnumber'] > 0 && $this->tpl_var['number']['child'][$exam['examid']] >= $this->tpl_var['data']['currentbasic']['basicexam']['examnumber']){ ?>
 											<a class="btn" href="javascript:;" title="考试次数已经用完"><?php echo $this->G->make('strings')->subString($exam['exam'],28); ?></a>
 											<?php } else { ?>
-											<a class="ajax btn btn-primary" href="index.php?exam-app-exam-selectquestions&examid=<?php echo $exam['examid']; ?>" title="<?php echo $exam['exam']; ?>" action-before="clearStorage"><?php echo $this->G->make('strings')->subString($exam['exam'],28); ?></a>
+											<a class="ajax btn btn-success" href="index.php?exam-app-exam-selectquestions&examid=<?php echo $exam['examid']; ?>" title="<?php echo $exam['exam']; ?>" action-before="clearStorage"><?php echo $this->G->make('strings')->subString($exam['exam'],28); ?></a>
 											<?php } ?>
 										</p>
 									</div>
@@ -81,7 +79,7 @@
 					<?php if($this->tpl_var['data']['currentbasic']['basicexam']['examnumber'] > 0 && $this->tpl_var['number']['all'] >= $this->tpl_var['data']['currentbasic']['basicexam']['examnumber']){ ?>
 					<div class="span4 text-center"><a class="btn" href="javascript:;">您的考试次数已经用完</a></div>
 					<?php } else { ?>
-					<div class="span4 text-center"><a class="ajax btn btn-primary" href="index.php?exam-app-exam-selectquestions&examid=<?php echo $exam['examid']; ?>" action-before="clearStorage">开始考试</a></div>
+					<div class="span4 text-center"><a class="ajax btn btn-success" href="index.php?exam-app-exam-selectquestions&examid=<?php echo $exam['examid']; ?>" action-before="clearStorage">开始考试</a></div>
 					<?php } ?>
 					<div class="span4"></div>
 				</div>
@@ -98,7 +96,7 @@
 									<?php if($this->tpl_var['data']['currentbasic']['basicexam']['examnumber'] > 0 && $this->tpl_var['number']['child'][$exam['examid']] >= $this->tpl_var['data']['currentbasic']['basicexam']['examnumber']){ ?>
 									<a class="btn" href="javascript:;" title="考试次数已经用完"><?php echo $this->G->make('strings')->subString($exam['exam'],28); ?></a>
 									<?php } else { ?>
-									<a class="ajax btn btn-primary" href="index.php?exam-app-exam-selectquestions&examid=<?php echo $exam['examid']; ?>" title="<?php echo $exam['exam']; ?>" action-before="clearStorage"><?php echo $this->G->make('strings')->subString($exam['exam'],28); ?></a>
+									<a class="ajax btn btn-success" href="index.php?exam-app-exam-selectquestions&examid=<?php echo $exam['examid']; ?>" title="<?php echo $exam['exam']; ?>" action-before="clearStorage"><?php echo $this->G->make('strings')->subString($exam['exam'],28); ?></a>
 									<?php } ?>
 								</p>
 							</div>

@@ -11,22 +11,22 @@
 <?php } ?>
 			<ul class="breadcrumb">
 				<li><a href="index.php?<?php echo $this->tpl_var['_app']; ?>-master"><?php echo $this->tpl_var['apps'][$this->tpl_var['_app']]['appname']; ?></a> <span class="divider">/</span></li>
-				<li class="active">地区设置</li>
+				<li class="active">班级设置</li>
 			</ul>
 			<ul class="nav nav-tabs">
 				<li class="active">
-					<a href="#">地区设置</a>
+					<a href="#">班级设置</a>
 				</li>
 				<li class="dropdown pull-right">
-					<a href="index.php?exam-master-basic-addarea&page=<?php echo $this->tpl_var['page']; ?><?php echo $this->tpl_var['u']; ?>">添加地区</a>
+					<a href="index.php?exam-master-basic-addarea&page=<?php echo $this->tpl_var['page']; ?><?php echo $this->tpl_var['u']; ?>">添加班级</a>
 				</li>
 			</ul>
 	        <table class="table table-hover">
 	            <thead>
 	                <tr>
-	                    <th>地区ID</th>
-	                    <th>区号</th>
-						<th>地区名称</th>
+	                    <th>班级ID</th>
+	                    <th>唯一码</th>
+						<th>班级名称</th>
 						<th>默认</th>
 						<th>操作</th>
 	                </tr>
@@ -42,7 +42,7 @@
 						<td><?php if($area['arealevel']){ ?><em class="icon-ok"></em><?php } else { ?><em class="icon-remove"></em><?php } ?></td>
 						<td>
 							<div class="btn-group">
-	                    		<a class="btn" href="index.php?exam-master-basic&search[basicareaid]=<?php echo $area['areaid']; ?>&page=<?php echo $this->tpl_var['page']; ?><?php echo $this->tpl_var['u']; ?>" title="考场"><em class="icon-th-list"></em></a>
+	                    		<a class="btn" href="index.php?exam-master-basic&search[basicareaid]=<?php echo $area['areaid']; ?>&page=<?php echo $this->tpl_var['page']; ?><?php echo $this->tpl_var['u']; ?>" title="考试"><em class="icon-th-list"></em></a>
 	                    		<a class="btn" href="index.php?exam-master-basic-modifyarea&areaid=<?php echo $area['areaid']; ?>&page=<?php echo $this->tpl_var['page']; ?><?php echo $this->tpl_var['u']; ?>" title="修改"><em class="icon-edit"></em></a>
 								<a class="btn ajax" href="index.php?exam-master-basic-delarea&areaid=<?php echo $area['areaid']; ?>&page=<?php echo $this->tpl_var['page']; ?><?php echo $this->tpl_var['u']; ?>" title="删除"><em class="icon-remove"></em></a>
 	                    	</div>

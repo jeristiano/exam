@@ -137,7 +137,7 @@
 					</tr>
 					<tr>
 						<td colspan="2">
-							<button class="btn btn-primary" type="submit">搜索</button>
+							<button class="btn btn-success" type="submit">搜索</button>
 							<input type="hidden" value="1" name="search[argsmodel]" />
 						</td>
 						<td colspan="4"></td>
@@ -204,7 +204,7 @@
 				            <input type="hidden" name="search[<?php echo $key; ?>]" value="<?php echo $arg; ?>"/>
 				            <?php } ?>
 				            <label class="radio inline">
-				            	<button class="btn btn-primary" type="submit">提交</button>
+				            	<button class="btn btn-success" type="submit">提交</button>
 				            </label>
 				            <input type="hidden" name="page" value="<?php echo $this->tpl_var['page']; ?>"/>
 				        </div>

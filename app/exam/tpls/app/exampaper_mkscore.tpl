@@ -7,9 +7,7 @@
 			<form class="examform form-horizontal" id="form1" name="form1" action="index.php?exam-app-exampaper-makescore">
 				<ul class="breadcrumb">
 					<li>
-						<span class="icon-home"></span> <a href="index.php?exam">地区
-地区
-考试选择</a> <span class="divider">/</span>
+						<span class="icon-home"></span> <a href="index.php?exam">考试选择</a> <span class="divider">/</span>
 					</li>
 					<li>
 						<a href="index.php?exam-app-basics">{x2;$data['currentbasic']['basic']}</a> <span class="divider">/</span>
@@ -94,7 +92,7 @@
 							<div class="paperexamcontent">
 								<ul class="nav nav-tabs">
 									<li class="active">
-										<span class="badge badge-info questionindex">{x2;v:did}</span></a>
+										<span class="badge badge-success questionindex">{x2;v:did}</span></a>
 									</li>
 									<li class="btn-group pull-right">
 										<button class="btn" type="button"><em class="icon-heart" title="收藏"></em></button>
@@ -130,7 +128,7 @@
 				{x2;endif}
 				{x2;endtree}
 				<div class="span12 text-center">
-					 <button type="submit" class="btn btn-primary">自行判分完毕，提交分数</button>
+					 <button type="submit" class="btn btn-success">自行判分完毕，提交分数</button>
 					 <input type="hidden" name="makescore" value="1"/>
 				</div>
 			</form>

@@ -126,7 +126,7 @@
 					</tr>
 					<tr>
 						<td colspan="2">
-							<button class="btn btn-primary" type="submit">搜索</button>
+							<button class="btn btn-success" type="submit">搜索</button>
 							<input type="hidden" value="1" name="search[argsmodel]" />
 						</td>
 						<td colspan="4"></td>
@@ -138,7 +138,7 @@
 	                <tr>
 	                    <th>ID</th>
 				        <th>试题类型</th>
-				        <th>试题内容</th>
+				        <th style='width:250px;overflow: hidden;'>试题内容</th>
 				        <th>录入人</th>
 				        <th>录入时间</th>
 				        <th>难度</th>

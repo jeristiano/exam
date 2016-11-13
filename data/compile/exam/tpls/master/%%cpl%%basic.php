@@ -12,18 +12,18 @@
 			<ul class="breadcrumb">
 				<li><a href="index.php?<?php echo $this->tpl_var['_app']; ?>-master"><?php echo $this->tpl_var['apps'][$this->tpl_var['_app']]['appname']; ?></a> <span class="divider">/</span></li>
 				<?php if($this->tpl_var['catid']){ ?>
-				<li><a href="index.php?<?php echo $this->tpl_var['_app']; ?>-master-contents">考场管理</a> <span class="divider">/</span></li>
+				<li><a href="index.php?<?php echo $this->tpl_var['_app']; ?>-master-contents">考试管理</a> <span class="divider">/</span></li>
 				<li class="active"><?php echo $this->tpl_var['categories'][$this->tpl_var['catid']]['catname']; ?></li>
 				<?php } else { ?>
-				<li class="active">考场管理</li>
+				<li class="active">考试管理</li>
 				<?php } ?>
 			</ul>
 			<ul class="nav nav-tabs">
 				<li class="active">
-					<a href="#">考场管理</a>
+					<a href="#">考试管理</a>
 				</li>
 				<li class="pull-right">
-					<a href="index.php?exam-master-basic-add">添加考场</a>
+					<a href="index.php?exam-master-basic-add">添加考试</a>
 				</li>
 			</ul>
 			<form action="index.php?exam-master-basic" method="post">
@@ -39,7 +39,7 @@
 		            </thead>
 					<tr>
 						<td>
-							考场ID：
+							考试ID：
 						</td>
 						<td>
 							<input name="search[basicid]" class="input-small" type="text" class="number" value="<?php echo $this->tpl_var['search']['basicid']; ?>"/>
@@ -51,11 +51,11 @@
 							<input class="input-medium" name="search[keyword]" type="text" value="<?php echo $this->tpl_var['search']['keyword']; ?>"/>
 						</td>
 						<td>
-							地区：
+							班级：
 						</td>
 			        	<td>
 			        		<select name="search[basicareaid]" class="input-medium">
-				        		<option value="0">选择地区</option>
+				        		<option value="0">选择班级</option>
 						  		<?php $aid = 0;
  foreach($this->tpl_var['areas'] as $key => $area){ 
  $aid++; ?>
@@ -96,7 +96,7 @@
 					  		</select>
 			        	</td>
 						<td>
-							<button class="btn btn-primary" type="submit">提交</button>
+							<button class="btn btn-success" type="submit">提交</button>
 						</td>
 
 					</tr>
@@ -110,9 +110,9 @@
 		            <thead>
 		                <tr>
 		                    <th><input type="checkbox" class="checkall"/></th>
-		                    <th>考场ID</th>
-					        <th>考场名称</th>
-					        <th>考场地区</th>
+		                    <th>考试ID</th>
+					        <th>考试名称</th>
+					        <th>考试班级</th>
 					        <th>考试科目</th>
 					        <th>开通人数</th>
 					        <th>状态</th>
@@ -159,7 +159,7 @@
 		        </table>
 		        <div class="control-group">
 		            <div class="controls">
-		            	<button class="btn btn-primary" type="submit">删除</button>
+		            	<button class="btn btn-success" type="submit">删除</button>
 		            </div>
 				</div>
 			</form>

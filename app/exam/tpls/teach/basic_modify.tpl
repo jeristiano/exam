@@ -11,31 +11,24 @@
 {x2;endif}
 			<ul class="breadcrumb">
 				<li><a href="index.php?{x2;$_app}-teach">{x2;$apps[$_app]['appname']}</a> <span class="divider">/</span></li>
-				<li><a href="index.php?{x2;$_app}-teach-questions">试题管理</a> <span class="divider">/</span></li>
-				<li class="active">普通试题管理</li>
+				<li><a href="index.php?{x2;$_app}-teach-questions">考试管理</a> <span class="divider">/</span></li>
+				<li class="active">修改考试</li>
 			</ul>
 			<ul class="nav nav-tabs">
 				<li class="active">
-					<a href="#">普通试题管理</a>
-				</li>
-				<li class="dropdown pull-right">
-					<a data-toggle="dropdown" class="dropdown-toggle" href="#">添加试题<strong class="caret"></strong></a>
-					<ul class="dropdown-menu">
-						<li><a href="index.php?content-master-contents-add&catid={x2;$catid}&page={x2;$page}">添加内容</a></li>
-						<li><a href="index.php?content-master-contents&catid={x2;$categories[$catid]['catparent']}&page={x2;$page}">上级分类</a></li>
-					</ul>
+					<a href="#">修改考试</a>
 				</li>
 			</ul>
         	<form action="index.php?exam-teach-basic-modifybasic" method="post" class="form-horizontal">
 				<fieldset>
 					<div class="control-group">
-						<label for="basic" class="control-label">考场名称</label>
+						<label for="basic" class="control-label">考试名称</label>
 						<div class="controls">
-							<input id="basic" name="args[basic]" type="text" value="{x2;$basic['basic']}" needle="needle" msg="您必须输入考场名称" />
+							<input id="basic" name="args[basic]" type="text" value="{x2;$basic['basic']}" needle="needle" msg="您必须输入考试名称" />
 						</div>
 					</div>
 					<div class="control-group">
-						<label for="basicthumb" class="control-label">考场缩略图</label>
+						<label for="basicthumb" class="control-label">考试缩略图</label>
 						<div class="controls">
 							<div class="thumbuper pull-left">
 								<div class="thumbnail">
@@ -46,17 +39,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="control-group">
-						<label for="basicapi" class="control-label">API标识</label>
-						<div class="controls">
-							<input id="basicapi" name="args[basicapi]" type="text" value="{x2;$basic['basicapi']}" datatype="datatable" max="12" msg="API标识为不超过12字符的英文或数字" />
-							<span class="help-block">API标识用于对外提供接口信息，如果单独使用本系统无须填写</span>
-						</div>
-					</div>
+					
 					<div class="control-group">
 						<label for="basicsubjectid" class="control-label">考试科目</label>
 						<div class="controls">
-							<select id="basicsubjectid" name="args[basicsubjectid]" needle="needle" msg="您必须选择考试科目">
+							<select id="basicsubjectid"   name="args[basicsubjectid]" needle="needle" msg="您必须选择考试科目">
 			        		<option value="">选择科目</option>
 					  		{x2;tree:$subjects,subject,sid}
 					  		<option value="{x2;v:subject['subjectid']}"{x2;if:v:subject['subjectid'] == $basic['basicsubjectid']} selected{x2;endif}>{x2;v:subject['subject']}</option>
@@ -65,18 +52,18 @@
 						</div>
 					</div>
 					<div class="control-group">
-						<label for="basicareaid" class="control-label">考试地区</label>
+						<label for="basicareaid" class="control-label">考试班级</label>
 						<div class="controls">
-							<select id="basicareaid" name="args[basicareaid]" needle="needle" msg="您必须选择考试地区">
-			        		<option value="">选择地区</option>
+							<select id="basicareaid" name="args[basicareaid]"  needle="needle" msg="您必须选择考试班级">
+			        		<option value="">选择班级</option>
 					  		{x2;tree:$areas,area,aid}
 					  		<option value="{x2;v:area['areaid']}"{x2;if:v:area['areaid'] == $basic['basicareaid']} selected{x2;endif}>{x2;v:area['area']}</option>
 					  		{x2;endtree}
 					  		</select>
 						</div>
 					</div>
-					<div class="control-group">
-						<label class="control-label">做为免费考场</label>
+					<!-- <div class="control-group">
+						<label class="control-label">做为免费考试</label>
 						<div class="controls">
 							<label class="radio inline">
 								<input name="args[basicdemo]" type="radio" value="1" {x2;if:$basic['basicdemo']}checked{x2;endif}/>是
@@ -84,19 +71,19 @@
 							<label class="radio inline">
 								<input name="args[basicdemo]" type="radio" value="0" {x2;if:!$basic['basicdemo']}checked{x2;endif}/>否
 							</label>
-							<span class="help-block">免费考场用户开通考场时不扣除积分</span>
+							<span class="help-block">免费考试用户开通考试时不扣除积分</span>
 						</div>
-					</div>
-					<div class="control-group">
+					</div> -->
+					<!-- <div class="control-group">
 						<label for="basicprice" class="control-label">价格设置</label>
 						<div class="controls">
 							<textarea class="input-xlarge" rows="4" name="args[basicprice]" id="basicprice">{x2;$basic['basicprice']}</textarea>
-						  	<span class="help-block">请按照“时长:开通所需积分”格式填写，每行一个，时长以天为单位，免费考场此设置无效。</span>
+						  	<span class="help-block">请按照“时长:开通所需积分”格式填写，每行一个，时长以天为单位，免费考试此设置无效。</span>
 						</div>
-					</div>
+					</div> -->
 					<div class="control-group">
 						<div class="controls">
-							<button class="btn btn-primary" type="submit">提交</button>
+							<button class="btn btn-success" type="submit">提交</button>
 							<input type="hidden" name="basicid" value="{x2;$basic['basicid']}"/>
 							<input type="hidden" name="page" value="{x2;$page}"/>
 							<input type="hidden" name="modifybasic" value="1"/>
@@ -111,6 +98,7 @@
 		</div>
 	</div>
 </div>
+
 </body>
 </html>
 {x2;endif}

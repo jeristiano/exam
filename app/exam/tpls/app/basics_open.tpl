@@ -93,7 +93,7 @@
 											{x2;if:v:basic['basicdemo']}
 											<a class="btn btn-success" href="index.php?exam-app-basics-detail&basicid={x2;v:basic['basicid']}" title="{x2;v:basic['basic']}">免费开通</a>
 											{x2;else}
-											<a class="btn btn-primary" href="index.php?exam-app-basics-detail&basicid={x2;v:basic['basicid']}" title="{x2;v:basic['basic']}">去开通</a>
+											<a class="btn btn-success" href="index.php?exam-app-basics-detail&basicid={x2;v:basic['basicid']}" title="{x2;v:basic['basic']}">去开通</a>
 											{x2;endif}
 										{x2;endif}
 										</p>

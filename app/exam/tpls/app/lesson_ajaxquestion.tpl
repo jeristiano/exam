@@ -85,7 +85,7 @@
 						<div class="paperexamcontent_{x2;v:data['questionid']}">
 							<ul class="nav nav-tabs">
 								<li class="active">
-									<span class="badge badge-info questionindex">{x2;v:did}</span>
+									<span class="badge badge-success questionindex">{x2;v:did}</span>
 								</li>
 								<li class="btn-group pull-right">
 									<button class="btn" type="button" onclick="javascript:favorquestion('{x2;v:data['questionid']}');"><em class="icon-heart" title="收藏"></em></button>

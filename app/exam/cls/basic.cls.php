@@ -250,8 +250,10 @@ class basic_exam
 	//返回值：插入的记录ID
 	public function setBasicConfig($id,$args)
 	{
+		
 		$data = array('basic',$args,array(array("AND","basicid = :basicid",'basicid',$id)));
 		$sql = $this->pdosql->makeUpdate($data);
+	
 		return $this->db->exec($sql);
 		//$this->db->affectedRows();
 	}

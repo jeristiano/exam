@@ -13,7 +13,10 @@ class app
 		$this->user = $this->G->make('user','user');
 		$this->_user = $_user = $this->session->getSessionUser();
 		$group = $this->user->getGroupById($_user['sessiongroupid']);
-		if($group['groupmoduleid'] != 1)
+		
+		//print_r($group);die;
+		
+		if($group['groupmoduleid'] != 1  &&$group['groupmoduleid']!=12)
 		{
 			if($this->ev->get('userhash'))
 			exit(json_encode(array(
@@ -1303,6 +1306,10 @@ class app
 			{
 				$args[] = array("AND","questions.question LIKE :question",'question','%'.$search['keyword'].'%');
 			}
+			if($search['username'])
+			{
+				$args[] = array('AND',"questions.questionusername LIKE :questionusername",'questionusername','%'.$search['username'].'%');
+			}
 			if($search['knowsids'])
 			{
 				$args[] = array("AND","find_in_set(questions.questionknowsid,:questionknowsid)",'questionknowsid',$search['knowsids']);
@@ -1702,6 +1709,10 @@ class app
 			{
 				$args[] = array("AND","questionrows.qrquestion LIKE :qrquestion",'qrquestion',"%".$search['keyword']."%");
 			}
+			if($search['username'])
+			{
+				$args[] = array('AND',"questions.questionusername LIKE :questionusername",'questionusername','%'.$search['username'].'%');
+			}
 			if($search['stime'])
 			{
 				$args[] = array("AND","questionrows.qrtime >= :qrtime",'qrtime',strtotime($search['stime']));
@@ -2090,6 +2101,7 @@ class app
 
 	public function exams()
 	{
+		
 		$subaction = $this->ev->url(3);
 		$search = $this->ev->get('search');
 		$u = '';
@@ -2595,6 +2607,10 @@ class app
 				{
 					$args[] = array("AND","questions.question LIKE :question",'question','%'.$search['keyword'].'%');
 				}
+				if($search['username'])
+			{
+				$args[] = array('AND',"questions.questionusername LIKE :questionusername",'questionusername','%'.$search['username'].'%');
+			}
 				if($search['knowsids'])
 				{
 					$args[] = array("AND","find_in_set(questions.questionknowsid,:questionknowsid)",'questionknowsid',$search['knowsids']);

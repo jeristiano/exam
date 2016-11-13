@@ -9,9 +9,7 @@
 			<div class="examform">
 				<ul class="breadcrumb">
 					<li>
-						<span class="icon-home"></span> <a href="index.php?exam">地区
-地区
-考试选择</a> <span class="divider">/</span>
+						<span class="icon-home"></span> <a href="index.php?exam">考试选择</a> <span class="divider">/</span>
 					</li>
 					<li>
 						<a href="index.php?exam-app-basics-open">开通考试</a> <span class="divider">/</span>
@@ -53,7 +51,7 @@
 								</p>
 								<p>
 									<input value="{x2;$basic['basicid']}" name="basicid" type="hidden"/>
-									<input class="btn btn-primary" value="开通" type="submit"/>
+									<input class="btn btn-success" value="开通" type="submit"/>
 								</p>
 								{x2;else}
 								<p>
@@ -63,7 +61,7 @@
 							{x2;else}
 							<p>
 								<input value="{x2;$basic['basicid']}" name="basicid" type="hidden"/>
-								<input class="btn btn-primary" value="开通" type="submit"/>
+								<input class="btn btn-success" value="开通" type="submit"/>
 							</p>
 							{x2;endif}
 						</form>

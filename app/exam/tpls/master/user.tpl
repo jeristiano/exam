@@ -39,7 +39,7 @@
 							<input class="inline" name="search[username]" size="25" type="text" value="{x2;$search['username']}"/>
 						</td>
 						<td>
-							<button class="btn btn-primary" type="submit">搜索</button>
+							<button class="btn btn-success" type="submit">搜索</button>
 							<input type="hidden" value="1" name="search[argsmodel]" />
 						</td>
 					</tr>

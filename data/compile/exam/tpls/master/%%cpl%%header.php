@@ -23,4 +23,5 @@
 <script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
 <script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
 <script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+
 </head>

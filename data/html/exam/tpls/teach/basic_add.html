@@ -17,6 +17,7 @@
 <link href="app/core/styles/css/layoutit.css" rel="stylesheet">
 <link href="app/core/styles/css/plugin.css" rel="stylesheet">
 <link href="app/core/styles/css/datetimepicker.css" rel="stylesheet">
+<link rel="stylesheet" href="app/exam/styles/css/bootstrap-select.min.css">
 <script type="text/javascript" src="app/core/styles/js/jquery.min.js"></script>
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -31,131 +32,34 @@
 <script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
 <script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
 </head><body>
-<div class="navbar navbar-inverse">
-	<div class="navbar-inner">
-		<div class="container-fluid">
-			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">在线考试教师管理平台<span class="label">Version:3.1</span></a>
-			<div class="nav-collapse navbar-responsive-collapse collapse">
-				<ul class="nav pull-right">
-					<li>
-						<a href="index.php">网站首页</a>
-					</li>
-					<li class="divider-vertical">
-					</li>
-					<li class="dropdown">
-						<a data-toggle="dropdown" class="dropdown-toggle" href="#">陈晨<strong class="caret"></strong></a>
-						<ul class="dropdown-menu">
-							<!--
-							<li>
-								<a href="index.php?user-app-privatement">个人中心</a>
-							</li>
-							<li class="divider">
-							</li>
-							-->
-							<li>
-								<a href="index.php?user-app-logout" class="ajax">退出管理</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-
-		</div>
-	</div>
-</div><div class="container-fluid">
+<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">在线考试教师管理平台<span class="label">Version:3.1</span></a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav pull-right">					<li>						<a href="index.php">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">陈晨<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?user-app-logout" class="ajax">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
 	<div class="row-fluid">
 		<div class="span2">
-			<div class="accordion" id="accordion-13465">
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-707348">考试设计 </a>
-		</div>
-		<div class="accordion-body in collapse" id="accordion-element-707348">
-			<div class="accordion-inner">
-				<ul class="unstyled">
-					<li><a href="index.php?exam-teach-basic">考场列表</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-2120761">课程成绩 </a>
-		</div>
-		<div class="accordion-body collapse" id="accordion-element-2120761">
-			<div class="accordion-inner">
-				<ul class="unstyled">
-					<li><a href="index.php?exam-teach-users">成绩管理</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212076">试题管理 </a>
-		</div>
-		<div class="accordion-body collapse" id="accordion-element-212076">
-			<div class="accordion-inner">
-				<ul class="unstyled">
-					<li><a href="index.php?exam-teach-questions">普通试题管理</a></li>
-					<li><a href="index.php?exam-teach-rowsquestions">题帽题管理</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212096">试卷管理 </a>
-		</div>
-		<div class="accordion-body collapse" id="accordion-element-212096">
-			<div class="accordion-inner">
-				<ul class="unstyled">
-					<li><a href="index.php?exam-teach-exams">试卷列表</a></li>
-					<li><a href="index.php?exam-teach-exams-autopage">随机组卷</a></li>
-					<li><a href="index.php?exam-teach-exams-selfpage">手工组卷</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212090">回收站 </a>
-		</div>
-		<div class="accordion-body collapse" id="accordion-element-212090">
-			<div class="accordion-inner">
-				<ul class="unstyled">
-					<li><a href="index.php?exam-teach-recyle">普通试题</a></li>
-					<li><a href="index.php?exam-teach-recyle-rows">题帽题</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>		</div>
+			<div class="accordion" id="accordion-13465">	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-707348">考试设计 </a>		</div>		<div class="accordion-body in collapse" id="accordion-element-707348">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-basic">考试列表</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-2120761">课程成绩 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-2120761">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-users">成绩管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212076">试题管理 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212076">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-questions">普通试题管理</a></li>					<li><a href="index.php?exam-teach-rowsquestions">题帽题管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212096">试卷管理 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212096">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-exams">试卷列表</a></li>					<li><a href="index.php?exam-teach-exams-autopage">随机组卷</a></li>					<li><a href="index.php?exam-teach-exams-selfpage">手工组卷</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212090">回收站 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212090">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-recyle">普通试题</a></li>					<li><a href="index.php?exam-teach-recyle-rows">题帽题</a></li>				</ul>			</div>		</div>	</div></div>		</div>
 		<div class="span10" id="datacontent">
 			<ul class="breadcrumb">
 				<li><a href="index.php?exam-teach">考试模块</a> <span class="divider">/</span></li>
-				<li><a href="index.php?exam-teach-basic">考场管理</a> <span class="divider">/</span></li>
-				<li class="active">添加考场</li>
+				<li><a href="index.php?exam-teach-basic">考试管理</a> <span class="divider">/</span></li>
+				<li class="active">添加考试</li>
 			</ul>
 			<ul class="nav nav-tabs">
 				<li class="active">
-					<a href="#">添加考场</a>
+					<a href="#">添加考试</a>
 				</li>
 				<li class="dropdown pull-right">
-					<a href="index.php?exam-teach-basic">考场管理</a>
+					<a href="index.php?exam-teach-basic">考试管理</a>
 				</li>
 			</ul>
 			<form action="index.php?exam-teach-basic-add" method="post" class="form-horizontal">
 				<fieldset>
 				<div class="control-group">
-					<label for="basic" class="control-label">考场名称</label>
+					<label for="basic" class="control-label">考试名称</label>
 					<div class="controls">
-						<input id="basic" name="args[basic]" type="text" value="" needle="needle" msg="您必须输入考场名称" />
+						<input id="basic" name="args[basic]" type="text" value="" needle="needle" msg="您必须输入考试名称" />
 					</div>
 				</div>
 				<div class="control-group">
-					<label for="basicthumb" class="control-label">考场缩略图</label>
+					<label for="basicthumb" class="control-label">考试缩略图</label>
 					<div class="controls">
 						<div class="thumbuper pull-left">
 							<div class="thumbnail">
@@ -166,13 +70,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="control-group">
-					<label for="basicapi" class="control-label">API标识</label>
-					<div class="controls">
-						<input id="basicapi" name="args[basicapi]" type="text" value="" datatype="datatable" max="12" msg="API标识为不超过12字符的英文或数字" />
-						<span class="help-block">API标识用于对外提供接口信息，如果单独使用本系统无须填写</span>
-					</div>
-				</div>
+				
 				<div class="control-group">
 					<label for="basicsubjectid" class="control-label">考试科目</label>
 					<div class="controls">
@@ -186,18 +84,18 @@
 					</div>
 				</div>
 				<div class="control-group">
-					<label for="basicareaid" class="control-label">考试地区</label>
+					<label for="basicareaid" class="control-label">考试班级</label>
 					<div class="controls">
-						<select id="basicareaid" name="args[basicareaid]" needle="needle" msg="您必须选择考试地区">
-		        		<option value="">选择地区</option>
+						<select id="basicareaid" name="args[basicareaid]" needle="needle" msg="您必须选择考试班级">
+		        		<option value="">选择班级</option>
 				  						  		<option value="1">全国</option>
 				  						  		<option value="10">检测0801班</option>
 				  						  		<option value="29">检测0802班</option>
 				  						  		</select>
 					</div>
 				</div>
-				<div class="control-group">
-					<label class="control-label">做为演示考场</label>
+				<!-- <div class="control-group">
+					<label class="control-label">做为演示考试</label>
 					<div class="controls">
 						<label class="radio inline">
 							<input name="args[basicdemo]" type="radio" value="1" />是
@@ -205,12 +103,12 @@
 						<label class="radio inline">
 							<input name="args[basicdemo]" type="radio" value="0" checked/>否
 						</label>
-						<span class="help-block">演示考场为用户未开通考场时演示使用</span>
+						<span class="help-block">演示考试为用户未开通考试时演示使用</span>
 					</div>
-				</div>
+				</div> -->
 				<div class="control-group">
 					<div class="controls">
-						<button class="btn btn-primary" type="submit">提交</button>
+						<button class="btn btn-success" type="submit">提交</button>
 						<input type="hidden" name="page" value=""/>
 						<input type="hidden" name="insertbasic" value="1"/>
 											</div>

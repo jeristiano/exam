@@ -113,7 +113,7 @@
 							    </div>
 						        <div class="control-group">
 						            <div class="controls">
-							            <button class="btn btn-primary" type="submit">提交</button>
+							            <button class="btn btn-success" type="submit">提交</button>
 							            <input type="hidden" name="moduleid" value="{x2;$field['fieldmoduleid']}"/>
 							            <input type="hidden" name="fieldid" value="{x2;$fieldid}"/>
 							            <input type="hidden" name="modifyfieldhtml" value="1"/>
@@ -156,7 +156,7 @@
 								</div>
 								<div class="control-group">
 									<div class="controls">
-										<button class="btn btn-primary" type="submit">提交</button>
+										<button class="btn btn-success" type="submit">提交</button>
 							            <input type="hidden" name="moduleid" value="{x2;$field['fieldmoduleid']}"/>
 							            <input type="hidden" name="fieldid" value="{x2;$fieldid}"/>
 							            <input type="hidden" name="modifyfielddata" value="1"/>

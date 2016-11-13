@@ -62,7 +62,7 @@
 							</select>
 						</td>
 						<td>
-							<button class="btn btn-primary" type="submit">搜索</button>
+							<button class="btn btn-success" type="submit">搜索</button>
 							<input type="hidden" value="1" name="search[argsmodel]" />
 						</td>
 					</tr>

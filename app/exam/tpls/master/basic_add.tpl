@@ -11,27 +11,27 @@
 {x2;endif}
 			<ul class="breadcrumb">
 				<li><a href="index.php?{x2;$_app}-master">{x2;$apps[$_app]['appname']}</a> <span class="divider">/</span></li>
-				<li><a href="index.php?{x2;$_app}-master-basic">考场管理</a> <span class="divider">/</span></li>
-				<li class="active">添加考场</li>
+				<li><a href="index.php?{x2;$_app}-master-basic">考试管理</a> <span class="divider">/</span></li>
+				<li class="active">添加考试</li>
 			</ul>
 			<ul class="nav nav-tabs">
 				<li class="active">
-					<a href="#">添加考场</a>
+					<a href="#">添加考试</a>
 				</li>
 				<li class="dropdown pull-right">
-					<a href="index.php?exam-master-basic">考场管理</a>
+					<a href="index.php?exam-master-basic">考试管理</a>
 				</li>
 			</ul>
 			<form action="index.php?exam-master-basic-add" method="post" class="form-horizontal">
 				<fieldset>
 				<div class="control-group">
-					<label for="basic" class="control-label">考场名称</label>
+					<label for="basic" class="control-label">考试名称</label>
 					<div class="controls">
-						<input id="basic" name="args[basic]" type="text" value="{x2;$basic['basic']}" needle="needle" msg="您必须输入考场名称" />
+						<input id="basic" name="args[basic]" type="text" value="{x2;$basic['basic']}" needle="needle" msg="您必须输入考试名称" />
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label">考场状态</label>
+					<label class="control-label">考试状态</label>
 					<div class="controls">
 						<label class="radio inline">
 							<input name="args[basicclosed]" type="radio" value="0" {x2;if:!$basic['basicclosed']}checked{x2;endif}/>开启
@@ -42,7 +42,7 @@
 					</div>
 				</div>
 				<div class="control-group">
-					<label for="basicthumb" class="control-label">考场缩略图</label>
+					<label for="basicthumb" class="control-label">考试缩略图</label>
 					<div class="controls">
 						<div class="thumbuper pull-left">
 							<div class="thumbnail">
@@ -72,18 +72,18 @@
 					</div>
 				</div>
 				<div class="control-group">
-					<label for="basicareaid" class="control-label">考试地区</label>
+					<label for="basicareaid" class="control-label">考试班级</label>
 					<div class="controls">
-						<select id="basicareaid" name="args[basicareaid]" needle="needle" msg="您必须选择考试地区">
-		        		<option value="">选择地区</option>
+						<select id="basicareaid" name="args[basicareaid]" needle="needle" msg="您必须选择考试班级">
+		        		<option value="">选择班级</option>
 				  		{x2;tree:$areas,area,aid}
 				  		<option value="{x2;v:area['areaid']}"{x2;if:v:area['areaid'] == $basic['basicareaid']} selected{x2;endif}>{x2;v:area['area']}</option>
 				  		{x2;endtree}
 				  		</select>
 					</div>
 				</div>
-				<div class="control-group">
-					<label class="control-label">做为免费考场</label>
+				<!-- <div class="control-group">
+					<label class="control-label">做为免费考试</label>
 					<div class="controls">
 						<label class="radio inline">
 							<input name="args[basicdemo]" type="radio" value="1" {x2;if:$basic['basicdemo']}checked{x2;endif}/>是
@@ -91,19 +91,19 @@
 						<label class="radio inline">
 							<input name="args[basicdemo]" type="radio" value="0" {x2;if:!$basic['basicdemo']}checked{x2;endif}/>否
 						</label>
-						<span class="help-block">免费考场用户开通考场时不扣除积分</span>
+						<span class="help-block">免费考试用户开通考试时不扣除积分</span>
 					</div>
-				</div>
-				<div class="control-group">
+				</div> -->
+				<!-- <div class="control-group">
 					<label for="basicprice" class="control-label">价格设置</label>
 					<div class="controls">
 						<textarea class="input-xlarge" rows="4" name="args[basicprice]" id="basicprice">{x2;$basic['basicprice']}</textarea>
-					  	<span class="help-block">请按照“时长:开通所需积分”格式填写，每行一个，时长以天为单位，免费考场此设置无效。</span>
+					  	<span class="help-block">请按照“时长:开通所需积分”格式填写，每行一个，时长以天为单位，免费考试此设置无效。</span>
 					</div>
-				</div>
+				</div> -->
 				<div class="control-group">
 					<div class="controls">
-						<button class="btn btn-primary" type="submit">提交</button>
+						<button class="btn btn-success" type="submit">提交</button>
 						<input type="hidden" name="page" value="{x2;$page}"/>
 						<input type="hidden" name="insertbasic" value="1"/>
 						{x2;tree:$search,arg,aid}

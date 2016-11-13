@@ -55,7 +55,7 @@
 							  		<?php } ?>
 							  		<?php } ?>
 						  		</select>
-								<button class="btn btn-primary" type="submit">检索</button>
+								<button class="btn btn-success" type="submit">检索</button>
 							</td>
 						</tr>
 					</table>

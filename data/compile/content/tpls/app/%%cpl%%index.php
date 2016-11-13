@@ -79,7 +79,7 @@
 							<img alt="300x200" src="<?php echo $hot['basicthumb']; ?>"/>
 							<div class="caption">
 								<p class="text-center">
-									<a class="ajax btn btn-primary" href="index.php?exam-app-index-setCurrentBasic&basicid=<?php echo $hot['basicid']; ?>" title="<?php echo $hot['basic']; ?>"><?php echo $hot['basic']; ?></a>
+									<a class="ajax btn btn-success" href="index.php?exam-app-index-setCurrentBasic&basicid=<?php echo $hot['basicid']; ?>" title="<?php echo $hot['basic']; ?>"><?php echo $hot['basic']; ?></a>
 								</p>
 							</div>
 						</div>
@@ -108,7 +108,7 @@
 							<img alt="300x200" src="<?php echo $new['basicthumb']; ?>"/>
 							<div class="caption">
 								<p class="text-center">
-									<a class="ajax btn btn-primary" href="index.php?exam-app-index-setCurrentBasic&basicid=<?php echo $new['basicid']; ?>" title="<?php echo $new['basic']; ?>"><?php echo $new['basic']; ?></a>
+									<a class="ajax btn btn-success" href="index.php?exam-app-index-setCurrentBasic&basicid=<?php echo $new['basicid']; ?>" title="<?php echo $new['basic']; ?>"><?php echo $new['basic']; ?></a>
 								</p>
 							</div>
 						</div>

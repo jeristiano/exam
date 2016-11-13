@@ -7,9 +7,7 @@
 			<div class="examform">
 				<ul class="breadcrumb">
 					<li>
-						<span class="icon-home"></span> <a href="index.php?exam">地区
-地区
-考试选择</a> <span class="divider">/</span>
+						<span class="icon-home"></span> <a href="index.php?exam">考试选择</a> <span class="divider">/</span>
 					</li>
 					<li>
 						<a href="index.php?exam-app-basics">{x2;$data['currentbasic']['basic']}</a> <span class="divider">/</span>
@@ -37,7 +35,7 @@
 							<img src="app/core/styles/images/icons/Clipboard.png"/>
 							<div class="caption">
 								<p class="text-center">
-									<a class="ajax btn btn-primary" href="index.php?exam-app-exampaper-selectquestions&examid={x2;v:exam['examid']}" title="{x2;v:exam['exam']}" action-before="clearStorage">{x2;substring:v:exam['exam'],28}</a>
+									<a class="ajax btn btn-success" href="index.php?exam-app-exampaper-selectquestions&examid={x2;v:exam['examid']}" title="{x2;v:exam['exam']}" action-before="clearStorage">{x2;substring:v:exam['exam'],28}</a>
 								</p>
 							</div>
 						</div>

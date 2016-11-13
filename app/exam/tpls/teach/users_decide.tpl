@@ -98,7 +98,7 @@
             <div class="controls">
             	<input type="hidden" name="makescore" value="1" />
             	<input type="hidden" name="ehid" value="{x2;$sessionvars['ehid']}" />
-            	<button class="btn btn-primary" type="submit">评分完毕</button>
+            	<button class="btn btn-success" type="submit">评分完毕</button>
             </div>
 		</div>
 		</form>

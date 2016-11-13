@@ -7,9 +7,7 @@
 			<form class="examform form-horizontal" id="form1" name="form1" action="index.php?exam-app-exam-makescore">
 				<ul class="breadcrumb">
 					<li>
-						<span class="icon-home"></span> <a href="index.php?exam">地区
-地区
-考试选择</a> <span class="divider">/</span>
+						<span class="icon-home"></span> <a href="index.php?exam">考试选择</a> <span class="divider">/</span>
 					</li>
 					<li>
 						<a href="index.php?exam-app-basics">{x2;$data['currentbasic']['basic']}</a> <span class="divider">/</span>
@@ -23,7 +21,7 @@
 				</ul>
 				<legend class="text-center"><h3>{x2;$sessionvars['examsession']}</h3></legend>
 				{x2;if:$data['currentbasic']['basicexam']['notviewscore']}
-				<div class="alert alert-info">
+				<div class="alert alert-success">
 					<p>您已经成功交卷，请等待教师统计并公布分数。</p>
 				</div>
 				{x2;else}

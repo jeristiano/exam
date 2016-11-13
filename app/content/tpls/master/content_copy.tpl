@@ -42,8 +42,8 @@
 		        </div>
 		        <div class="control-group">
 		            <div class="controls">
-			            <button class="btn btn-primary" type="submit">提交</button>
-			            <a class="btn btn-primary" href="index.php?content-master-contents&page={x2;$page}{x2;$u}">取消</a>
+			            <button class="btn btn-success" type="submit">提交</button>
+			            <a class="btn btn-success" href="index.php?content-master-contents&page={x2;$page}{x2;$u}">取消</a>
 			            {x2;tree:$search,arg,sid}
 			            <input type="hidden" name="search[{x2;v:key}]" value="{x2;v:arg}"/>
 			            {x2;endtree}

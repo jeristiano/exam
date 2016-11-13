@@ -34,7 +34,7 @@
 				</div>
 				<div class="control-group">
 				  	<div class="controls">
-					  	<button class="btn btn-primary" type="submit">提交</button>
+					  	<button class="btn btn-success" type="submit">提交</button>
 						<input type="hidden" name="sectionid" value="{x2;$section['sectionid']}"/>
 						<input type="hidden" name="page" value="{x2;$page}"/>
 						<input type="hidden" name="modifysection" value="1"/>

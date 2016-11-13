@@ -71,7 +71,7 @@
 							<img alt="300x200" src="{x2;v:hot['basicthumb']}"/>
 							<div class="caption">
 								<p class="text-center">
-									<a class="ajax btn btn-primary" href="index.php?exam-app-index-setCurrentBasic&basicid={x2;v:hot['basicid']}" title="{x2;v:hot['basic']}">{x2;v:hot['basic']}</a>
+									<a class="ajax btn btn-success" href="index.php?exam-app-index-setCurrentBasic&basicid={x2;v:hot['basicid']}" title="{x2;v:hot['basic']}">{x2;v:hot['basic']}</a>
 								</p>
 							</div>
 						</div>
@@ -98,7 +98,7 @@
 							<img alt="300x200" src="{x2;v:new['basicthumb']}"/>
 							<div class="caption">
 								<p class="text-center">
-									<a class="ajax btn btn-primary" href="index.php?exam-app-index-setCurrentBasic&basicid={x2;v:new['basicid']}" title="{x2;v:new['basic']}">{x2;v:new['basic']}</a>
+									<a class="ajax btn btn-success" href="index.php?exam-app-index-setCurrentBasic&basicid={x2;v:new['basicid']}" title="{x2;v:new['basic']}">{x2;v:new['basic']}</a>
 								</p>
 							</div>
 						</div>

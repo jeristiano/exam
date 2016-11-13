@@ -4,7 +4,13 @@
 		<div class="span8">
 			<span class="pull-right">
 			<?php if($this->tpl_var['_user']['userid']){ ?>
-			您好（<?php echo $this->tpl_var['_user']['username']; ?>）&nbsp;&nbsp;<a href="index.php?user-center"><em class="icon-user"></em> 用户中心</a><?php if($this->tpl_var['_user']['teacher_subjects']){ ?>&nbsp;&nbsp;<em class="icon-edit"></em> <a href="index.php?exam-teach">教师管理</a><?php } elseif($this->tpl_var['_user']['groupid'] == 1){ ?>&nbsp;&nbsp;<em class="icon-edit"></em> <a href="index.php?core-master">后台管理</a><?php } ?>&nbsp;&nbsp;<a class="ajax" href="index.php?user-app-logout"><em class="icon-lock"></em> 退出</a>
+			您好（<?php echo $this->tpl_var['_user']['username']; ?>）&nbsp;&nbsp;
+
+			<?php if($this->tpl_var['_user']['groupid'] != 1){ ?>
+			<a href="index.php?user-center"><em class="icon-user"></em> 用户中心</a>
+			<?php } ?>
+
+			<?php if($this->tpl_var['_user']['teacher_subjects']){ ?>&nbsp;&nbsp;<em class="icon-edit"></em> <a href="index.php?exam-teach">教师管理</a><?php } elseif($this->tpl_var['_user']['groupid'] == 1){ ?>&nbsp;&nbsp;<em class="icon-edit"></em> <a href="index.php?core-master">后台管理</a><?php } ?>&nbsp;&nbsp;<a class="ajax" href="index.php?user-app-logout"><em class="icon-lock"></em> 退出</a>
 			<?php } else { ?>
 			<a href="javascript:;" onclick="javascript:$.loginbox.show();"><em class="icon-lock"></em> 登录</a>&nbsp;&nbsp;<a href="index.php?user-center"><em class="icon-user"></em> 注册</a>
 			<?php } ?>
@@ -24,9 +30,19 @@
 							<li class="mainmenu">
 								<a href="index.php">主页</a>
 							</li>
-							<li class="active mainmenu">
+							<?php if($this->tpl_var['_user']['teacher_subjects']){ ?>
+							<li class=" mainmenu">
+								<a href="index.php?exam-teach">教师管理</a>
+							</li>
+							<?php } elseif($this->tpl_var['_user']['groupid'] == 1){ ?>
+							<li class=" mainmenu">
+								<a href="index.php?core-master">后台管理</a>
+							</li>
+							<?php } else { ?>
+							<li class=" mainmenu">
 								<a href="index.php?exam">在线考试</a>
 							</li>
+							<?php } ?>
 						</ul>
 					</div>
 				</div>

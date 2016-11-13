@@ -119,12 +119,17 @@ class app
 			break;
 
 			case 'modifybasic':
+			
 			$page = $this->ev->get('page');
+			
 			if($this->ev->get('modifybasic'))
 			{
+								
 				$basicid = $this->ev->get('basicid');
 				$args = $this->ev->get('args');
+				
 				$this->basic->setBasicConfig($basicid,$args);
+
 				$message = array(
 					'statusCode' => 200,
 					"message" => "操作成功",
@@ -228,7 +233,7 @@ class app
 				$this->tpl->assign('subjects',$subjects);
 				$this->tpl->display('basic_add');
 
-				print_r($subjects);
+				//print_r($subjects);
 			}
 			break;
 
@@ -263,6 +268,7 @@ class app
 
 	public function questions()
 	{
+		
 		$subaction = $this->ev->url(3);
 		$search = $this->ev->get('search');
 		$u = '';
@@ -529,6 +535,7 @@ class app
 
 			//试题列表（可根据条件进行查询）
 			default:
+			
 			$page = $this->ev->get('page');
 			$page = $page > 0?$page:1;
 			$args = array(array('AND',"quest2knows.qkquestionid = questions.questionid"),array('AND',"questions.questionstatus = '1'"),array('AND',"questions.questionparent = 0"),array('AND',"quest2knows.qktype = 0") );
@@ -539,6 +546,10 @@ class app
 			if($search['keyword'])
 			{
 				$args[] = array('AND',"questions.question LIKE :question",'question','%'.$search['keyword'].'%');
+			}
+			if($search['username'])
+			{
+				$args[] = array('AND',"questions.questionusername LIKE :questionusername",'questionusername','%'.$search['username'].'%');
 			}
 			if($search['knowsids'])
 			{
@@ -597,6 +608,16 @@ class app
 			}
 			$questypes = $this->basic->getQuestypeList();
 			$questions = $this->exam->getQuestionsList($page,10,$args);
+
+			// $ques=$this->session->getSessionUser();
+			// $questionuserid=$ques['sessionuserid'];
+			// print_r($questions['data']);
+			// //print_r($questionuserid);
+			// foreach ($questions['data'] as $k => $v) {
+			// 	if($v['questionuserid'] ==$questionuserid ){
+
+			// 	}
+			// }
 			$subjects = $this->basic->getSubjectList(array(array('AND','find_in_set(subjectid,:subjectid)','subjectid',$this->teachsubjects)));
 			$sections = $this->section->getSectionListByArgs(array(array('AND',"sectionsubjectid = :sectionsubjectid",'sectionsubjectid',$search['questionsubjectid'])));
 			$knows = $this->section->getKnowsListByArgs(array(array('AND',"knowsstatus = 1"),array('AND',"knowssectionid = :knowssectionid",'knowssectionid',$search['questionsectionid'])));

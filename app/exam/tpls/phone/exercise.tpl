@@ -7,9 +7,7 @@
 			<div class="examform">
 				<ul class="breadcrumb">
 					<li>
-						<span class="icon-home"></span> <a href="index.php?exam-phone">地区
-地区
-考试选择</a> <span class="divider">/</span>
+						<span class="icon-home"></span> <a href="index.php?exam-phone">考试选择</a> <span class="divider">/</span>
 					</li>
 					<li>
 						<a href="index.php?exam-phone-basics">{x2;$data['currentbasic']['basic']}</a> <span class="divider">/</span>
@@ -47,7 +45,7 @@
 						<label class="control-label"></label>
 						<div class="controls">
 							<input type="hidden" name="setExecriseConfig" value="1" />
-							<button type="submit" class="btn btn-primary">来十道</button>
+							<button type="submit" class="btn btn-success">来十道</button>
 						</div>
 					</div>
                 </form>

@@ -62,7 +62,7 @@
 			        		<input class="input-small" name="search[username]" size="25" type="text" value="{x2;$search['username']}"/>
 			        	</td>
 						<td colspan="2">
-							<button class="btn btn-primary" type="submit">搜索</button>
+							<button class="btn btn-success" type="submit">搜索</button>
 							<input type="hidden" value="1" name="search[argsmodel]" />
 						</td>
 						<td colspan="2"></td>
@@ -117,7 +117,7 @@
 				            <input type="hidden" name="search[{x2;v:key}]" value="{x2;v:arg}"/>
 				            {x2;endtree}
 				            <label class="radio inline">
-				            	<button class="btn btn-primary" type="submit">提交</button>
+				            	<button class="btn btn-success" type="submit">提交</button>
 				            </label>
 				            <input type="hidden" name="page" value="{x2;$page}"/>
 				        </div>

@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="title" content="无纸化模拟考试系统">
-<meta name="description" content="无纸化模拟考试系统">
-<meta name="keywords" content="无纸化模拟考试系统">
+<meta name="title" content="在线考试系统">
+<meta name="description" content="在线考试系统">
+<meta name="keywords" content="在线考试系统">
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<title>无纸化在线考试系统</title>
+<title>在线考试系统</title>
 <!-- Le styles -->
 <link href="app/core/styles/css/bootstrap-combined.min.css" rel="stylesheet">
 <link href="app/core/styles/css/layoutit.css" rel="stylesheet">
@@ -23,153 +23,23 @@
 <script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
 <script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
 <script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
-</head><body>
-<div class="navbar navbar-inverse">
-	<div class="navbar-inner">
-		<div class="container-fluid">
-			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">PHPEMS系统管理平台<span class="label">Version:3.1</span></a>
-			<div class="nav-collapse navbar-responsive-collapse collapse">
-				<ul class="nav">
-					<li>
-						<a href="index.php?core-master">全局</a>
-					</li>
-															<li>
-						<a href="index.php?user-master">用户模块</a>
-					</li>
-																				<li class="active">
-						<a href="index.php?exam-master">考试模块</a>
-					</li>
-																																								<li>
-						<a href="index.php?content-master">内容模块</a>
-					</li>
-																								</ul>
-				<ul class="nav pull-right">
-					<li>
-						<a href="index.php">网站首页</a>
-					</li>
-					<li class="divider-vertical">
-					</li>
-					<li class="dropdown">
-						<a data-toggle="dropdown" class="dropdown-toggle" href="#">peadmin<strong class="caret"></strong></a>
-						<ul class="dropdown-menu">
-							<!--
-							<li>
-								<a href="index.php?user-app-privatement">个人中心</a>
-							</li>
-							<li class="divider">
-							</li>
-							-->
-							<li>
-								<a href="index.php?core-master-logout">退出管理</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
 
-		</div>
-	</div>
-</div><div class="container-fluid">
+</head><body>
+<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">在线考试管理平台</a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav">					<li>						<a href="index.php?core-master">全局</a>					</li>															<li>						<a href="index.php?user-master">用户模块</a>					</li>																				<li class="active">						<a href="index.php?exam-master">考试模块</a>					</li>																																																						</ul>				<ul class="nav pull-right">					<li>						<a href="index.php">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">peadmin<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?core-master-logout">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
 	<div class="row-fluid">
 		<div class="span2">
-			<div class="accordion" id="accordion-13465">
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-707348">考试设计 </a>
-		</div>
-		<div class="accordion-body in collapse" id="accordion-element-707348">
-			<div class="accordion-inner">
-				<ul class="unstyled">
-					<li><a href="?exam-master-basic">考场列表</a></li>
-		    		<li><a href="?exam-master-basic-area">地区设置</a></li>
-		    		<li><a href="?exam-master-basic-subject">科目管理</a></li>
-		    		<li><a href="?exam-master-basic-questype">题型管理</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-2120761">课程开通 </a>
-		</div>
-		<div class="accordion-body collapse" id="accordion-element-2120761">
-			<div class="accordion-inner">
-				<ul class="unstyled">
-					<li><a href="index.php?exam-master-users">开通课程</a></li>
-					<li><a href="index.php?exam-master-users-batopen">批量开通</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212076">试题管理 </a>
-		</div>
-		<div class="accordion-body collapse" id="accordion-element-212076">
-			<div class="accordion-inner">
-				<ul class="unstyled">
-					<li><a href="index.php?exam-master-questions">普通试题管理</a></li>
-					<li><a href="index.php?exam-master-rowsquestions">题帽题管理</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212096">试卷管理 </a>
-		</div>
-		<div class="accordion-body collapse" id="accordion-element-212096">
-			<div class="accordion-inner">
-				<ul class="unstyled">
-					<li><a href="index.php?exam-master-exams">试卷列表</a></li>
-					<li><a href="index.php?exam-master-exams-autopage">随机组卷</a></li>
-					<li><a href="index.php?exam-master-exams-selfpage">手工组卷</a></li>
-					<li><a href="index.php?exam-master-exams-temppage">即时组卷</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212090">回收站 </a>
-		</div>
-		<div class="accordion-body collapse" id="accordion-element-212090">
-			<div class="accordion-inner">
-				<ul class="unstyled">
-					<li><a href="index.php?exam-master-recyle">普通试题</a></li>
-					<li><a href="index.php?exam-master-recyle-rows">题帽题</a></li>
-					<li><a href="index.php?exam-master-recyle-knows">知识点</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-2120901">批量工具 </a>
-		</div>
-		<div class="accordion-body collapse" id="accordion-element-2120901">
-			<div class="accordion-inner">
-				<ul class="unstyled">
-					<li><a href="index.php?exam-master-tools">删除试题</a></li>
-					<li><a href="index.php?exam-master-tools-clearhistory">清空考试记录</a></li>
-					<li><a href="index.php?exam-master-tools-clearsession">清理会话</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>		</div>
+			<div class="accordion" id="accordion-13465">	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-707348">考试设计 </a>		</div>		<div class="accordion-body in collapse" id="accordion-element-707348">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="?exam-master-basic">考试列表</a></li>		    		<li><a href="?exam-master-basic-area">班级设置</a></li>		    		<li><a href="?exam-master-basic-subject">科目管理</a></li>		    		<li><a href="?exam-master-basic-questype">题型管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-2120761">课程开通 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-2120761">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-master-users">开通课程</a></li>					<li><a href="index.php?exam-master-users-batopen">批量开通</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212076">试题管理 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212076">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-master-questions">普通试题管理</a></li>					<li><a href="index.php?exam-master-rowsquestions">题帽题管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212096">试卷管理 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212096">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-master-exams">试卷列表</a></li>					<li><a href="index.php?exam-master-exams-autopage">随机组卷</a></li>					<li><a href="index.php?exam-master-exams-selfpage">手工组卷</a></li>					<li><a href="index.php?exam-master-exams-temppage">即时组卷</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212090">回收站 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212090">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-master-recyle">普通试题</a></li>					<li><a href="index.php?exam-master-recyle-rows">题帽题</a></li>					<li><a href="index.php?exam-master-recyle-knows">知识点</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-2120901">批量工具 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-2120901">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-master-tools">删除试题</a></li>					<li><a href="index.php?exam-master-tools-clearhistory">清空考试记录</a></li>					<li><a href="index.php?exam-master-tools-clearsession">清理会话</a></li>				</ul>			</div>		</div>	</div></div>		</div>
 		<div class="span10" id="datacontent">
 			<ul class="breadcrumb">
 				<li><a href="index.php?exam-master">考试模块</a> <span class="divider">/</span></li>
-								<li class="active">考场管理</li>
+								<li class="active">考试管理</li>
 							</ul>
 			<ul class="nav nav-tabs">
 				<li class="active">
-					<a href="#">考场管理</a>
+					<a href="#">考试管理</a>
 				</li>
 				<li class="pull-right">
-					<a href="index.php?exam-master-basic-add">添加考场</a>
+					<a href="index.php?exam-master-basic-add">添加考试</a>
 				</li>
 			</ul>
 			<form action="index.php?exam-master-basic" method="post">
@@ -185,7 +55,7 @@
 		            </thead>
 					<tr>
 						<td>
-							考场ID：
+							考试ID：
 						</td>
 						<td>
 							<input name="search[basicid]" class="input-small" type="text" class="number" value=""/>
@@ -197,11 +67,11 @@
 							<input class="input-medium" name="search[keyword]" type="text" value=""/>
 						</td>
 						<td>
-							地区：
+							班级：
 						</td>
 			        	<td>
 			        		<select name="search[basicareaid]" class="input-medium">
-				        		<option value="0">选择地区</option>
+				        		<option value="0">选择班级</option>
 						  								  		<option value="1">全国</option>
 						  								  		<option value="10">检测0801班</option>
 						  								  		<option value="29">检测0802班</option>
@@ -222,10 +92,10 @@
 						<td>
 			        		<select name="search[basicsubjectid]" class="input-medium">
 				        		<option value="0">选择科目</option>
-						  								  		<option value="1">php</option>
+						  								  		<option value="1">大学英语</option>
 						  								  		<option value="2">java</option>
 						  								  		<option value="3">python</option>
-						  								  		<option value="4">大学英语</option>
+						  								  		<option value="4">php</option>
 						  							  		</select>
 			        	</td>
 			        	<td>
@@ -239,7 +109,7 @@
 					  		</select>
 			        	</td>
 						<td>
-							<button class="btn btn-primary" type="submit">提交</button>
+							<button class="btn btn-success" type="submit">提交</button>
 						</td>
 
 					</tr>
@@ -253,9 +123,9 @@
 		            <thead>
 		                <tr>
 		                    <th><input type="checkbox" class="checkall"/></th>
-		                    <th>考场ID</th>
-					        <th>考场名称</th>
-					        <th>考场地区</th>
+		                    <th>考试ID</th>
+					        <th>考试名称</th>
+					        <th>考试班级</th>
 					        <th>考试科目</th>
 					        <th>开通人数</th>
 					        <th>状态</th>
@@ -265,16 +135,68 @@
 		            <tbody>
 		                				        <tr>
 							<td>
+								<input type="checkbox" name="delids[5]" value="1"/>
+							</td>
+							<td>
+								5							</td>
+							<td>
+								ggg							</td>
+							<td>
+								检测0801班							</td>
+							<td>
+								python							</td>
+							<td>
+								<span class="autoloaditem" autoload="index.php?exam-master-basic-getbasicmembernumber&basicid=5"></span>
+							</td>
+							<td>
+								开启							</td>
+							<td>
+								<div class="btn-group">
+									<a class="btn" href="index.php?exam-master-basic-offpaper&page=&basicid=5" title="考试调度"><em class="icon-wrench"></em></a>
+									<a class="btn" href="index.php?exam-master-basic-setexamrange&page=&basicid=5" title="考试范围"><em class="icon-cog"></em></a>
+									<a class="btn" href="index.php?exam-master-basic-modifybasic&page=&basicid=5" title="修改"><em class="icon-edit"></em></a>
+									<a class="btn confirm" href="index.php?exam-master-basic-delbasic&basicid=5&page=" title="删除"><em class="icon-remove"></em></a>
+								</div>
+							</td>
+				        </tr>
+				        				        <tr>
+							<td>
+								<input type="checkbox" name="delids[4]" value="1"/>
+							</td>
+							<td>
+								4							</td>
+							<td>
+								检测0802大学英语							</td>
+							<td>
+								检测0802班							</td>
+							<td>
+								大学英语							</td>
+							<td>
+								<span class="autoloaditem" autoload="index.php?exam-master-basic-getbasicmembernumber&basicid=4"></span>
+							</td>
+							<td>
+								开启							</td>
+							<td>
+								<div class="btn-group">
+									<a class="btn" href="index.php?exam-master-basic-offpaper&page=&basicid=4" title="考试调度"><em class="icon-wrench"></em></a>
+									<a class="btn" href="index.php?exam-master-basic-setexamrange&page=&basicid=4" title="考试范围"><em class="icon-cog"></em></a>
+									<a class="btn" href="index.php?exam-master-basic-modifybasic&page=&basicid=4" title="修改"><em class="icon-edit"></em></a>
+									<a class="btn confirm" href="index.php?exam-master-basic-delbasic&basicid=4&page=" title="删除"><em class="icon-remove"></em></a>
+								</div>
+							</td>
+				        </tr>
+				        				        <tr>
+							<td>
 								<input type="checkbox" name="delids[3]" value="1"/>
 							</td>
 							<td>
 								3							</td>
 							<td>
-								大学英语							</td>
+								检测0801大学英语考场							</td>
 							<td>
 								检测0801班							</td>
 							<td>
-								php							</td>
+								大学英语							</td>
 							<td>
 								<span class="autoloaditem" autoload="index.php?exam-master-basic-getbasicmembernumber&basicid=3"></span>
 							</td>
@@ -293,7 +215,7 @@
 		        </table>
 		        <div class="control-group">
 		            <div class="controls">
-		            	<button class="btn btn-primary" type="submit">删除</button>
+		            	<button class="btn btn-success" type="submit">删除</button>
 		            </div>
 				</div>
 			</form>

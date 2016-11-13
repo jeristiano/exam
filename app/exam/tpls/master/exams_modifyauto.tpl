@@ -104,7 +104,7 @@
 			    	<div class="control-group">
 				        <label class="control-label">题量配比：</label>
 			          	<div class="controls">
-				          	<label class="radio inline">题量配比模式关闭时，此设置不生效。题量配比操作繁琐，请尽量熟悉后再行操作。题量配比会受考场中考试范围制约，请谨慎配置。</label>
+				          	<label class="radio inline">题量配比模式关闭时，此设置不生效。题量配比操作繁琐，请尽量熟悉后再行操作。题量配比会受考试中考试范围制约，请谨慎配置。</label>
 				       </div>
 				    </div>
 				    {x2;tree:$questypes,questype,qid}
@@ -143,7 +143,7 @@
 			    </div>
 				<div class="control-group">
 					<div class="controls">
-						<button class="btn btn-primary" type="submit">提交</button>
+						<button class="btn btn-success" type="submit">提交</button>
 						<input type="hidden" name="submitsetting" value="1"/>
 					  	<input type="hidden" name="page" value="{x2;$page}" />
 					  	<input name="args[examsubject]" type="hidden" value="{x2;$exam['examsubject']}">
@@ -158,7 +158,7 @@
 			    <div class="control-group">
 			        <label class="control-label">题量配比：</label>
 		          	<div class="controls">
-			          	<label class="radio inline">题量配比模式关闭时，此设置不生效。题量配比操作繁琐，请尽量熟悉后再行操作。题量配比会受考场中考试范围制约，请谨慎配置。</label>
+			          	<label class="radio inline">题量配比模式关闭时，此设置不生效。题量配比操作繁琐，请尽量熟悉后再行操作。题量配比会受考试中考试范围制约，请谨慎配置。</label>
 			       </div>
 			    </div>
 			    {x2;tree:$questypes,questype,qid}

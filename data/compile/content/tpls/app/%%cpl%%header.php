@@ -28,4 +28,5 @@
 <script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
 <script type="text/javascript" src="app/core/styles/js/unslider.min.js"></script>
 <script type="text/javascript" src="app/core/styles/js/highcharts.js"></script>
+<link rel="stylesheet" href="app/exam/styles/css/bootstrap-select.min.css">
 </head>

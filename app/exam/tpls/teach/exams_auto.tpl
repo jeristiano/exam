@@ -38,7 +38,10 @@
 						<label class="radio inline">
 							<input name="args[examdecide]" type="radio" value="0" checked/>学生自评
 						</label>
-						<span class="help-block">教师评卷时有主观题则需要教师在后台评分后才能显示分数，无主观题自动显示分数。</span>
+						<div style="padding-top: 15px;">
+							<blockquote class="text-info">教师评卷时有主观题则需要教师在后台评分后才能显示分数，无主观题自动显示分数。</blockquote>
+						</div>
+						
 					</div>
 				</div>
 				<div class="control-group">
@@ -116,7 +119,7 @@
 			    </div>
 				<div class="control-group">
 					<div class="controls">
-						<button class="btn btn-primary" type="submit">提交</button>
+						<button class="btn btn-success" type="submit">提交</button>
 						<input type="hidden" name="submitsetting" value="1"/>
 					</div>
 				</div>
@@ -125,7 +128,7 @@
 			    <div class="control-group">
 			        <label class="control-label">题量配比：</label>
 		          	<div class="controls">
-			          	<label class="radio inline">题量配比模式关闭时，此设置不生效。题量配比操作繁琐，请尽量熟悉后再行操作。</label>
+			          	<label class="radio inline"><blockquote class="text-info">题量配比模式关闭时，此设置不生效。题量配比操作繁琐，请尽量熟悉后再行操作。</blockquote></label>
 			       </div>
 			    </div>
 			    {x2;tree:$questypes,questype,qid}

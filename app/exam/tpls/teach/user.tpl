@@ -39,7 +39,7 @@
 							<input class="inline" name="search[username]" size="25" type="text" value="{x2;$search['username']}"/>
 						</td>
 						<td>
-							<button class="btn btn-primary" type="submit">搜索</button>
+							<button class="btn btn-success" type="submit">搜索</button>
 							<input type="hidden" value="1" name="search[argsmodel]" />
 						</td>
 					</tr>
@@ -52,7 +52,6 @@
 				        <th>用户名</th>
 				        <th>电子邮件</th>
 				        <th>注册IP</th>
-				        <th>积分点数</th>
 				        <th>角色</th>
 				        <th>注册时间</th>
 				        <th>操作</th>
@@ -64,7 +63,7 @@
 	                    <td>{x2;v:user['userid']}</td>
 	                    <td>{x2;v:user['username']}</td>
 						<td>{x2;v:user['useremail']}</td><td>{x2;v:user['userregip']}</td>
-						<td>{x2;v:user['usercoin']}</td><td>{x2;$groups[v:user['usergroupid']]['groupname']}</td>
+						<td>{x2;$groups[v:user['usergroupid']]['groupname']}</td>
 						<td>{x2;date:v:user['userregtime'],'Y-m-d H:i:s'}</td>
 						<td>
 						  	<div class="btn-group">

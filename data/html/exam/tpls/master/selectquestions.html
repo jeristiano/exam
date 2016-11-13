@@ -11,7 +11,7 @@
 						<tr>
 							<td class="form-inline">
 								录入时间：
-								<input type="text" name="search[stime]" size="9" class="input-small datetimepicker" data-date="2016-11-10" data-date-format="yyyy-mm-dd" id="stime" value=""/> - <input class="input-small datetimepicker" data-date="2016-11-10" data-date-format="yyyy-mm-dd" size="9" type="text" name="search[etime]" id="etime" value=""/>
+								<input type="text" name="search[stime]" size="9" class="input-small datetimepicker" data-date="2016-11-13" data-date-format="yyyy-mm-dd" id="stime" value=""/> - <input class="input-small datetimepicker" data-date="2016-11-13" data-date-format="yyyy-mm-dd" size="9" type="text" name="search[etime]" id="etime" value=""/>
 								关键字：
 								<input name="search[keyword]" class="input-small" size="8" type="text" value=""/>
 							</td>
@@ -37,17 +37,13 @@
 							<td class="form-inline">
 						  		<select name="search[questionsectionid]" class="combox input-medium" id="sectionselect" target="knowsselect" refUrl="?exam-master-questions-ajax-getknowsbysectionid&sectionid={value}">
 							  		<option value="">选择章节</option>
-							  									  									  		<option value="1" selected>请修改科目章节</option>
-							  									  		<option value="2">章节2</option>
+							  									  									  		<option value="1">第一章</option>
+							  									  		<option value="2">第二章</option>
 							  									  								  		</select>
 						  		<select name="search[questionknowsid]" id="knowsselect" class="input-medium">
 							  		<option value="">选择知识点</option>
-							  									  									  		<option value="1">请修改知识点1</option>
-							  									  		<option value="2">请修改知识点2</option>
-							  									  		<option value="3">请修改知识点3</option>
-							  									  		<option value="4">请修改知识点4</option>
-							  									  								  		</select>
-								<button class="btn btn-primary" type="submit">检索</button>
+							  								  		</select>
+								<button class="btn btn-success" type="submit">检索</button>
 							</td>
 						</tr>
 					</table>
@@ -64,18 +60,18 @@
 					</thead>
 					<tbody>
 										        <tr>
-				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="8456" onclick="javascript:selectquestions(this,'iselectquestions_1','ialreadyselectnumber_1')"/></td>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="8460" onclick="javascript:selectquestions(this,'iselectquestions_1','ialreadyselectnumber_1')"/></td>
 				          <td>单选题</td>
 				          <td>
-						  	  <a href="javascript:;" title="啊啊啊啊啊">啊啊啊啊啊</a>
+						  	  <a href="javascript:;" title="ffff">ffff</a>
 						  </td>
-						  <td>中</td>
+						  <td>难</td>
 				        </tr>
 				        				        <tr>
-				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="8455" onclick="javascript:selectquestions(this,'iselectquestions_1','ialreadyselectnumber_1')"/></td>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="8459" onclick="javascript:selectquestions(this,'iselectquestions_1','ialreadyselectnumber_1')"/></td>
 				          <td>单选题</td>
 				          <td>
-						  	  <a href="javascript:;" title="问题测试">问题测试</a>
+						  	  <a href="javascript:;" title="what is your name?">what is your name?</a>
 						  </td>
 						  <td>难</td>
 				        </tr>
@@ -146,7 +142,7 @@
 				        					</tbody>
 				</table>
 				<div class="pagination pagination-right">
-	            	<ul><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[stime]=&search[etime]=&search[keyword]=&search[questionisrows]=0&search[questiontype]=1&search[questionsubjectid]=1&search[username]=&search[questionlevel]=0&search[questionsectionid]=1&search[questionknowsid]=&page=1">|&lsaquo;</a></li><li><a href="#" class="current">1</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[stime]=&search[etime]=&search[keyword]=&search[questionisrows]=0&search[questiontype]=1&search[questionsubjectid]=1&search[username]=&search[questionlevel]=0&search[questionsectionid]=1&search[questionknowsid]=&page=2">2</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[stime]=&search[etime]=&search[keyword]=&search[questionisrows]=0&search[questiontype]=1&search[questionsubjectid]=1&search[username]=&search[questionlevel]=0&search[questionsectionid]=1&search[questionknowsid]=&page=3">3</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[stime]=&search[etime]=&search[keyword]=&search[questionisrows]=0&search[questiontype]=1&search[questionsubjectid]=1&search[username]=&search[questionlevel]=0&search[questionsectionid]=1&search[questionknowsid]=&page=4">4</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[stime]=&search[etime]=&search[keyword]=&search[questionisrows]=0&search[questiontype]=1&search[questionsubjectid]=1&search[username]=&search[questionlevel]=0&search[questionsectionid]=1&search[questionknowsid]=&page=5">5</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[stime]=&search[etime]=&search[keyword]=&search[questionisrows]=0&search[questiontype]=1&search[questionsubjectid]=1&search[username]=&search[questionlevel]=0&search[questionsectionid]=1&search[questionknowsid]=&page=6">6</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[stime]=&search[etime]=&search[keyword]=&search[questionisrows]=0&search[questiontype]=1&search[questionsubjectid]=1&search[username]=&search[questionlevel]=0&search[questionsectionid]=1&search[questionknowsid]=&page=7">7</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[stime]=&search[etime]=&search[keyword]=&search[questionisrows]=0&search[questiontype]=1&search[questionsubjectid]=1&search[username]=&search[questionlevel]=0&search[questionsectionid]=1&search[questionknowsid]=&page=8">8</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[stime]=&search[etime]=&search[keyword]=&search[questionisrows]=0&search[questiontype]=1&search[questionsubjectid]=1&search[username]=&search[questionlevel]=0&search[questionsectionid]=1&search[questionknowsid]=&page=9">9</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[stime]=&search[etime]=&search[keyword]=&search[questionisrows]=0&search[questiontype]=1&search[questionsubjectid]=1&search[username]=&search[questionlevel]=0&search[questionsectionid]=1&search[questionknowsid]=&page=10">10</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[stime]=&search[etime]=&search[keyword]=&search[questionisrows]=0&search[questiontype]=1&search[questionsubjectid]=1&search[username]=&search[questionlevel]=0&search[questionsectionid]=1&search[questionknowsid]=&page=11"> >> </a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[stime]=&search[etime]=&search[keyword]=&search[questionisrows]=0&search[questiontype]=1&search[questionsubjectid]=1&search[username]=&search[questionlevel]=0&search[questionsectionid]=1&search[questionknowsid]=&page=23">&rsaquo;|</a></li><li><a>共230条数据</a></li></ul>
+	            	<ul><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=&rowsquestionids=&0.2432440996968801&page=1">|&lsaquo;</a></li><li><a href="#" class="current">1</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=&rowsquestionids=&0.2432440996968801&page=2">2</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=&rowsquestionids=&0.2432440996968801&page=3">3</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=&rowsquestionids=&0.2432440996968801&page=4">4</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=&rowsquestionids=&0.2432440996968801&page=5">5</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=&rowsquestionids=&0.2432440996968801&page=6">6</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=&rowsquestionids=&0.2432440996968801&page=7">7</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=&rowsquestionids=&0.2432440996968801&page=8">8</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=&rowsquestionids=&0.2432440996968801&page=9">9</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=&rowsquestionids=&0.2432440996968801&page=10">10</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=&rowsquestionids=&0.2432440996968801&page=11"> >> </a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=1&questionids=&rowsquestionids=&0.2432440996968801&page=23">&rsaquo;|</a></li><li><a>共230条数据</a></li></ul>
 		        </div>
 		    	<script type="text/javascript">
 		    		jQuery(function($) {

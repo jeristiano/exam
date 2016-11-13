@@ -130,7 +130,7 @@
 			    </div>
 				<div class="control-group">
 					<div class="controls">
-						<button class="btn btn-primary" type="submit">提交</button>
+						<button class="btn btn-success" type="submit">提交</button>
 						<input type="hidden" name="submitsetting" value="1"/>
 					  	<input type="hidden" name="page" value="{x2;$page}" />
 					  	<input name="args[examsubject]" type="hidden" value="{x2;$exam['examsubject']}">

@@ -15,7 +15,7 @@ jQuery.extend({'zoombox':(function(){
 				}
 				else
 				msg = '您确定要删除吗？';
-				var cnt = "<div class=\"modal-header\" style=\"height:2em;overflow:hidden;\"><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">×</button><h5>操作确认</h5></div><div class=\"modal-body\"><p class=\"text-error\">"+msg+"</p></div><div class=\"modal-footer\"><button class=\"btn btn-primary\" onclick=\"javascript:submitAjax({'url':'"+url+"'});\">确定</button><button class=\"btn\" onclick=\"javascript:$.zoombox.hide();\">取消</button></div";
+				var cnt = "<div class=\"modal-header\" style=\"height:2em;overflow:hidden;\"><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">×</button><h5>操作确认</h5></div><div class=\"modal-body\"><p class=\"text-error\">"+msg+"</p></div><div class=\"modal-footer\"><button class=\"btn btn-success\" onclick=\"javascript:submitAjax({'url':'"+url+"'});\">确定</button><button class=\"btn\" onclick=\"javascript:$.zoombox.hide();\">取消</button></div";
 				break;
 
 				case 'ajax':
@@ -50,7 +50,7 @@ jQuery.extend({'zoombox':(function(){
 				fp = null;
 			}
 			**/
-			lcnt = "<div class=\"modal-header\"><button class=\"close\" type=\"button\" data-dismiss=\"modal\">×</button><h5>用户登录</h5></div><div class=\"modal-body\"><form class=\"form-horizontal\" id=\"peloginform\" action=\"index.php?user-app-login\" style=\"padding-top:20px;\"><div class=\"control-group\"><label class=\"control-label\" for=\"inputEmail\">用户名</label><div class=\"controls\"><input name=\"args[username]\" type=\"text\" needle=\"needle\" msg=\"请输入正确格式的用户名\"/></div></div><div class=\"control-group\"><label class=\"control-label\" for=\"inputPassword\">密　码</label><div class=\"controls\"><input needle=\"needle\" msg=\"请输入正确格式的密码\" name=\"args[userpassword]\" type=\"password\" /><input type=\"hidden\" value=\"1\" name=\"userlogin\"/></div></div></form></div><div class=\"modal-footer\"><button class=\"btn btn-primary\" type=\"button\" onclick=\"javascript:$('#peloginform').submit();\">登录</button><button aria-hidden=\"true\" class=\"btn\" data-dismiss=\"modal\">取消</button></div>";
+			lcnt = "<div class=\"modal-header\"><button class=\"close\" type=\"button\" data-dismiss=\"modal\">×</button><h5>用户登录</h5></div><div class=\"modal-body\"><form class=\"form-horizontal\" id=\"peloginform\" action=\"index.php?user-app-login\" style=\"padding-top:20px;\"><div class=\"control-group\"><label class=\"control-label\" for=\"inputEmail\">用户名</label><div class=\"controls\"><input name=\"args[username]\" type=\"text\" needle=\"needle\" msg=\"请输入正确格式的用户名\"/></div></div><div class=\"control-group\"><label class=\"control-label\" for=\"inputPassword\">密　码</label><div class=\"controls\"><input needle=\"needle\" msg=\"请输入正确格式的密码\" name=\"args[userpassword]\" type=\"password\" /><input type=\"hidden\" value=\"1\" name=\"userlogin\"/></div></div></form></div><div class=\"modal-footer\"><button class=\"btn btn-success\" type=\"button\" onclick=\"javascript:$('#peloginform').submit();\">登录</button><button aria-hidden=\"true\" class=\"btn\" data-dismiss=\"modal\">取消</button></div>";
 			l.html(lcnt);
 			l.find("form").on('submit',formsubmit);
 			l.modal({});

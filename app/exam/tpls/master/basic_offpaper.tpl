@@ -11,7 +11,7 @@
 {x2;endif}
 			<ul class="breadcrumb">
 				<li><a href="index.php?{x2;$_app}-master">{x2;$apps[$_app]['appname']}</a> <span class="divider">/</span></li>
-				<li><a href="index.php?{x2;$_app}-master-basic&page={x2;$page}{x2;$u}">考场管理</a> <span class="divider">/</span></li>
+				<li><a href="index.php?{x2;$_app}-master-basic&page={x2;$page}{x2;$u}">考试管理</a> <span class="divider">/</span></li>
 				<li class="active">考试调度</li>
 			</ul>
 			<ul class="nav nav-tabs">

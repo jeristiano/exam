@@ -15,10 +15,10 @@
 			</ul>
 			<ul class="nav nav-tabs">
 				<li class="active">
-					<a href="#">考场管理</a>
+					<a href="#">考试管理</a>
 				</li>
 				<li class="pull-right">
-					<a href="index.php?exam-teach-basic-add">添加考场</a>
+					<a href="index.php?exam-teach-basic-add">添加考试</a>
 				</li>
 			</ul>
 			<form action="index.php?exam-teach-users" method="post">
@@ -33,12 +33,7 @@
 		                </tr>
 		            </thead>
 					<tr>
-						<td>
-							考场ID：
-						</td>
-						<td>
-							<input name="search[basicid]" class="input-small" type="text" class="number" value="{x2;$search['basicid']}"/>
-						</td>
+						
 						<td>
 							关键字：
 						</td>
@@ -46,11 +41,11 @@
 							<input class="input-medium" name="search[keyword]" type="text" value="{x2;$search['keyword']}"/>
 						</td>
 						<td>
-							地区：
+							班级：
 						</td>
 			        	<td>
 			        		<select name="search[basicareaid]" class="input-medium">
-				        		<option value="0">选择地区</option>
+				        		<option value="0">选择班级</option>
 						  		{x2;tree:$areas,area,aid}
 						  		<option value="{x2;v:area['areaid']}"{x2;if:v:area['areaid'] == $search['basicareaid']} selected{x2;endif}>{x2;v:area['area']}</option>
 						  		{x2;endtree}
@@ -58,12 +53,7 @@
 			        	</td>
 			        </tr>
 			        <tr>
-			        	<td>
-							API标识：
-						</td>
-						<td>
-							<input class="input-small" name="search[basicapi]" type="text" value="{x2;$search['basicapi']}"/>
-						</td>
+			        	
 						<td>
 							科目：
 						</td>
@@ -76,7 +66,7 @@
 					  		</select>
 			        	</td>
 						<td>
-							<button class="btn btn-primary" type="submit">提交</button>
+							<button class="btn btn-success" type="submit">提交</button>
 						</td>
 						<td></td>
 					</tr>
@@ -89,9 +79,9 @@
 	            <thead>
 	                <tr>
 	                    <th><input type="checkbox" class="checkall"/></th>
-	                    <th>考场ID</th>
-				        <th>考场名称</th>
-				        <th>考场地区</th>
+	                    <th>考试ID</th>
+				        <th>考试名称</th>
+				        <th>考试班级</th>
 				        <th>考试科目</th>
 				        <th>操作</th>
 	                </tr>

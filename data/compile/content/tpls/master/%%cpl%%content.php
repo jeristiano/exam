@@ -74,7 +74,7 @@
 					  		</select>
 						</td>
 						<td>
-							<button class="btn btn-primary" type="submit">提交</button>
+							<button class="btn btn-success" type="submit">提交</button>
 						</td>
 						<td></td>
 			        </tr>
@@ -168,7 +168,7 @@
 				            <input type="hidden" name="search[<?php echo $key; ?>]" value="<?php echo $arg; ?>"/>
 				            <?php } ?>
 				            <label class="radio inline">
-				            	<button class="btn btn-primary" type="submit">提交</button>
+				            	<button class="btn btn-success" type="submit">提交</button>
 				            </label>
 				            <input type="hidden" name="modifycontentsequence" value="1"/>
 				            <input type="hidden" name="catid" value="<?php echo $this->tpl_var['catid']; ?>"/>

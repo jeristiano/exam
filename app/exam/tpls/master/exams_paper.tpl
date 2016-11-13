@@ -50,7 +50,7 @@
 						<div class="media well">
 							<ul class="nav nav-tabs">
 								<li class="active">
-									<span class="badge badge-info questionindex">{x2;v:tid}</span></a>
+									<span class="badge badge-success questionindex">{x2;v:tid}</span></a>
 								</li>
 								{x2;if:$setting['examtype'] == 3}
 								<li class="btn-group pull-right">
@@ -100,7 +100,7 @@
 						<div class="media well">
 							<ul class="nav nav-tabs">
 								<li class="active">
-									<span class="badge badge-info questionindex">{x2;v:tid}</span>
+									<span class="badge badge-success questionindex">{x2;v:tid}</span>
 								</li>
 								{x2;if:$setting['examtype'] == 3}
 								<li class="btn-group pull-right">
@@ -175,7 +175,7 @@
 						<p>共有试题 <span class="allquestionnumber">50</span> 题，已做 <span class="yesdonumber">0</span> 题。您确认要交卷吗？</p>
 					</div>
 					<div class="modal-footer">
-						 <button type="button" onclick="javascript:submitPaper();" class="btn btn-primary">确定交卷</button>
+						 <button type="button" onclick="javascript:submitPaper();" class="btn btn-success">确定交卷</button>
 						 <input type="hidden" name="insertscore" value="1"/>
 						 <button aria-hidden="true" class="btn" type="button" data-dismiss="modal">再检查一下</button>
 					</div>
@@ -195,7 +195,7 @@
 		<p>共有试题 <span class="allquestionnumber">50</span> 题，已做 <span class="yesdonumber">0</span> 题。您确认要交卷吗？</p>
 	</div>
 	<div class="modal-footer">
-		 <button type="button" class="btn btn-primary">确定</button>
+		 <button type="button" class="btn btn-success">确定</button>
 		 <button aria-hidden="true" class="btn" type="button" data-dismiss="modal">取消</button>
 	</div>
 </div>

@@ -93,7 +93,7 @@
 			            <input type="hidden" name="search[<?php echo $key; ?>]" value="<?php echo $arg; ?>"/>
 			            <?php } ?>
 			            <label class="radio inline">
-			            	<button class="btn btn-primary" type="submit">提交</button>
+			            	<button class="btn btn-success" type="submit">提交</button>
 			            </label>
 			            <input type="hidden" name="modifyfieldsequence" value="1"/>
   						<input type="hidden" name="questionparent" value="<?php echo $this->tpl_var['questionparent']; ?>"/>

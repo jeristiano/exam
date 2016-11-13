@@ -66,7 +66,7 @@
 				            <input type="hidden" name="search[<?php echo $key; ?>]" value="<?php echo $arg; ?>"/>
 				            <?php } ?>
 				            <label class="radio inline">
-				            	<button class="btn btn-primary" type="submit">更改排序</button>
+				            	<button class="btn btn-success" type="submit">更改排序</button>
 				            </label>
 				            <input type="hidden" name="modifycategorysequence" value="1"/>
 				            <input type="hidden" name="page" value="<?php echo $this->tpl_var['page']; ?>"/>

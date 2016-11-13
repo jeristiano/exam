@@ -11,7 +11,7 @@
 {x2;endif}
 			<ul class="breadcrumb">
 				<li><a href="index.php?{x2;$_app}-master">{x2;$apps[$_app]['appname']}</a> <span class="divider">/</span></li>
-				<li><a href="index.php?{x2;$_app}-master-basic&page={x2;$page}{x2;$u}">考场管理</a> <span class="divider">/</span></li>
+				<li><a href="index.php?{x2;$_app}-master-basic&page={x2;$page}{x2;$u}">考试管理</a> <span class="divider">/</span></li>
 				<li class="active">考试范围</li>
 			</ul>
 			<ul class="nav nav-tabs">
@@ -19,7 +19,7 @@
 					<a href="#">考试范围</a>
 				</li>
 				<li class="dropdown pull-right">
-					<a href="index.php?exam-master-basic&page={x2;$page}{x2;$u}">考场管理</a>
+					<a href="index.php?exam-master-basic&page={x2;$page}{x2;$u}">考试管理</a>
 				</li>
 			</ul>
 	        <form action="?exam-master-basic-setexamrange" method="post" class="form-horizontal">
@@ -31,7 +31,7 @@
 					</thead>
 					<tr>
 						<td>
-							考场ID：
+							考试ID：
 						</td>
 						<td>
 							{x2;$basic['basicid']}
@@ -43,7 +43,7 @@
 							{x2;$subjects[$basic['basicsubjectid']]['subject']}
 						</td>
 						<td>
-							地区：
+							班级：
 						</td>
 			        	<td>
 			        		{x2;$areas[$basic['basicareaid']]['area']}
@@ -72,7 +72,7 @@
 				</div>
 				{x2;endif}
 				<div class="control-group">
-					<label for="basicexam_auto" class="control-label">考场模式：</label>
+					<label for="basicexam_auto" class="control-label">考试模式：</label>
 					<div class="controls">
 						<label class="radio inline">
 				          		<input type="radio" class="input-text" name="args[basicexam][model]" value="0"{x2;if:$basic['basicexam']['model'] == 0} checked{x2;endif}/> 全功能模式（练习和正式考试均开放）
@@ -169,7 +169,7 @@
 				</div>
 				<div class="submit">
 					<div class="controls">
-						<button class="btn btn-primary" type="submit">提交</button>
+						<button class="btn btn-success" type="submit">提交</button>
 						<input type="hidden" name="page" value="{x2;$page}"/>
 						<input type="hidden" name="setexamrange" value="1"/>
 						<input type="hidden" name="basicid" value="{x2;$basic['basicid']}"/>

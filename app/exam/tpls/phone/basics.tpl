@@ -7,9 +7,7 @@
 			<div class="examform">
 				<ul class="breadcrumb">
 					<li>
-						<span class="icon-home"></span> <a href="index.php?exam-phone">地区
-地区
-考试选择</a> <span class="divider">/</span>
+						<span class="icon-home"></span> <a href="index.php?exam-phone">考试选择</a> <span class="divider">/</span>
 					</li>
 					<li class="active">
 						{x2;$data['currentbasic']['basic']}
@@ -26,7 +24,7 @@
 							<img src="app/core/styles/images/icons/Pensils.png"/>
 							<div class="caption">
 								<p class="text-center">
-									<a class="btn btn-primary" href="index.php?exam-phone-exercise">强化训练</a>
+									<a class="btn btn-success" href="index.php?exam-phone-exercise">强化训练</a>
 								</p>
 							</div>
 						</div>
@@ -36,7 +34,7 @@
 							<img src="app/core/styles/images/icons/Pocket.png"/>
 							<div class="caption">
 								<p class="text-center">
-									<a class="btn btn-primary" href="index.php?exam-phone-favor">习题收藏</a>
+									<a class="btn btn-success" href="index.php?exam-phone-favor">习题收藏</a>
 								</p>
 							</div>
 						</div>

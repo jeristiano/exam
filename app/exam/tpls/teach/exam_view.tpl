@@ -48,7 +48,7 @@
 						<div class="media well">
 							<ul class="nav nav-tabs">
 								<li class="active">
-									<span class="badge badge-info questionindex">{x2;v:tid}</span></a>
+									<span class="badge badge-success questionindex">{x2;v:tid}</span></a>
 								</li>
 							</ul>
 							<div class="media-body well text-warning">
@@ -79,7 +79,7 @@
 						<div class="media well">
 							<ul class="nav nav-tabs">
 								<li class="active">
-									<span class="badge badge-info questionindex">{x2;v:tid}</span>
+									<span class="badge badge-success questionindex">{x2;v:tid}</span>
 								</li>
 							</ul>
 							<div class="media-body well">

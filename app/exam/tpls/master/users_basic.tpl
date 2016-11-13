@@ -31,7 +31,7 @@
 					</thead>
 					<tr>
 						<td>
-							考场ID：
+							考试ID：
 						</td>
 						<td>
 							<input name="search[basicid]" class="inline" type="text" class="number" value="{x2;$search['basicid']}"/>
@@ -43,11 +43,11 @@
 							<input name="search[keyword]" type="text" value="{x2;$search['keyword']}"/>
 						</td>
 						<td>
-							地区：
+							班级：
 						</td>
 			        	<td>
 			        		<select name="search[basicareaid]">
-			        		<option value="0">选择地区</option>
+			        		<option value="0">选择班级</option>
 					  		{x2;tree:$areas,area,aid}
 					  		<option value="{x2;v:area['areaid']}"{x2;if:v:area['areaid'] == $search['basicareaid']} selected{x2;endif}>{x2;v:area['area']}</option>
 					  		{x2;endtree}
@@ -73,7 +73,7 @@
 					  		</select>
 			        	</td>
 						<td>
-							<button class="btn btn-primary" type="submit">搜索</button>
+							<button class="btn btn-success" type="submit">搜索</button>
 							<input type="hidden" value="1" name="search[argsmodel]" />
 						</td>
 						<td></td>
@@ -83,9 +83,9 @@
 	        <table class="table table-hover">
 	            <thead>
 	                <tr>
-	                    <th>考场ID</th>
-				        <th>考场名称</th>
-				        <th>考场地区</th>
+	                    <th>考试ID</th>
+				        <th>考试名称</th>
+				        <th>考试班级</th>
 				        <th>考试科目</th>
 				        <th>到期时间</th>
 				        <th>操作</th>
@@ -110,7 +110,7 @@
 							{x2;if:$openbasics[v:basic['basicid']]}{x2;date:$openbasics[v:basic['basicid']]['obendtime'],'Y-m-d'}{x2;else}未开启{x2;endif}
 						</td>
 						<td>
-							{x2;if:$openbasics[v:basic['basicid']]}<a class="ajax btn" title="关闭考场" href="index.php?exam-master-users-closebasics&userid={x2;$userid}&basicid={x2;v:basic['basicid']}"><em class="icon-minus-sign"></em></a>{x2;else}<a class="ajax btn" href="index.php?exam-master-users-openbasics&userid={x2;$userid}&basicid={x2;v:basic['basicid']}" title="开启考场"><em class="icon-plus-sign"></em></a>{x2;endif}
+							{x2;if:$openbasics[v:basic['basicid']]}<a class="ajax btn" title="关闭考试" href="index.php?exam-master-users-closebasics&userid={x2;$userid}&basicid={x2;v:basic['basicid']}"><em class="icon-minus-sign"></em></a>{x2;else}<a class="ajax btn" href="index.php?exam-master-users-openbasics&userid={x2;$userid}&basicid={x2;v:basic['basicid']}" title="开启考试"><em class="icon-plus-sign"></em></a>{x2;endif}
 						</td>
 			        </tr>
 			        {x2;endtree}

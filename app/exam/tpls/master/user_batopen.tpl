@@ -36,10 +36,10 @@
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label">考场ID：</label>
+								<label class="control-label">考试ID：</label>
 							  	<div class="controls">
-								  	<textarea class="input-xxlarge" rows="4" needle="needle" msg="您最少需要填写一个考场" name="basics"></textarea>
-							  		<span class="help-block">每个考场ID请使用英文逗号隔开</span>
+								  	<textarea class="input-xxlarge" rows="4" needle="needle" msg="您最少需要填写一个考试" name="basics"></textarea>
+							  		<span class="help-block">每个考试ID请使用英文逗号隔开</span>
 								</div>
 							</div>
 							<div class="control-group">
@@ -50,7 +50,7 @@
 							</div>
 							<div class="control-group">
 							  	<div class="controls">
-								  	<button class="btn btn-primary" type="submit">提交</button>
+								  	<button class="btn btn-success" type="submit">提交</button>
 								  	<input type="hidden" name="page" value="{x2;$page}"/>
 								  	<input type="hidden" name="batopen" value="1"/>
 								</div>
@@ -67,10 +67,10 @@
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label">考场ID：</label>
+								<label class="control-label">考试ID：</label>
 							  	<div class="controls">
-								  	<textarea class="input-xxlarge" rows="4" needle="needle" msg="您最少需要填写一个考场" name="basics"></textarea>
-							  		<span class="help-block">每个考场ID请使用英文逗号隔开</span>
+								  	<textarea class="input-xxlarge" rows="4" needle="needle" msg="您最少需要填写一个考试" name="basics"></textarea>
+							  		<span class="help-block">每个考试ID请使用英文逗号隔开</span>
 								</div>
 							</div>
 							<div class="control-group">
@@ -81,7 +81,7 @@
 							</div>
 							<div class="control-group">
 							  	<div class="controls">
-								  	<button class="btn btn-primary" type="submit">提交</button>
+								  	<button class="btn btn-success" type="submit">提交</button>
 								  	<input type="hidden" name="page" value="{x2;$page}"/>
 								  	<input type="hidden" name="batopen" value="1"/>
 								</div>
@@ -98,10 +98,10 @@
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label">考场ID：</label>
+								<label class="control-label">考试ID：</label>
 							  	<div class="controls">
-								  	<textarea class="input-xxlarge" rows="4" needle="needle" msg="您最少需要填写一个考场" name="basics"></textarea>
-							  		<span class="help-block">每个考场ID请使用英文逗号隔开</span>
+								  	<textarea class="input-xxlarge" rows="4" needle="needle" msg="您最少需要填写一个考试" name="basics"></textarea>
+							  		<span class="help-block">每个考试ID请使用英文逗号隔开</span>
 								</div>
 							</div>
 							<div class="control-group">
@@ -112,7 +112,7 @@
 							</div>
 							<div class="control-group">
 							  	<div class="controls">
-								  	<button class="btn btn-primary" type="submit">提交</button>
+								  	<button class="btn btn-success" type="submit">提交</button>
 								  	<input type="hidden" name="page" value="{x2;$page}"/>
 								  	<input type="hidden" name="batopen" value="1"/>
 								</div>

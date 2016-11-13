@@ -117,7 +117,7 @@
 				</div>
 				<div class="control-group">
 				  	<div class="controls">
-					  	<button class="btn btn-primary" type="submit">提交</button>
+					  	<button class="btn btn-success" type="submit">提交</button>
 					  	<input type="hidden" name="page" value="<?php echo $this->tpl_var['page']; ?>"/>
 						<input type="hidden" name="args[questionparent]" value="<?php echo $this->tpl_var['questionparent']; ?>"/>
 						<input type="hidden" name="questionid" value="<?php echo $this->tpl_var['question']['questionid']; ?>"/>

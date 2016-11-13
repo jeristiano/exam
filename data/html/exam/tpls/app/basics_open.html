@@ -7,7 +7,7 @@
 <meta name="description" content="无纸化模拟考试系统">
 <meta name="keywords" content="无纸化模拟考试系统">
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<title>无纸化模拟考试系统</title>
+<title>无纸化在线考试系统</title>
 <link href="app/core/styles/css/bootstrap.css" rel="stylesheet">
 <link href="app/core/styles/css/bootstrap-responsive.css" rel="stylesheet">
 <link href="app/core/styles/css/plugin.css" rel="stylesheet">
@@ -33,7 +33,7 @@
 		<div class="span4"></div>
 		<div class="span8">
 			<span class="pull-right">
-						您好（kris）&nbsp;&nbsp;<a href="index.php?user-center"><em class="icon-user"></em> 用户中心</a>&nbsp;&nbsp;<a class="ajax" href="index.php?user-app-logout"><em class="icon-lock"></em> 退出</a>
+						您好（陈晨）&nbsp;&nbsp;<a href="index.php?user-center"><em class="icon-user"></em> 用户中心</a>&nbsp;&nbsp;<em class="icon-edit"></em> <a href="index.php?exam-teach">教师管理</a>&nbsp;&nbsp;<a class="ajax" href="index.php?user-app-logout"><em class="icon-lock"></em> 退出</a>
 						&nbsp;&nbsp;&nbsp;&nbsp;
 			</span>
 		</div>
@@ -65,17 +65,15 @@
 			<div class="examform">
 				<ul class="breadcrumb">
 					<li>
-						<span class="icon-home"></span> <a href="index.php?exam">地区
-地区
-考试选择</a> <span class="divider">/</span>
+						<span class="icon-home"></span> <a href="index.php?exam">考试选择</a> <span class="divider">/</span>
 					</li>
 					<li class="active">
-						开通考场
+						开通考试
 					</li>
 				</ul>
 				<ul class="nav nav-tabs">
 					<li class="active">
-						<a href="#" data-toggle="tab">开通考场</a>
+						<a href="#" data-toggle="tab">开通考试</a>
 					</li>
 				</ul>
 				<form action="index.php?exam-app-basics-open" method="post">
@@ -105,11 +103,11 @@
 						</tr>
 				        <tr>
 							<td>
-								地区：
+								班级：
 							</td>
 				        	<td>
 				        		<select name="search[basicareaid]" class="input-medium">
-					        		<option value="0">选择地区</option>
+					        		<option value="0">选择班级</option>
 							  									  		<option value="1">全国</option>
 							  									  		<option value="10">检测0801班</option>
 							  									  		<option value="29">检测0802班</option>
@@ -128,7 +126,7 @@
 							  								  		</select>
 				        	</td>
 							<td>
-								<button class="btn btn-primary" type="submit">提交</button>
+								<button class="btn btn-success" type="submit">提交</button>
 							</td>
 						</tr>
 					</table>
@@ -158,8 +156,8 @@
 									<div class="text-center">
 										<h6>检测0801大学英语考场...</h6>
 										<p>
-																				<a class="btn" href="javascript:;" title="检测0801大学英语考场">已开通</a>
-																				</p>
+																																<a class="btn btn-success" href="index.php?exam-app-basics-detail&basicid=3" title="检测0801大学英语考场">免费开通</a>
+																															</p>
 									</div>
 								</div>
 							</div>
@@ -176,15 +174,17 @@
 <div class="row-fluid">
 	<div class="container-fluid logfooter">
 		<ul class="inline unstyled">
-			<li><a href="http://phpems.net">网站首页</a></li>
+			
+			<li><a href=" ">湖畔大学附中网站</a></li>
 			<li>|</li>
-			<li><a href="http://phpems.net/bbs/">用户须知</a></li>
+			<li><a href=" ">隐私政策</a></li>
 			<li>|</li>
-			<li><a href="http://phpems.net/bbs/">隐私协议</a></li>
-			<li>|</li>
-			<li><a href="http://phpems.net/bbs/">网站论坛</a></li>
-			<li>|</li>
-			<li>豫ICP备13016752号-1</li>
+			<li><a href=" "></a>关于我们</li>
+			<li></li>
+			
+			
+			
+		
 		</ul>
 	</div>
 </div>

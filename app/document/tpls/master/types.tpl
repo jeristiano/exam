@@ -59,7 +59,7 @@
 		        </table>
 		        <div class="control-group">
 		            <div class="controls">
-		            	<button class="btn btn-primary" type="submit">删除</button>
+		            	<button class="btn btn-success" type="submit">删除</button>
 		            </div>
 				</div>
 			</form>

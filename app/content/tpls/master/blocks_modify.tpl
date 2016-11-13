@@ -44,7 +44,7 @@
 		        </div>
 		        <div class="control-group">
 		            <div class="controls">
-		            	<button class="btn btn-primary" type="submit">提交</button>
+		            	<button class="btn btn-success" type="submit">提交</button>
 			            <input type="hidden" name="blockid" value="{x2;$block['blockid']}">
 			            <input type="hidden" name="modifyblock" value="1">
 			            <input type="hidden" name="page" value="{x2;$apge}">
@@ -104,7 +104,7 @@
 		        </div>
 		        <div class="control-group">
 		            <div class="controls">
-		            	<button class="btn btn-primary" type="submit">提交</button>
+		            	<button class="btn btn-success" type="submit">提交</button>
 			            <input type="hidden" name="blockid" value="{x2;$block['blockid']}">
 			            <input type="hidden" name="page" value="{x2;$apge}">
 			            <input type="hidden" name="modifyblock" value="1">
@@ -185,7 +185,7 @@
 		        </div>
 		        <div class="control-group">
 		            <div class="controls">
-		            	<button class="btn btn-primary" type="submit">提交</button>
+		            	<button class="btn btn-success" type="submit">提交</button>
 			            <input type="hidden" name="blockid" value="{x2;$block['blockid']}">
 			            <input type="hidden" name="page" value="{x2;$apge}">
 			            <input type="hidden" name="modifyblock" value="1">
@@ -214,7 +214,7 @@
 		        </div>
 		        <div class="control-group">
 		            <div class="controls">
-		            	<button class="btn btn-primary" type="submit">提交</button>
+		            	<button class="btn btn-success" type="submit">提交</button>
 			            <input type="hidden" name="blockid" value="{x2;$block['blockid']}">
 			            <input type="hidden" name="page" value="{x2;$apge}">
 			            <input type="hidden" name="modifyblock" value="1">

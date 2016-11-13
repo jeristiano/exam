@@ -62,7 +62,7 @@
 				</div>
 				<div class="control-group">
 				  	<div class="controls">
-					  	<button class="btn btn-primary" type="submit">提交</button>
+					  	<button class="btn btn-success" type="submit">提交</button>
 					  	<input type="hidden" name="page" value="{x2;$page}"/>
 					  	<input type="hidden" name="questid" value="{x2;$quest['questid']}"/>
 						<input type="hidden" name="modifyquestype" value="1"/>

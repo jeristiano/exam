@@ -116,7 +116,7 @@
 							    </div>
 						        <div class="control-group">
 						            <div class="controls">
-							            <button class="btn btn-primary" type="submit">提交</button>
+							            <button class="btn btn-success" type="submit">提交</button>
 							            <input type="hidden" name="moduleid" value="<?php echo $this->tpl_var['field']['fieldmoduleid']; ?>"/>
 							            <input type="hidden" name="fieldid" value="<?php echo $this->tpl_var['fieldid']; ?>"/>
 							            <input type="hidden" name="modifyfieldhtml" value="1"/>
@@ -159,7 +159,7 @@
 								</div>
 								<div class="control-group">
 									<div class="controls">
-										<button class="btn btn-primary" type="submit">提交</button>
+										<button class="btn btn-success" type="submit">提交</button>
 							            <input type="hidden" name="moduleid" value="<?php echo $this->tpl_var['field']['fieldmoduleid']; ?>"/>
 							            <input type="hidden" name="fieldid" value="<?php echo $this->tpl_var['fieldid']; ?>"/>
 							            <input type="hidden" name="modifyfielddata" value="1"/>

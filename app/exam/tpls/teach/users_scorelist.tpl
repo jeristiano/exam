@@ -53,7 +53,7 @@
 						<td colspan="3">
 
 						</td>
-						<td><button class="btn btn-primary" type="submit">提交</button> <a class="btn btn-primary" href="index.php?exam-teach-users-stats&basicid={x2;$basicid}{x2;$u}">统计</a></td>
+						<td><button class="btn btn-success" type="submit">提交</button> <a class="btn btn-success" href="index.php?exam-teach-users-stats&basicid={x2;$basicid}{x2;$u}">统计</a></td>
 			        </tr>
 				</table>
 				<div class="input">
@@ -97,7 +97,7 @@
 						<td>
 							{x2;if:v:exam['ehtime'] >= 60}{x2;if:v:exam['ehtime']%60}{x2;eval: echo intval(v:exam['ehtime']/60)+1}{x2;else}{x2;eval: echo intval(v:exam['ehtime']/60)}{x2;endif}分钟{x2;else}{x2;v:exam['ehtime']}秒{x2;endif}
 						</td>
-						<td><a class="btn btn-primary" href="index.php?exam-teach-users-readpaper&ehid={x2;v:exam['ehid']}" target="_blank">阅卷</a>&nbsp;<a class="btn btn-primary hide" href="index.php?exam-teach-users-changescore&ehid={x2;v:exam['ehid']}" target="_blank">纠分</a></td>
+						<td><a class="btn btn-success" href="index.php?exam-teach-users-readpaper&ehid={x2;v:exam['ehid']}" target="_blank">阅卷</a>&nbsp;<a class="btn btn-success hide" href="index.php?exam-teach-users-changescore&ehid={x2;v:exam['ehid']}" target="_blank">纠分</a></td>
 			        </tr>
 			        {x2;endtree}
 	        	</tbody>

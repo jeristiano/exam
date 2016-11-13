@@ -11,9 +11,7 @@
 				<div class="scoreArea">{x2;$sessionvars['examsessionscore']}</div>
 				<ul class="breadcrumb">
 					<li>
-						<span class="icon-home"></span> <a href="index.php?exam-phone">地区
-地区
-考试选择</a> <span class="divider">/</span>
+						<span class="icon-home"></span> <a href="index.php?exam-phone">考试选择</a> <span class="divider">/</span>
 					</li>
 					<li>
 						<a href="index.php?exam-phone-basics">{x2;$data['currentbasic']['basic']}</a> <span class="divider">/</span>
@@ -50,7 +48,7 @@
 		                        </select>
 							</td>
 							<td>
-								<button class="btn btn-primary" type="submit">提交</button>
+								<button class="btn btn-success" type="submit">提交</button>
 								<input type="hidden" value="{x2;$type}" name="type" />
 							</td>
 						</tr>
@@ -112,7 +110,7 @@
 						<div class="media well">
 							<ul class="nav nav-tabs">
 								<li class="active">
-									<span class="badge badge-info questionindex">{x2;eval: echo ($page-1)*20+v:qid}</span></a>
+									<span class="badge badge-success questionindex">{x2;eval: echo ($page-1)*20+v:qid}</span></a>
 								</li>
 								<li class="btn-group pull-right">
 									<button class="btn" type="button" onclick="javascript:delfavorquestion('{x2;v:question['favorid']}');"><em class="icon-remove" title="删除"></em></button>
