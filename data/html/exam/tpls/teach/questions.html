@@ -32,7 +32,7 @@
 <script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
 <script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
 </head><body>
-<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">在线考试教师管理平台</a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav pull-right">					<li>						<a href="index.php">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">陈晨<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?user-app-logout" class="ajax">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
+<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">在线考试教师管理平台</a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav pull-right">					<li>						<a href="index.php">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">jeristiano<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?user-app-logout" class="ajax">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
 	<div class="row-fluid">
 		<div class="span2">
 			<div class="accordion" id="accordion-13465">	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-707348">考试设计 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-707348">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-basic">考试列表</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-2120761">课程成绩 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-2120761">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-users">成绩管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212076">试题管理 </a>		</div>		<div class="accordion-body in collapse" id="accordion-element-212076">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-questions">普通试题管理</a></li>					<li><a href="index.php?exam-teach-rowsquestions">题帽题管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212096">试卷管理 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212096">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-exams">试卷列表</a></li>					<li><a href="index.php?exam-teach-exams-autopage">随机组卷</a></li>					<li><a href="index.php?exam-teach-exams-selfpage">手工组卷</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212090">回收站 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212090">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-recyle">普通试题</a></li>					<li><a href="index.php?exam-teach-recyle-rows">题帽题</a></li>				</ul>			</div>		</div>	</div></div>		</div>
@@ -49,8 +49,8 @@
 				<li class="dropdown pull-right">
 					<a data-toggle="dropdown" class="dropdown-toggle" href="#">添加试题<strong class="caret"></strong></a>
 					<ul class="dropdown-menu">
-						<li><a href="index.php?exam-teach-questions-addquestion&page=">单题添加</a></li>
-						<li><a href="index.php?exam-teach-questions-bataddquestion&page=">批量添加</a></li>
+						<li><a href="index.php?exam-teach-questions-addquestion&page=2">单题添加</a></li>
+						<li><a href="index.php?exam-teach-questions-bataddquestion&page=2">批量添加</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -93,9 +93,6 @@
 			        		<select name="search[questionsubjectid]" class="combox input-medium" target="sectionselect" refUrl="?exam-teach-questions-ajax-getsectionsbysubjectid&subjectid={value}">
 				        		<option value="0">选择科目</option>
 						  								  		<option value="1">大学英语</option>
-						  								  		<option value="2">java</option>
-						  								  		<option value="3">python</option>
-						  								  		<option value="4">php</option>
 						  							  		</select>
 			        	</td>
 			        	<td>
@@ -177,89 +174,11 @@
 						</td>
 						-->
 						<td>
-							8460						</td>
-						<td>
-							单选题						</td>
-						<td>
-							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=8460" data-target="#modal">ffff</a>
-						</td>
-						<td>
-							陈晨						</td>
-						<td>
-							2016-11-13						</td>
-						<td>
-							难						</td>
-						<td>
-							<div class="btn-group">
-	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=8460" title="修改"><em class="icon-edit"></em></a>
-								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=8460" title="删除"><em class="icon-remove"></em></a>
-	                    	</div>
-						</td>
-			        </tr>
-			        			        <tr>
-						<!--
-						<td>
-							<input type="checkbox" />
-						</td>
-						-->
-						<td>
-							8459						</td>
-						<td>
-							单选题						</td>
-						<td>
-							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=8459" data-target="#modal">what is your name?</a>
-						</td>
-						<td>
-							陈晨						</td>
-						<td>
-							2016-11-13						</td>
-						<td>
-							难						</td>
-						<td>
-							<div class="btn-group">
-	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=8459" title="修改"><em class="icon-edit"></em></a>
-								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=8459" title="删除"><em class="icon-remove"></em></a>
-	                    	</div>
-						</td>
-			        </tr>
-			        			        <tr>
-						<!--
-						<td>
-							<input type="checkbox" />
-						</td>
-						-->
-						<td>
-							8454						</td>
-						<td>
-							单选题						</td>
-						<td>
-							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=8454" data-target="#modal">这些自行车自行车相撞</a>
-						</td>
-						<td>
-							peadmin						</td>
-						<td>
-							2015-10-02						</td>
-						<td>
-							难						</td>
-						<td>
-							<div class="btn-group">
-	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=8454" title="修改"><em class="icon-edit"></em></a>
-								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=8454" title="删除"><em class="icon-remove"></em></a>
-	                    	</div>
-						</td>
-			        </tr>
-			        			        <tr>
-						<!--
-						<td>
-							<input type="checkbox" />
-						</td>
-						-->
-						<td>
-							770						</td>
+							708						</td>
 						<td>
 							判断题						</td>
 						<td>
-							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=770" data-target="#modal">健全全民医保体系，建立重特大疾病保障和救助机制，全面开展儿童白血病等30种重大疾病保障试点工...</a>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=708" data-target="#modal">禁止党员领导干部利用职务便利私自干预下级或者原任职地区、单位干部选拔任用工作。</a>
 						</td>
 						<td>
 													</td>
@@ -269,9 +188,8 @@
 							易						</td>
 						<td>
 							<div class="btn-group">
-	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=770" title="修改"><em class="icon-edit"></em></a>
-								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=770" title="删除"><em class="icon-remove"></em></a>
-	                    	</div>
+															<a class="btn" href="javascript:;" title="禁用"><em class="icon-ban-circle"></em></a>
+	                    		                    	</div>
 						</td>
 			        </tr>
 			        			        <tr>
@@ -281,11 +199,11 @@
 						</td>
 						-->
 						<td>
-							769						</td>
+							707						</td>
 						<td>
 							判断题						</td>
 						<td>
-							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=769" data-target="#modal">收入分配制度是经济社会发展中一项根本性、基础性的制度，是社会主义市场经济体制的重要基石。</a>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=707" data-target="#modal">禁止党员领导干部在经济实体、社会团体等单位中兼职或者兼职取酬，以及从事中介活动。</a>
 						</td>
 						<td>
 													</td>
@@ -295,9 +213,8 @@
 							易						</td>
 						<td>
 							<div class="btn-group">
-	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=769" title="修改"><em class="icon-edit"></em></a>
-								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=769" title="删除"><em class="icon-remove"></em></a>
-	                    	</div>
+															<a class="btn" href="javascript:;" title="禁用"><em class="icon-ban-circle"></em></a>
+	                    		                    	</div>
 						</td>
 			        </tr>
 			        			        <tr>
@@ -307,11 +224,11 @@
 						</td>
 						-->
 						<td>
-							766						</td>
+							706						</td>
 						<td>
 							判断题						</td>
 						<td>
-							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=766" data-target="#modal">推动诚信体系建设，以社会诚信带动商务诚信和政务诚信，形成良好的社会风尚。</a>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=706" data-target="#modal">禁止党员领导干部个人经商、办企业，但对党员领导干部借他人名义经商、办企业则未作严格要求。</a>
 						</td>
 						<td>
 													</td>
@@ -321,9 +238,8 @@
 							易						</td>
 						<td>
 							<div class="btn-group">
-	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=766" title="修改"><em class="icon-edit"></em></a>
-								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=766" title="删除"><em class="icon-remove"></em></a>
-	                    	</div>
+															<a class="btn" href="javascript:;" title="禁用"><em class="icon-ban-circle"></em></a>
+	                    		                    	</div>
 						</td>
 			        </tr>
 			        			        <tr>
@@ -333,11 +249,11 @@
 						</td>
 						-->
 						<td>
-							764						</td>
+							705						</td>
 						<td>
 							判断题						</td>
 						<td>
-							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=764" data-target="#modal">目前我国年度财政性教育经费支出总额已经超过3万亿元。</a>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=705" data-target="#modal">党员在留党察看期间，可以向群众宣传党的主张，但不能向党反映群众的意见和要求。</a>
 						</td>
 						<td>
 													</td>
@@ -347,9 +263,8 @@
 							易						</td>
 						<td>
 							<div class="btn-group">
-	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=764" title="修改"><em class="icon-edit"></em></a>
-								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=764" title="删除"><em class="icon-remove"></em></a>
-	                    	</div>
+															<a class="btn" href="javascript:;" title="禁用"><em class="icon-ban-circle"></em></a>
+	                    		                    	</div>
 						</td>
 			        </tr>
 			        			        <tr>
@@ -359,11 +274,11 @@
 						</td>
 						-->
 						<td>
-							712						</td>
+							704						</td>
 						<td>
 							判断题						</td>
 						<td>
-							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=712" data-target="#modal">党员领导干部不准借用公款、公物或者将公款、公物借给他人。</a>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=704" data-target="#modal">党员在留党察看期间，有参加党的有关会议的权利。</a>
 						</td>
 						<td>
 													</td>
@@ -373,9 +288,8 @@
 							易						</td>
 						<td>
 							<div class="btn-group">
-	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=712" title="修改"><em class="icon-edit"></em></a>
-								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=712" title="删除"><em class="icon-remove"></em></a>
-	                    	</div>
+															<a class="btn" href="javascript:;" title="禁用"><em class="icon-ban-circle"></em></a>
+	                    		                    	</div>
 						</td>
 			        </tr>
 			        			        <tr>
@@ -385,11 +299,11 @@
 						</td>
 						-->
 						<td>
-							711						</td>
+							703						</td>
 						<td>
 							判断题						</td>
 						<td>
-							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=711" data-target="#modal">禁止党员领导干部大办婚丧喜庆事宜，造成不良影响，或者借机敛财。其中，用私款操办的不受禁止。...</a>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=703" data-target="#modal">在党组织讨论决定对党员作出党纪处分时，预备党员可以为他作证和辩护。</a>
 						</td>
 						<td>
 													</td>
@@ -399,9 +313,8 @@
 							易						</td>
 						<td>
 							<div class="btn-group">
-	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=711" title="修改"><em class="icon-edit"></em></a>
-								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=711" title="删除"><em class="icon-remove"></em></a>
-	                    	</div>
+															<a class="btn" href="javascript:;" title="禁用"><em class="icon-ban-circle"></em></a>
+	                    		                    	</div>
 						</td>
 			        </tr>
 			        			        <tr>
@@ -411,11 +324,11 @@
 						</td>
 						-->
 						<td>
-							710						</td>
+							702						</td>
 						<td>
 							判断题						</td>
 						<td>
-							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=710" data-target="#modal">禁止党员领导干部在公务活动中提供或者接受超过规定标准的接待，或者超过规定标准报销招待费、差...</a>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=702" data-target="#modal">预备党员在转为正式党员之前，可以不遵守党的纪律，不执行党的决定。</a>
 						</td>
 						<td>
 													</td>
@@ -425,9 +338,83 @@
 							易						</td>
 						<td>
 							<div class="btn-group">
-	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=&questionid=710" title="修改"><em class="icon-edit"></em></a>
-								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=&questionid=710" title="删除"><em class="icon-remove"></em></a>
-	                    	</div>
+															<a class="btn" href="javascript:;" title="禁用"><em class="icon-ban-circle"></em></a>
+	                    		                    	</div>
+						</td>
+			        </tr>
+			        			        <tr>
+						<!--
+						<td>
+							<input type="checkbox" />
+						</td>
+						-->
+						<td>
+							701						</td>
+						<td>
+							判断题						</td>
+						<td>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=701" data-target="#modal">党员个人不能代表党组织发表重要主张。</a>
+						</td>
+						<td>
+													</td>
+						<td>
+							2013-06-26						</td>
+						<td>
+							易						</td>
+						<td>
+							<div class="btn-group">
+															<a class="btn" href="javascript:;" title="禁用"><em class="icon-ban-circle"></em></a>
+	                    		                    	</div>
+						</td>
+			        </tr>
+			        			        <tr>
+						<!--
+						<td>
+							<input type="checkbox" />
+						</td>
+						-->
+						<td>
+							700						</td>
+						<td>
+							判断题						</td>
+						<td>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=700" data-target="#modal">党组织对预备党员应当认真教育和考察。</a>
+						</td>
+						<td>
+													</td>
+						<td>
+							2013-06-26						</td>
+						<td>
+							易						</td>
+						<td>
+							<div class="btn-group">
+															<a class="btn" href="javascript:;" title="禁用"><em class="icon-ban-circle"></em></a>
+	                    		                    	</div>
+						</td>
+			        </tr>
+			        			        <tr>
+						<!--
+						<td>
+							<input type="checkbox" />
+						</td>
+						-->
+						<td>
+							699						</td>
+						<td>
+							判断题						</td>
+						<td>
+							<a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-teach-questions-detail&questionid=699" data-target="#modal">党员的党龄，从成为预备党员之日算起。</a>
+						</td>
+						<td>
+													</td>
+						<td>
+							2013-06-26						</td>
+						<td>
+							易						</td>
+						<td>
+							<div class="btn-group">
+															<a class="btn" href="javascript:;" title="禁用"><em class="icon-ban-circle"></em></a>
+	                    		                    	</div>
 						</td>
 			        </tr>
 			        	        	</tbody>
@@ -440,7 +427,7 @@
 	        </div>
 	        -->
 	        <div class="pagination pagination-right">
-	            <ul><li><a target="" href="index.php?exam-teach-questions&page=1">|&lsaquo;</a></li><li><a href="#" class="current">1</a></li><li><a target="" href="index.php?exam-teach-questions&page=2">2</a></li><li><a target="" href="index.php?exam-teach-questions&page=3">3</a></li><li><a target="" href="index.php?exam-teach-questions&page=4">4</a></li><li><a target="" href="index.php?exam-teach-questions&page=5">5</a></li><li><a target="" href="index.php?exam-teach-questions&page=6">6</a></li><li><a target="" href="index.php?exam-teach-questions&page=7">7</a></li><li><a target="" href="index.php?exam-teach-questions&page=8">8</a></li><li><a target="" href="index.php?exam-teach-questions&page=9">9</a></li><li><a target="" href="index.php?exam-teach-questions&page=10">10</a></li><li><a target="" href="index.php?exam-teach-questions&page=11"> >> </a></li><li><a target="" href="index.php?exam-teach-questions&page=64">&rsaquo;|</a></li><li><a>共633条数据</a></li></ul>
+	            <ul><li><a target="" href="index.php?exam-teach-questions&page=1">|&lsaquo;</a></li><li><a target="" href="index.php?exam-teach-questions&page=1">1</a></li><li><a href="#" class="current">2</a></li><li><a target="" href="index.php?exam-teach-questions&page=3">3</a></li><li><a target="" href="index.php?exam-teach-questions&page=4">4</a></li><li><a target="" href="index.php?exam-teach-questions&page=5">5</a></li><li><a target="" href="index.php?exam-teach-questions&page=6">6</a></li><li><a target="" href="index.php?exam-teach-questions&page=7">7</a></li><li><a target="" href="index.php?exam-teach-questions&page=8">8</a></li><li><a target="" href="index.php?exam-teach-questions&page=9">9</a></li><li><a target="" href="index.php?exam-teach-questions&page=10">10</a></li><li><a target="" href="index.php?exam-teach-questions&page=11"> >> </a></li><li><a target="" href="index.php?exam-teach-questions&page=64">&rsaquo;|</a></li><li><a>共632条数据</a></li></ul>
 	        </div>
 	        <div aria-hidden="true" id="modal" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel">
 				<div class="modal-header">

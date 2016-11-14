@@ -93,6 +93,7 @@
 					        <th>考试名称</th>
 					        <th>考试班级</th>
 					        <th>考试科目</th>
+					         <th>状态</th>
 					        <th>操作</th>
 		                </tr>
 		            </thead>
@@ -117,11 +118,18 @@
 								<?php echo $this->tpl_var['subjects'][$basic['basicsubjectid']]['subject']; ?>
 							</td>
 							<td>
+								<?php if($basic['basicclosed']){ ?>关闭<?php } else { ?>开启<?php } ?>
+							</td>
+							<td>
+
 								<div class="btn-group">
+								<?php if($this->tpl_var['authorid']['userid']==$basic['basicauthorid'] ){ ?>	
 									<a class="btn" href="index.php?exam-teach-basic-setexamrange&page=<?php echo $this->tpl_var['page']; ?>&basicid=<?php echo $basic['basicid']; ?><?php echo $this->tpl_var['u']; ?>" title="考试范围"><em class="icon-cog"></em></a>
 									<a class="btn" href="index.php?exam-teach-basic-modifybasic&page=<?php echo $this->tpl_var['page']; ?>&basicid=<?php echo $basic['basicid']; ?><?php echo $this->tpl_var['u']; ?>" title="修改"><em class="icon-edit"></em></a>
 									<a class="btn ajax" href="index.php?exam-teach-basic-delbasic&basicid=<?php echo $basic['basicid']; ?>&page=<?php echo $this->tpl_var['page']; ?><?php echo $this->tpl_var['u']; ?>" title="删除"><em class="icon-remove"></em></a>
+								<?php } ?>
 								</div>
+
 							</td>
 				        </tr>
 				        <?php } ?>

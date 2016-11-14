@@ -89,6 +89,7 @@
 					        <th>考试名称</th>
 					        <th>考试班级</th>
 					        <th>考试科目</th>
+					         <th>状态</th>
 					        <th>操作</th>
 		                </tr>
 		            </thead>
@@ -111,11 +112,18 @@
 								{x2;$subjects[v:basic['basicsubjectid']]['subject']}
 							</td>
 							<td>
+								{x2;if:v:basic['basicclosed']}关闭{x2;else}开启{x2;endif}
+							</td>
+							<td>
+
 								<div class="btn-group">
+								{x2;if:$authorid['userid']==v:basic['basicauthorid'] }	
 									<a class="btn" href="index.php?exam-teach-basic-setexamrange&page={x2;$page}&basicid={x2;v:basic['basicid']}{x2;$u}" title="考试范围"><em class="icon-cog"></em></a>
 									<a class="btn" href="index.php?exam-teach-basic-modifybasic&page={x2;$page}&basicid={x2;v:basic['basicid']}{x2;$u}" title="修改"><em class="icon-edit"></em></a>
 									<a class="btn ajax" href="index.php?exam-teach-basic-delbasic&basicid={x2;v:basic['basicid']}&page={x2;$page}{x2;$u}" title="删除"><em class="icon-remove"></em></a>
+								{x2;endif}
 								</div>
+
 							</td>
 				        </tr>
 				        {x2;endtree}

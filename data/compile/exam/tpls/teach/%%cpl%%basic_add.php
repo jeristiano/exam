@@ -31,6 +31,17 @@
 					</div>
 				</div>
 				<div class="control-group">
+					<label class="control-label">考试状态</label>
+					<div class="controls">
+						<label class="radio inline">
+							<input name="args[basicclosed]" type="radio" value="0" <?php if(!$this->tpl_var['basic']['basicclosed']){ ?>checked<?php } ?>/>开启
+						</label>
+						<label class="radio inline">
+							<input name="args[basicclosed]" type="radio" value="1" <?php if($this->tpl_var['basic']['basicclosed']){ ?>checked<?php } ?>/>关闭
+						</label>
+					</div>
+				</div>
+				<div class="control-group">
 					<label for="basicthumb" class="control-label">考试缩略图</label>
 					<div class="controls">
 						<div class="thumbuper pull-left">

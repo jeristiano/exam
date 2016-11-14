@@ -213,7 +213,11 @@ class app
 			
 			if($this->ev->get('insertbasic'))
 			{
+				$authorid = $this->_user;
+
 				$args = $this->ev->get('args');
+				$args['basicauthorid']=$authorid['userid'];
+				//print_r($args);die;
 				$page = $this->ev->get('page');
 				$id = $this->basic->addBasic($args);
 				$message = array(
@@ -250,10 +254,12 @@ class app
 				if($search['basicsubjectid'])$args[] = array('AND',"basicsubjectid = :basicsubjectid",'basicsubjectid',$search['basicsubjectid']);
 				if($search['basicapi'])$args[] = array('AND',"basicapi = :basicapi",'basicapi',$search['basicapi']);
 			}
+			$authorid = $this->_user;
 			$basics = $this->basic->getBasicList($page,10,$args);
 			$areas = $this->area->getAreaList();
 			$this->tpl->assign('areas',$areas);
 			$this->tpl->assign('subjects',$subjects);
+			$this->tpl->assign('authorid',$authorid);
 			$this->tpl->assign('basics',$basics);
 			$this->tpl->display('basic');
 			break;
@@ -608,16 +614,8 @@ class app
 			}
 			$questypes = $this->basic->getQuestypeList();
 			$questions = $this->exam->getQuestionsList($page,10,$args);
-
-			// $ques=$this->session->getSessionUser();
-			// $questionuserid=$ques['sessionuserid'];
-			// print_r($questions['data']);
-			// //print_r($questionuserid);
-			// foreach ($questions['data'] as $k => $v) {
-			// 	if($v['questionuserid'] ==$questionuserid ){
-
-			// 	}
-			// }
+			$userid=$this->_user;
+			//print_r($userid['userid']);
 			$subjects = $this->basic->getSubjectList(array(array('AND','find_in_set(subjectid,:subjectid)','subjectid',$this->teachsubjects)));
 			$sections = $this->section->getSectionListByArgs(array(array('AND',"sectionsubjectid = :sectionsubjectid",'sectionsubjectid',$search['questionsubjectid'])));
 			$knows = $this->section->getKnowsListByArgs(array(array('AND',"knowsstatus = 1"),array('AND',"knowssectionid = :knowssectionid",'knowssectionid',$search['questionsectionid'])));
@@ -625,6 +623,7 @@ class app
 			$this->tpl->assign('sections',$sections);
 			$this->tpl->assign('knows',$knows);
 			$this->tpl->assign('questypes',$questypes);
+			$this->tpl->assign('authorid',$userid['userid']);
 			$this->tpl->assign('questions',$questions);
 			$this->tpl->display('questions');
 		}

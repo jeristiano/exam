@@ -178,8 +178,12 @@
 						</td>
 						<td>
 							<div class="btn-group">
+							{x2;if:$authorid['userid']==v:question['questionuserid'] }	
 	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page={x2;$page}&questionid={x2;v:question['questionid']}{x2;$u}" title="修改"><em class="icon-edit"></em></a>
 								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page={x2;$page}&questionid={x2;v:question['questionid']}{x2;$u}" title="删除"><em class="icon-remove"></em></a>
+								{x2;else}
+								<a class="btn" href="javascript:;" title="禁用"><em class="icon-ban-circle"></em></a>
+	                    	{x2;endif}
 	                    	</div>
 						</td>
 			        </tr>

@@ -32,7 +32,7 @@
 <script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
 <script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
 </head><body>
-<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">在线考试教师管理平台</a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav pull-right">					<li>						<a href="index.php">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">陈晨<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?user-app-logout" class="ajax">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
+<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">在线考试教师管理平台</a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav pull-right">					<li>						<a href="index.php">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">jeristiano<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?user-app-logout" class="ajax">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
 	<div class="row-fluid">
 		<div class="span2">
 			<div class="accordion" id="accordion-13465">	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-707348">考试设计 </a>		</div>		<div class="accordion-body in collapse" id="accordion-element-707348">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-basic">考试列表</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-2120761">课程成绩 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-2120761">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-users">成绩管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212076">试题管理 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212076">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-questions">普通试题管理</a></li>					<li><a href="index.php?exam-teach-rowsquestions">题帽题管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212096">试卷管理 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212096">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-exams">试卷列表</a></li>					<li><a href="index.php?exam-teach-exams-autopage">随机组卷</a></li>					<li><a href="index.php?exam-teach-exams-selfpage">手工组卷</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212090">回收站 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212090">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-teach-recyle">普通试题</a></li>					<li><a href="index.php?exam-teach-recyle-rows">题帽题</a></li>				</ul>			</div>		</div>	</div></div>		</div>
@@ -89,9 +89,6 @@
 			        		<select name="search[basicsubjectid]" class="input-medium">
 				        		<option value="0">选择科目</option>
 						  								  		<option value="1">大学英语</option>
-						  								  		<option value="2">java</option>
-						  								  		<option value="3">python</option>
-						  								  		<option value="4">php</option>
 						  							  		</select>
 			        	</td>
 						<td>
@@ -113,28 +110,34 @@
 					        <th>考试名称</th>
 					        <th>考试班级</th>
 					        <th>考试科目</th>
+					         <th>状态</th>
 					        <th>操作</th>
 		                </tr>
 		            </thead>
 		            <tbody>
 		                				        <tr>
 							<td>
-								<input type="checkbox" name="delids[5]" value="1"/>
+								<input type="checkbox" name="delids[6]" value="1"/>
 							</td>
 							<td>
-								5							</td>
+								6							</td>
 							<td>
-								ggg							</td>
+								考试斯密码							</td>
 							<td>
-								检测0801班							</td>
+								检测0802班							</td>
 							<td>
-								python							</td>
+								大学英语							</td>
 							<td>
+								关闭							</td>
+							<td>
+
 								<div class="btn-group">
-									<a class="btn" href="index.php?exam-teach-basic-setexamrange&page=&basicid=5" title="考试范围"><em class="icon-cog"></em></a>
-									<a class="btn" href="index.php?exam-teach-basic-modifybasic&page=&basicid=5" title="修改"><em class="icon-edit"></em></a>
-									<a class="btn ajax" href="index.php?exam-teach-basic-delbasic&basicid=5&page=" title="删除"><em class="icon-remove"></em></a>
-								</div>
+									
+									<a class="btn" href="index.php?exam-teach-basic-setexamrange&page=&basicid=6" title="考试范围"><em class="icon-cog"></em></a>
+									<a class="btn" href="index.php?exam-teach-basic-modifybasic&page=&basicid=6" title="修改"><em class="icon-edit"></em></a>
+									<a class="btn ajax" href="index.php?exam-teach-basic-delbasic&basicid=6&page=" title="删除"><em class="icon-remove"></em></a>
+																</div>
+
 							</td>
 				        </tr>
 				        				        <tr>
@@ -150,11 +153,12 @@
 							<td>
 								大学英语							</td>
 							<td>
+								关闭							</td>
+							<td>
+
 								<div class="btn-group">
-									<a class="btn" href="index.php?exam-teach-basic-setexamrange&page=&basicid=4" title="考试范围"><em class="icon-cog"></em></a>
-									<a class="btn" href="index.php?exam-teach-basic-modifybasic&page=&basicid=4" title="修改"><em class="icon-edit"></em></a>
-									<a class="btn ajax" href="index.php?exam-teach-basic-delbasic&basicid=4&page=" title="删除"><em class="icon-remove"></em></a>
-								</div>
+																</div>
+
 							</td>
 				        </tr>
 				        				        <tr>
@@ -170,11 +174,12 @@
 							<td>
 								大学英语							</td>
 							<td>
+								开启							</td>
+							<td>
+
 								<div class="btn-group">
-									<a class="btn" href="index.php?exam-teach-basic-setexamrange&page=&basicid=3" title="考试范围"><em class="icon-cog"></em></a>
-									<a class="btn" href="index.php?exam-teach-basic-modifybasic&page=&basicid=3" title="修改"><em class="icon-edit"></em></a>
-									<a class="btn ajax" href="index.php?exam-teach-basic-delbasic&basicid=3&page=" title="删除"><em class="icon-remove"></em></a>
-								</div>
+																</div>
+
 							</td>
 				        </tr>
 				        		        	</tbody>

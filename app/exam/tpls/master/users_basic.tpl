@@ -116,6 +116,7 @@
 			        {x2;endtree}
 	        	</tbody>
 	        </table>
+	        	<p class="text-info">提示:非学生用户无需开通课程操作!</p>
 	        <div class="pagination pagination-right">
 	            <ul>{x2;$basics['pages']}</ul>
 	        </div>

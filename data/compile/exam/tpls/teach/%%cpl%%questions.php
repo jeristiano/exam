@@ -188,8 +188,12 @@
 						</td>
 						<td>
 							<div class="btn-group">
+							<?php if($this->tpl_var['authorid']['userid']==$question['questionuserid'] ){ ?>	
 	                    		<a class="btn" href="index.php?exam-teach-questions-modifyquestion&page=<?php echo $this->tpl_var['page']; ?>&questionid=<?php echo $question['questionid']; ?><?php echo $this->tpl_var['u']; ?>" title="修改"><em class="icon-edit"></em></a>
 								<a class="btn ajax" href="index.php?exam-teach-questions-delquestion&questionparent=0&page=<?php echo $this->tpl_var['page']; ?>&questionid=<?php echo $question['questionid']; ?><?php echo $this->tpl_var['u']; ?>" title="删除"><em class="icon-remove"></em></a>
+								<?php } else { ?>
+								<a class="btn" href="javascript:;" title="禁用"><em class="icon-ban-circle"></em></a>
+	                    	<?php } ?>
 	                    	</div>
 						</td>
 			        </tr>

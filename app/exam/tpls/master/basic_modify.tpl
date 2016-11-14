@@ -53,13 +53,13 @@
 							</div>
 						</div>
 					</div>
-					<div class="control-group">
+					<!-- <div class="control-group">
 						<label for="basicapi" class="control-label">API标识</label>
 						<div class="controls">
 							<input id="basicapi" name="args[basicapi]" type="text" value="{x2;$basic['basicapi']}" datatype="datatable" max="12" msg="API标识为不超过12字符的英文或数字" />
 							<span class="help-block">API标识用于对外提供接口信息，如果单独使用本系统无须填写</span>
 						</div>
-					</div>
+					</div> -->
 					<div class="control-group">
 						<label for="basicsubjectid" class="control-label">考试科目</label>
 						<div class="controls">
@@ -82,7 +82,7 @@
 					  		</select>
 						</div>
 					</div>
-					<div class="control-group">
+					<!-- <div class="control-group">
 						<label class="control-label">做为免费考试</label>
 						<div class="controls">
 							<label class="radio inline">
@@ -93,14 +93,14 @@
 							</label>
 							<span class="help-block">免费考试用户开通考试时不扣除积分</span>
 						</div>
-					</div>
-					<div class="control-group">
+					</div> -->
+					<!-- <div class="control-group">
 						<label for="basicprice" class="control-label">价格设置</label>
 						<div class="controls">
 							<textarea class="input-xlarge" rows="4" name="args[basicprice]" id="basicprice">{x2;$basic['basicprice']}</textarea>
 						  	<span class="help-block">请按照“时长:开通所需积分”格式填写，每行一个，时长以天为单位，免费考试此设置无效。</span>
 						</div>
-					</div>
+					</div> -->
 					<div class="control-group">
 						<div class="controls">
 							<button class="btn btn-success" type="submit">提交</button>
