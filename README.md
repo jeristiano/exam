@@ -41,5 +41,24 @@
 ![后台](http://okxzkjtey.bkt.clouddn.com/admin%601.png)
 ![后台](http://okxzkjtey.bkt.clouddn.com/admin2.png)
 
+# 文档
+- basic考场表
+- examhistory考试记录表
+- exams试卷表
+- examsession会话表
+- favor收藏表
+- knows知识点表
+- sections章节表
+- subject科目表
+- openbasics开通的考场记录表
+- quest2knows知识点与试题关系表
+- questionrows题冒题表
+- questions试题表
+- questype题型表
+- session用户会话表
+- user用户表
+- user_group用户组表
+- module模型表
+- module_fields模型字段表
 
 
